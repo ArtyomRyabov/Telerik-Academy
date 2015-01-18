@@ -18,7 +18,7 @@ class ComparingFloats
 
         bool areEqual = difference < eps;
         Console.WriteLine(areEqual ? "The numbers are equal." :
-            "The numbers not equal.");
+            "The numbers are not equal.");
     }
 }
 
