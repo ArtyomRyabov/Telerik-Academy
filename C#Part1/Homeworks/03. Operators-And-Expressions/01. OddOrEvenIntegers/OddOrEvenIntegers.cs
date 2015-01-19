@@ -21,7 +21,7 @@ class OddOrEvenIntegers
         // another solution:
         Console.WriteLine();
         bool check = (entered % 2 != 0);
-        Console.WriteLine("This is an odd integer: " + check);
+        Console.WriteLine("This is an odd integer: {0}", check);
     }
 }
 
