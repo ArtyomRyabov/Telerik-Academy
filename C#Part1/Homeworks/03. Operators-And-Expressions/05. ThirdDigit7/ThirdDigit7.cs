@@ -6,7 +6,7 @@ class ThirdDigit7
     {
         // Write an expression that checks for given integer if its third digit from right-to-left is 7.
         
-        Console.Write("Enter an integer: ");
+        Console.Write("Enter an integer (at least 3 digits): ");
         int number = int.Parse(Console.ReadLine());
 
         bool check = (number % 1000) / 100 == 7;
