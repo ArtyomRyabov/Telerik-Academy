@@ -11,10 +11,10 @@ class ExtractThirdBit
         Console.Write("Enter an unsigned integer: ");
         int number = int.Parse(Console.ReadLine());
 
-        int bitPossition = 3;
-        int mask = 1 << bitPossition;
+        int bitPosition = 3;
+        int mask = 1 << bitPosition;
         int numberAndMask = number & mask;
-        int bitValue = numberAndMask >> bitPossition;
+        int bitValue = numberAndMask >> bitPosition;
         Console.WriteLine(Convert.ToString(number, 2).PadLeft(32, '0'));
         Console.WriteLine("The third bit of {0} is: {1}", number, bitValue);
 
