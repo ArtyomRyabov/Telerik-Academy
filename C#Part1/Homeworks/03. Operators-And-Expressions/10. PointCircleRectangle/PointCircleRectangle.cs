@@ -12,16 +12,16 @@ class PointCircleRectangle
         double xPoint = double.Parse(Console.ReadLine());
         Console.Write("y = ");
         double yPoint = double.Parse(Console.ReadLine());
-        int xCircle = 1;
-        int yCircle = 1;
+        double xCircle = 1;
+        double yCircle = 1;
         double radius = 1.5;
         bool inCircle = Math.Pow((xPoint - xCircle), 2) + Math.Pow((yPoint - yCircle), 2) <= Math.Pow(radius, 2);
         Console.WriteLine("The point is within the circle: {0}", inCircle);
 
-        int topRectangle = 1;
-        int bottomRectangle = -1;
-        int leftRectangle = -1;
-        int rightRectangle = 5;
+        double topRectangle = 1;
+        double bottomRectangle = -1;
+        double leftRectangle = -1;
+        double rightRectangle = 5;
         bool outRectangle = ((xPoint < leftRectangle) || (xPoint > rightRectangle)) ||
                             ((yPoint > topRectangle) || (yPoint < bottomRectangle));
         Console.WriteLine("The point is out of the rectangle: {0}", outRectangle);
