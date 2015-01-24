@@ -19,7 +19,6 @@ class AgeCalculation
         else
         {
             age = (now.Year - birthday.Year) - 1;
-
         }
         Console.WriteLine("Your current age is: {0}", age);
         Console.WriteLine("In ten years you will be {0} years old", age + 10);

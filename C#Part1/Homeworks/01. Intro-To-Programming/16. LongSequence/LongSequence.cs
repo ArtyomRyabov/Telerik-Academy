@@ -13,9 +13,11 @@ class LongSequence
             if (i % 2 == 0)
             {
                 Console.Write(number + i + ", ");
-            }  
-            else 
+            }
+            else
+            {
                 Console.Write(-(number + i) + ", ");
+            }
         }
     }
 }
