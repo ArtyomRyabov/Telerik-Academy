@@ -10,13 +10,12 @@ class SumFiveNumbers
         string numbers = Console.ReadLine();
         string[] splitNumbers = numbers.Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
         double sum = 0;
-        int i;
 
-        for (i = 0; i < splitNumbers.Length; i++)
+        for (int i = 0; i < splitNumbers.Length; i++)
         {
             sum += double.Parse(splitNumbers[i]);
         }
-        Console.WriteLine("Sum of the numbers is: {0}", sum);
+        Console.WriteLine("Sum: {0}", sum);
     }
 }
 
