@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. PrintCompanyInfo", "02.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. CirclePerimeterArea", "03. CirclePerimeterArea\03. CirclePerimeterArea.csproj", "{9FC83EAD-F6A2-4439-8611-28CDCF67672B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. NumberComparer", "04. NumberComparer\04. NumberComparer.csproj", "{AA19D3AB-27DA-4DDE-AC62-FB7AB209F1DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9FC83EAD-F6A2-4439-8611-28CDCF67672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FC83EAD-F6A2-4439-8611-28CDCF67672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FC83EAD-F6A2-4439-8611-28CDCF67672B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA19D3AB-27DA-4DDE-AC62-FB7AB209F1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA19D3AB-27DA-4DDE-AC62-FB7AB209F1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA19D3AB-27DA-4DDE-AC62-FB7AB209F1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA19D3AB-27DA-4DDE-AC62-FB7AB209F1DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
