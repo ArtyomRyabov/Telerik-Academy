@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>17def12b-1aad-4e74-b31c-540478508daa</ProjectGuid>
+    <ProjectGuid>{6F49B442-3930-4484-A287-93EAF999B8DE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_10.FibonacciNumbers</RootNamespace>
