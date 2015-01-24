@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59173E7A-986B-42F9-95AA-140285565B85}</ProjectGuid>
+    <ProjectGuid>{ABAA2444-1DBA-4A17-AE9B-C68772FD77DE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_08.IsoscelesTriangle</RootNamespace>

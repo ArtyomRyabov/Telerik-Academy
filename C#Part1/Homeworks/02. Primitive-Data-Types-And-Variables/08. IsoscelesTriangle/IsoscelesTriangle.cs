@@ -20,4 +20,3 @@ class IsoscelesTriangle
         Console.WriteLine("   {0}\n  {0} {0}\n {0}   {0}\n{0} {0} {0} {0}", copyright);
     }
 }
-

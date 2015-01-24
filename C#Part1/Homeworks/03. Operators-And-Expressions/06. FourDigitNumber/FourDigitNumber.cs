@@ -20,14 +20,9 @@ class FourDigitNumber
         int c = (number / 10) % 10;
         int d = number % 10;
 
-        if (number > 9999)
+        if ((number > 9999) | (number < 1000))
         {
-            Console.WriteLine("Invalid number - more than four digits in it!");
-            return;
-        }
-        if (a == 0)
-        {
-            Console.WriteLine("Invalid number - less than four digits / cannot start with '0'!");
+            Console.WriteLine("Invalid number!");
             return;
         }
 
