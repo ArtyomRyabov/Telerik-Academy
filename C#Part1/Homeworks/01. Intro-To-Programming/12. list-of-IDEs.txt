@@ -1,3 +1,4 @@
+﻿
 Microsoft Visual Studio
 -----------------------
 Microsoft Visual Studio offers a multitude of editions for developing, testing, and deploying applications for the web, 
@@ -137,4 +138,3 @@ Key Features:
     Extend capabilities by stringing custom commands
 
 Cost: FREE
-======================================================================================================================
