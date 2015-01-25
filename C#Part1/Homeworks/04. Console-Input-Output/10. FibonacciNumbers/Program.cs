@@ -17,7 +17,6 @@ class Program
 
         for (int i = 0; i < n; i++)
         {
-
             Console.Write("{0}, ", aNumber);
             sumAB = aNumber + bNumber;
             aNumber = bNumber;
