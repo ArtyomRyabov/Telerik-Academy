@@ -1,4 +1,3 @@
-
 Java and C#
 -----------
 Java and C# are two very similar programming languages that are well-optimized and have stricter rules to help prevent 

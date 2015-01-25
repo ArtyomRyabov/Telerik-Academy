@@ -1,5 +1,4 @@
-﻿
-Microsoft Visual Studio
+﻿Microsoft Visual Studio
 -----------------------
 Microsoft Visual Studio offers a multitude of editions for developing, testing, and deploying applications for the web, 
 desktop, mobile, and even game consoles. With a plethora of testing and compatibility tools, you can test on virtual 
