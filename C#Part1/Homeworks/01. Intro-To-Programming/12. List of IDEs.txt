@@ -64,7 +64,6 @@ Cost: FREE
 ======================================================================================================================
 
 Eclipse
-Eclipse
 -------
 Many development frameworks are built on Eclipse, a free, open-source editor that was initially a Java environment 
 but a variety of plug-ins have extended its capabilities considerably. The Eclipse Standard 4.3.2 version, for 
