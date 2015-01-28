@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. PrintADeckOf52Cards", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. CalculateFactorial", "05. CalculateFactorial\05. CalculateFactorial.csproj", "{F7F9EFEC-D4AC-457F-96AE-8AA6C5DDC70A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. CalculateN!DivK!", "06. CalculateN!DivK!\06. CalculateN!DivK!.csproj", "{1F11FAA0-409B-4DC0-BABD-5824D416D260}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F7F9EFEC-D4AC-457F-96AE-8AA6C5DDC70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7F9EFEC-D4AC-457F-96AE-8AA6C5DDC70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7F9EFEC-D4AC-457F-96AE-8AA6C5DDC70A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F11FAA0-409B-4DC0-BABD-5824D416D260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F11FAA0-409B-4DC0-BABD-5824D416D260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F11FAA0-409B-4DC0-BABD-5824D416D260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F11FAA0-409B-4DC0-BABD-5824D416D260}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
