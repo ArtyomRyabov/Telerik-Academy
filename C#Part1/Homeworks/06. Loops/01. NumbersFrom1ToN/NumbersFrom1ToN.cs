@@ -7,15 +7,16 @@ class NumbersFrom1ToN
         // Write a program that enters from the console a positive integer n and prints all the numbers from 1 to n, 
         // on a single line, separated by a space.
 
-        Console.WriteLine("Enter a positive integer:");
-        int input = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter a positive integer n (n > 0):");
+        int n = int.Parse(Console.ReadLine());
         int number = 1;
 
-        while (number <= input)
+        while (number <= n)
         {
             Console.Write("{0} ", number);
             number++;
         }
+
         Console.WriteLine();
     }
 }
