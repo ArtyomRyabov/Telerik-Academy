@@ -24,6 +24,7 @@ class DivideFactorials
                 kFactorial *= i;
             }
         }
+
         BigInteger division = nFactorial / kFactorial;
         Console.WriteLine("n!/k! = {0}", division);
     }
