@@ -22,16 +22,16 @@ class SumFiveNumbers
         // solution 2:
 
         Console.Write("Enter 5 numbers in a single line, separated by a space: ");
-        string numbs = Console.ReadLine();
-        string[] splitNumbs = numbs.Split(' ');
+        string nums = Console.ReadLine();
+        string[] splitnums = nums.Split(' ');
 
-        double sumNumbs = 0;
+        double sumnums = 0;
 
-        for (int i = 0; i < splitNumbs.Length; i++)
+        for (int i = 0; i < splitnums.Length; i++)
         {
-            sumNumbs += double.Parse(splitNumbs[i]);
+            sumnums += double.Parse(splitnums[i]);
         }
-        Console.WriteLine("Sum: {0}", sumNumbs);
+        Console.WriteLine("Sum: {0}", sumnums);
     }
 }
 
