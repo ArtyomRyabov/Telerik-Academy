@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. CalculateN!DivK!", "06.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. K-out-of-N", "07. K-out-of-N\07. K-out-of-N.csproj", "{92E07F1B-2E29-416D-9B0D-1940303F2995}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. CatalanNumbers", "08. CatalanNumbers\08. CatalanNumbers.csproj", "{A5484E95-F4BE-4A4C-B973-955489891473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. MatrixOfNumbers", "09. MatrixOfNumbers\09. MatrixOfNumbers.csproj", "{92916B59-CE57-4C3C-8359-21FDC0734F51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{92E07F1B-2E29-416D-9B0D-1940303F2995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92E07F1B-2E29-416D-9B0D-1940303F2995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92E07F1B-2E29-416D-9B0D-1940303F2995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5484E95-F4BE-4A4C-B973-955489891473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5484E95-F4BE-4A4C-B973-955489891473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5484E95-F4BE-4A4C-B973-955489891473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5484E95-F4BE-4A4C-B973-955489891473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92916B59-CE57-4C3C-8359-21FDC0734F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92916B59-CE57-4C3C-8359-21FDC0734F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92916B59-CE57-4C3C-8359-21FDC0734F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92916B59-CE57-4C3C-8359-21FDC0734F51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

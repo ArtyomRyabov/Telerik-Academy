@@ -12,7 +12,7 @@ class PrintADeckOf52Cards
 
         for (int i = 2; i <= 14; i++)
         {
-            if (i != 2)
+            if (i > 2)
             {
                 Console.WriteLine();
             }
@@ -68,7 +68,7 @@ class PrintADeckOf52Cards
 
         for (int i = 2; i <= 14; i++)
         {
-            if (i != 2)
+            if (i > 2)
             {
                 Console.WriteLine();
             }
