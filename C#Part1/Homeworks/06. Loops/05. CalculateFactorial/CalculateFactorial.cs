@@ -23,7 +23,7 @@ class CalculateFactorial
             xPow *= x;
             sum += ((decimal)factorial / xPow);
         }
-        Console.WriteLine("{0:F5}", sum);
-    }
+        Console.WriteLine("{0:F5}", sum);        // Using BigInteger does not work for this solution. That is why
+    }                                            // usig 'long' in certain cases console gives back exception.
 }
 
