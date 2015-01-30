@@ -13,14 +13,21 @@ class TrailingZeroes
         BigInteger divider = 5;
         BigInteger sum = 0;
         BigInteger result = 1;
+        BigInteger factorial = 1;
 
         while (result > 0)
         {
-            sum = sum + n / divider;
+            sum += (n / divider);
             result = n / divider;
-            divider = divider * 5;
+            divider *= 5;
         }
-        Console.WriteLine(sum);         
+        Console.WriteLine("trailing zeroes of n!: {0}", sum);
+
+        for (int i = 1; i <= n; i++)
+        {
+            factorial *= i;
+        }
+        Console.WriteLine("n! = {0}", factorial);
     }
 }
 
