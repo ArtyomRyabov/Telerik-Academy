@@ -21,7 +21,6 @@ class DecimalToHexadecimal
 
         while (decimalNumber > 0)
         {
-            
             remainder = decimalNumber % 16;
             switch (remainder)
             {
