@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8BBC2B70-91FF-45C4-A062-7D1DCD2E4C6E}</ProjectGuid>
+    <ProjectGuid>{750C78F7-BA69-497F-8479-FBA667FEC881}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_1.AllocateArray</RootNamespace>
-    <AssemblyName>_1.AllocateArray</AssemblyName>
+    <RootNamespace>_02.CompareArrays</RootNamespace>
+    <AssemblyName>_02.CompareArrays</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllocateArray.cs" />
+    <Compile Include="CompareArrays.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

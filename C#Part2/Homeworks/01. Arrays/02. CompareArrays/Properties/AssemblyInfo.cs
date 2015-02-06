@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("1. AllocateArray")]
+[assembly: AssemblyTitle("02. CompareArrays")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("1. AllocateArray")]
+[assembly: AssemblyProduct("02. CompareArrays")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0b6a936b-ff7d-466f-a989-14d151dda4ed")]
+[assembly: Guid("5cf2862f-c420-4562-bbc1-50c8bd0cad69")]
 
 // Version information for an assembly consists of the following four values:
 //

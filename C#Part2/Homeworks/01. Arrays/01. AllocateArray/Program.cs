@@ -1,4 +1,5 @@
 ﻿using System;
+
 class AllocateArray
 {
     static void Main()
@@ -14,9 +15,9 @@ class AllocateArray
 
             if (i < array.Length - 1)
             {
-                Console.Write("{0}, ", array[i]);                
+                Console.Write("{0}, ", array[i]);
             }
-            else 
+            else
             {
                 Console.WriteLine("{0}", array[i]);
             }
