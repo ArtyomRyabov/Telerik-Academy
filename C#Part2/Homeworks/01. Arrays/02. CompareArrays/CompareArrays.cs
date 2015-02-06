@@ -53,7 +53,11 @@ class CompareArrays
         {
             Console.WriteLine("The arrays have equal length, but different elements.");
         }
-        if (firstArray.Length != secondArray.Length)
+        if ((firstArray.Length != secondArray.Length) && (counter == 0))
+        {
+            Console.WriteLine("The arrays have different length and zero equal elements.");
+        }
+        if ((firstArray.Length != secondArray.Length) && (counter != 0))
         {
             Console.WriteLine("The arrays have different length.");
         }
