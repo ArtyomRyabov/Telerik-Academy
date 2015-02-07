@@ -1,4 +1,5 @@
 ﻿using System;
+
 class DecimalToHexadecimal
 {
     static void Main()
