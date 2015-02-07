@@ -11,7 +11,6 @@ class MaximalIncreasingSequence
         int number = int.Parse(Console.ReadLine());
 
         List<int> intList = new List<int>();
-        //List<int> intList2 = new List<int>();
         int counter = 1;
         int maxCounter = 1;
         int minValue = 0;
