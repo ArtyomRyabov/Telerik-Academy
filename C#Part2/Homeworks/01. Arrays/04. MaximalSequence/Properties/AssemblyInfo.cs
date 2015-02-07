@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("01. AllocateArray")]
+[assembly: AssemblyTitle("04. MaximalSequence")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("01. AllocateArray")]
+[assembly: AssemblyProduct("04. MaximalSequence")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("147a82c0-d3a9-4850-8ef2-9ee48424a7e6")]
+[assembly: Guid("2b734ca3-0786-4ce9-a3da-c70f4bea0e4e")]
 
 // Version information for an assembly consists of the following four values:
 //
