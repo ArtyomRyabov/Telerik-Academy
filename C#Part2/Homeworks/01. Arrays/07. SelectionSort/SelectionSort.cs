@@ -23,7 +23,7 @@ class SelectionSort
         {
             for (int j = i + 1; j < array.Length; j++)
             {
-                if (array[i] < array[j])
+                if (array[i] > array[j])
                 {
                     temporary = array[i];
                     array[i] = array[j];
