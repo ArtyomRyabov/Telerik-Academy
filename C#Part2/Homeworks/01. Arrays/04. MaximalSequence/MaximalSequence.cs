@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-
 class MaximalSequence
 {
     static void Main()
     {
         // Write a program that finds the maximal sequence of equal elements in an array.
 
-        Console.WriteLine("Enter the number of elements in an array:");
+        Console.WriteLine("Enter the number of elements in an array (of digits):");
         int number = int.Parse(Console.ReadLine());
 
         int[] array = new int[number];
@@ -64,4 +63,3 @@ class MaximalSequence
         }
     }
 }
-

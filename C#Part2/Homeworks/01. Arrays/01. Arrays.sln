@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. MaximalSequence", "04. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. AllocateArray", "01. AllocateArray\01. AllocateArray.csproj", "{F3DAE851-8109-4923-B811-16E3F078C908}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. MaximalIncreasingSequence", "05. MaximalIncreasingSequence\05. MaximalIncreasingSequence.csproj", "{2CE4BF0F-6E43-4A30-9C4B-32E473751355}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F3DAE851-8109-4923-B811-16E3F078C908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3DAE851-8109-4923-B811-16E3F078C908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3DAE851-8109-4923-B811-16E3F078C908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE4BF0F-6E43-4A30-9C4B-32E473751355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE4BF0F-6E43-4A30-9C4B-32E473751355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE4BF0F-6E43-4A30-9C4B-32E473751355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE4BF0F-6E43-4A30-9C4B-32E473751355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
