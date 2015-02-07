@@ -14,10 +14,14 @@ class SaddyKopper
 
         while (isTrue)
         {
-            BigInteger temp = BigInteger.Parse(number);
-            temp /= 10;
-            number = Convert.ToString(temp);
-            if (temp == 0)
+            for (int i = 0; i < number.Length - 1; i++)
+            {
+                currentNumber += string.Join("", number[i] - 48);
+            }
+            number = currentNumber;
+            currentNumber = "";
+
+            if (number.Length == 0)
             {
                 transformation++;
                 if (transformation >= 10)
