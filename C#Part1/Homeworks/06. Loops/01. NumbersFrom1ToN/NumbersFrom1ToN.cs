@@ -16,7 +16,6 @@ class NumbersFrom1ToN
             Console.Write("{0} ", number);
             number++;
         }
-
         Console.WriteLine();
     }
 }
