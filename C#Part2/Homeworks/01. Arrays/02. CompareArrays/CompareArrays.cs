@@ -6,10 +6,10 @@ class CompareArrays
     {
         // Write a program that reads two integer arrays from the console and compares them element by element.
 
-        Console.WriteLine("Enter two integer arrays (number > 0):");
-        int first = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter two integer arrays:");
+        int first = Math.Abs(int.Parse(Console.ReadLine()));
         int[] firstArray = new int[first];
-        int second = int.Parse(Console.ReadLine());
+        int second = Math.Abs(int.Parse(Console.ReadLine()));
         int[] secondArray = new int[second];
 
         Console.WriteLine("Enter the elements of the first array:");
