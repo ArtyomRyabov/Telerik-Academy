@@ -7,7 +7,7 @@ class MaximalSum
     {
         // Write a program that finds the sequence of maximal sum in given array.
 
-        Console.WriteLine("Enter number of elements:");
+        Console.WriteLine("Enter the number of elements:");
         int number = int.Parse(Console.ReadLine());
         Console.WriteLine("Enter the elements:");
         int[] array = new int[number];
