@@ -19,6 +19,7 @@ class FrequentNumber
         {
             array[i] = int.Parse(Console.ReadLine());            
         }
+
         for (int i = 0; i < array.Length; i++)
         {
             for (int j = i + 1; j < array.Length; j++)
@@ -42,7 +43,7 @@ class FrequentNumber
             counter = 1;
         }
 
-        Console.WriteLine("The most frequent number(s) in an array is:");
+        Console.WriteLine("The most frequent number(s) in the array is (are):");
 
         foreach (int item in elements)
         {
