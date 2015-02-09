@@ -6,29 +6,37 @@ class PrimeNumbers
     {
         // Write a program that finds all prime numbers in the range [1...10 000 000]. Use the Sieve of Eratosthenes algorithm.
 
-        long n = 10000000;
-        bool[] e = new bool[n];
-        for (int i = 2; i < n; i++)
+        int maxNumber = 10000000;
+        bool[] notPrimes = new bool[maxNumber];
+
+        for (int i = 2; i < Math.Sqrt(maxNumber); i++)
         {
-            e[i] = true;
-        }
-        for (int i = 2; i < n; i++)
-        {
-            if (e[i] == true)
+            if (notPrimes[i] == false)
             {
-                for (int j = 2; (j * i) < n; j++)
+                for (int j = i * i; j < maxNumber; j += i)
                 {
-                    e[i * j] = false;
+                    notPrimes[j] = true;
                 }
             }
         }
-        for (int i = 0; i < n / 1000; i++)
+
+        Console.WriteLine("The prime numbers are yellow and not primes are blue");
+
+        for (int j = 2; j < maxNumber; j++)      // For fast result: change 'maxResult' on this line to 'maxResult / 10000'
         {
-            if (e[i])
+            if (notPrimes[j])
             {
-                Console.Write("{0} ", i);
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write("{0} ", j);
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("{0} ", j);
             }
         }
+        Console.WriteLine();
+        Console.ForegroundColor = ConsoleColor.White;
     }
 }
 
