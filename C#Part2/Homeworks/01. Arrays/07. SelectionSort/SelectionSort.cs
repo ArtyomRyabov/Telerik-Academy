@@ -21,11 +21,14 @@ class SelectionSort
 
         for (int i = 0; i < array.Length - 1; i++)
         {
-            if (array[i] > array[i + 1])
+            for (int j = i + 1; j < array.Length; j++)
             {
-                temporary = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = temporary;
+                if (array[i] > array[j])
+                {
+                    temporary = array[i];
+                    array[i] = array[j];
+                    array[j] = temporary;
+                }
             }
         }
 
