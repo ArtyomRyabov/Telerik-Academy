@@ -9,7 +9,7 @@ class FindSumInArray
 
         Console.WriteLine("Enter number for 'sum':");
         int S = int.Parse(Console.ReadLine());
-        Console.WriteLine("Enter elements' number:");
+        Console.WriteLine("Enter array's number of elements:");
         int number = int.Parse(Console.ReadLine());
         Console.WriteLine("Enter the elements:");
         int[] array = new int[number];
