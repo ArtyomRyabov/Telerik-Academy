@@ -7,11 +7,11 @@ class MergeSort
         // Write a program that sorts an array of integers using the Merge sort algorithm.
 
         Console.WriteLine("Enter number of elements of the array:");
-        int N = int.Parse(Console.ReadLine());
-        int[] array = new int[N];
+        int number = int.Parse(Console.ReadLine());
+        int[] array = new int[number];
 
         Console.WriteLine("Enter the elements:");
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < number; i++)
         {
             array[i] = int.Parse(Console.ReadLine());
         }
@@ -51,6 +51,7 @@ class MergeSort
         int leftIndex = 0;
         int rightIndex = 0;
         int[] array = new int[left.Length + right.Length];
+
         for (int i = 0; i < array.Length; i++)
         {
             if (rightIndex == right.Length)
@@ -63,7 +64,6 @@ class MergeSort
                 array[i] = left[leftIndex];
                 leftIndex++;
             }
-
             else if (leftIndex == left.Length)
             {
                 array[i] = right[rightIndex];
@@ -75,7 +75,7 @@ class MergeSort
                 rightIndex++;
             }
         }
+
         return array;
     }
 }
-

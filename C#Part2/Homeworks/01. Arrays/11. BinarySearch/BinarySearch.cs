@@ -26,7 +26,7 @@ class BinarySearch
         Console.WriteLine((index > -1) ? ("The index is of element ({0}) is: {1}"): ("Invalid input!"),element, index);
     }
 
-    private static int BinSearch(int[] array, int element)
+    public static int BinSearch(int[] array, int element)
     {
         int start = 0;
         int end = (array.Length - 1);

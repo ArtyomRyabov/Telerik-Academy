@@ -7,11 +7,11 @@ class QuickSort
         // Write a program that sorts an array of strings using the Quick sort algorithm.
 
         Console.WriteLine("Enter array's number of elements:");
-        int N = int.Parse(Console.ReadLine());
-        int[] array = new int[N];
+        int number = int.Parse(Console.ReadLine());
+        int[] array = new int[number];
 
         Console.WriteLine("Enter the array:");
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < number; i++)
         {
             array[i] = int.Parse(Console.ReadLine());
         }
