@@ -68,8 +68,10 @@ class MaximalSum
         Console.WriteLine("The maximal sum is: {0}", maxSum);
         Console.WriteLine("The square with maximal sum is:");
         Console.WriteLine(" {0}  {1}  {2}", matrix[bestRow, bestCol], matrix[bestRow, bestCol + 1], matrix[bestRow, bestCol + 2]);
-        Console.WriteLine(" {0}  {1}  {2}", matrix[bestRow + 1, bestCol], matrix[bestRow + 1, bestCol + 1], matrix[bestRow + 1, bestCol + 2]);
-        Console.WriteLine(" {0}  {1}  {2}", matrix[bestRow + 2, bestCol], matrix[bestRow + 2, bestCol + 1], matrix[bestRow + 2, bestCol + 2]);
+        Console.WriteLine(" {0}  {1}  {2}", matrix[bestRow + 1, bestCol], matrix[bestRow + 1, bestCol + 1], 
+                                            matrix[bestRow + 1, bestCol + 2]);
+        Console.WriteLine(" {0}  {1}  {2}", matrix[bestRow + 2, bestCol], matrix[bestRow + 2, bestCol + 1], 
+                                            matrix[bestRow + 2, bestCol + 2]);
     }
 }
 
