@@ -168,32 +168,28 @@ class FillTheMatrix
         {
             while ((newRow < n) && (newMatrix[newRow, newCol] == 0))
             {
-                newMatrix[newRow, newCol] = number++;
-                newRow++;
+                newMatrix[newRow++, newCol] = number++;
             }
             newRow--;
             newCol++;
 
             while ((newCol < n) && (newMatrix[newRow, newCol] == 0))
             {
-                newMatrix[newRow, newCol] = number++;
-                newCol++;
+                newMatrix[newRow, newCol++] = number++;
             }
             newCol--;
             newRow--;
 
             while ((newRow > -1) && (newMatrix[newRow, newCol] == 0))
             {
-                newMatrix[newRow, newCol] = number++;
-                newRow--;
+                newMatrix[newRow--, newCol] = number++;
             }
             newRow++;
             newCol--;
 
             while ((newCol >= 0) && (newMatrix[newRow, newCol] == 0))
             {
-                newMatrix[newRow, newCol] = number++;
-                newCol--;
+                newMatrix[newRow, newCol--] = number++;
             }
             newCol++;
             newRow++;
