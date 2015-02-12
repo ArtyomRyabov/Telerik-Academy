@@ -23,7 +23,7 @@ class RemoveElementsFromArray
         int counter = 0;
         int maxCounter = 0;
         int lastMember = 0;
-        int all = Math.Pow(2, number) - 1;
+        int all = (int)Math.Pow(2, number) - 1;
 
         for (int i = 1; i <= all; i++)
         {
