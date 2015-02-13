@@ -192,7 +192,6 @@ class SequenceNmatrix
                 Console.WriteLine(item);
             }
         }
-
     }
 }
 
