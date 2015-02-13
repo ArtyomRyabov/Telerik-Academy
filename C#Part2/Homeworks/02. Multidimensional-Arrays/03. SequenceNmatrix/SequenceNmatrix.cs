@@ -73,13 +73,13 @@ class SequenceNmatrix
                     counter = 1;
                 }
 
-                if ((row < matrix.GetLength(0) - 1) && (col < matrix.GetLength(1) - 1) && 
+                if ((row < matrix.GetLength(0) - 1) && (col < matrix.GetLength(1) - 1) &&
                     (matrix[row + 1, col + 1] == matrix[row, col]))
                 {
                     currentCol = col + 1;
                     currentRow = row + 1;
 
-                    while ((currentRow < matrix.GetLength(0)) && (currentCol < matrix.GetLength(1)) && 
+                    while ((currentRow < matrix.GetLength(0)) && (currentCol < matrix.GetLength(1)) &&
                            (matrix[currentRow, currentCol] == matrix[row, col]))
                     {
                         counter++;
@@ -137,7 +137,7 @@ class SequenceNmatrix
                     currentRow = row + 1;
                     currentCol = col - 1;
 
-                    while ((currentRow < matrix.GetLength(0))  && (currentCol >= 0 ) && 
+                    while ((currentRow < matrix.GetLength(0)) && (currentCol >= 0) &&
                            (matrix[currentRow, currentCol] == matrix[row, col]))
                     {
                         counter++;
@@ -167,21 +167,32 @@ class SequenceNmatrix
 
         Console.WriteLine("The longest sequence(es) of equal strings in the matrix:");
 
-        foreach (string item in elementsList)
+        if (maxCount > 0)
         {
-            for (int i = 0; i < maxCount; i++)
+            foreach (string item in elementsList)
             {
-                if (i < maxCount - 1)
+                for (int i = 0; i < maxCount; i++)
                 {
-                    Console.Write("{0}, ", item);
+                    if (i < maxCount - 1)
+                    {
+                        Console.Write("{0}, ", item);
+                    }
+                    else
+                    {
+                        Console.Write("{0}", item);
+                    }
                 }
-                else
-                {
-                    Console.Write("{0}", item);
-                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
         }
+        else
+        {
+            foreach (string item in matrix)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
     }
 }
 
