@@ -15,7 +15,6 @@ class SequenceNmatrix
         int m = int.Parse(Console.ReadLine());
         string[,] matrix = new string[n, m];
 
-
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
@@ -49,10 +48,12 @@ class SequenceNmatrix
                 if ((col < matrix.GetLength(1) - 1) && (matrix[row, col + 1] == matrix[row, col]))
                 {
                     currentCol = col + 1;
+
                     while ((currentCol < matrix.GetLength(1)) && (matrix[row, currentCol] == matrix[row, col]))
                     {
                         counter++;
                         currentCol++;
+
                         if (counter > maxCount)
                         {
                             maxCount = counter;
@@ -72,10 +73,12 @@ class SequenceNmatrix
                     counter = 1;
                 }
 
-                if ((row < matrix.GetLength(0) - 1) && (col < matrix.GetLength(1) - 1) && (matrix[row + 1, col + 1] == matrix[row, col]))
+                if ((row < matrix.GetLength(0) - 1) && (col < matrix.GetLength(1) - 1) && 
+                    (matrix[row + 1, col + 1] == matrix[row, col]))
                 {
                     currentCol = col + 1;
                     currentRow = row + 1;
+
                     while ((currentRow < matrix.GetLength(0)) && (currentCol < matrix.GetLength(1)) && 
                            (matrix[currentRow, currentCol] == matrix[row, col]))
                     {
@@ -105,6 +108,7 @@ class SequenceNmatrix
                 if ((row < matrix.GetLength(0) - 1) && (matrix[row + 1, col] == matrix[row, col]))
                 {
                     currentRow = row + 1;
+
                     while ((currentRow < matrix.GetLength(0)) && (matrix[currentRow, col] == matrix[row, col]))
                     {
                         counter++;
@@ -132,7 +136,9 @@ class SequenceNmatrix
                 {
                     currentRow = row + 1;
                     currentCol = col - 1;
-                    while ((currentRow < matrix.GetLength(0))  && (currentCol >= 0 ) && (matrix[currentRow, currentCol] == matrix[row, col]))
+
+                    while ((currentRow < matrix.GetLength(0))  && (currentCol >= 0 ) && 
+                           (matrix[currentRow, currentCol] == matrix[row, col]))
                     {
                         counter++;
                         currentRow++;
