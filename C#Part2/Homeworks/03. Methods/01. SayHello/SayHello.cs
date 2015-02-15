@@ -30,13 +30,12 @@ class SayHello
     {
         foreach (char item in name)
         {
-            if ((((int)item > 90 && (int)item < 97)) || ((int)item > 120 || ((int)item < 65) && (item != 32)))
+            if ((((int)item > 90 && (int)item < 97)) || ((int)item > 120 || (int)item < 65))
             {
                 return false;
             }
         }
         return true;
     }
-
 }
 
