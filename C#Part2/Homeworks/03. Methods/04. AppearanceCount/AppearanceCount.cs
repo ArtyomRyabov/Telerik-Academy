@@ -21,20 +21,21 @@ class AppearanceCount
         int counter = ElementAppearances(array, countedElement);
         Console.WriteLine("Number ({0}) appears {1} time(s) in the array.", countedElement, counter);
 
+        // test "ElementAppearances Method"
         Console.WriteLine();
         Console.WriteLine(new String('-', 40));
         Console.WriteLine();
 
-        Console.WriteLine(@"An array includes { 5, 5, 5, 5, 5 }. 
-It will be tested with ElementAppearances Method, 
-to see if the last one is working properly (Needed result: Test counter = 5).");
+        Console.WriteLine(@"An array includes { 5, 5, 5, 5, 5, 5 }. 
+It will be tested with ""ElementAppearances Method"", 
+to see if the last one is working properly.");
         Console.WriteLine();
 
-        int[] testArray = new int[] { 5, 5, 5, 5, 5 };
+        int[] testArray = new int[] { 5, 5, 5, 5, 5, 5 };
 
-        if ((counter = ElementAppearances(testArray, 5)) == 5)
+        if ((counter = ElementAppearances(testArray, 5)) == 6)
         {
-            Console.WriteLine("Result: Test counter = {0} => ElementAppearances Method is working properly.", 
+            Console.WriteLine("Result: Test counter = {0} => \"ElementAppearances Method\" is working properly.", 
                               (counter = ElementAppearances(testArray, 5)));
         }
         else
