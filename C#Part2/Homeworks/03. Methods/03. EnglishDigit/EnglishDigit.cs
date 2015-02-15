@@ -11,8 +11,7 @@ class EnglishDigit
         int digit = number % 10;
         int lastDigit = Math.Abs(digit);
 
-
-        Console.WriteLine("Last digit as a word is: {0}", LastDigitAsWord(lastDigit));
+        Console.WriteLine("The last digit as a word is: {0}", LastDigitAsWord(lastDigit));
     }
 
     private static string LastDigitAsWord(int lastDigit)
