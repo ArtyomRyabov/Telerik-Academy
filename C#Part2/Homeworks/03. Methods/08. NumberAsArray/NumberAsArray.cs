@@ -31,7 +31,6 @@ class NumberAsArray
         }
 
         SumArrays(first, second, firstSecond, longestLength);
-
     }
 
     private static void SumArrays(int[] first, int[] second, List<int> firstSecond, int longestLength)
