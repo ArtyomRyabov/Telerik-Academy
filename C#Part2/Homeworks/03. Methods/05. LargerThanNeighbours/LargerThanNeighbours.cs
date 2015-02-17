@@ -3,7 +3,7 @@
 
 using System;
 
-class LargerThanNeighbours
+public class LargerThanNeighbours
 {
     static void Main()
     {
@@ -23,7 +23,7 @@ class LargerThanNeighbours
         Console.WriteLine();
     }
 
-    private static bool IfLargerThanNeighbours(int[] array, int checkedElement)
+    public static bool IfLargerThanNeighbours(int[] array, int checkedElement)
     {
         bool result = ((array[checkedElement] > array[checkedElement - 1]) && (array[checkedElement] > array[checkedElement + 1]));
         return result;
