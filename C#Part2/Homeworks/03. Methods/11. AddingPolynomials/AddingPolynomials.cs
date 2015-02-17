@@ -9,10 +9,8 @@ class AddPolynomials
         Console.WriteLine("Enter number of coefficients for the first polynomial:");
         int firstNumC = int.Parse(Console.ReadLine());
         decimal[] firstPolynomial = new decimal[firstNumC];
-
         Console.WriteLine("Enter the coefficients:");
         WritePolynomial(firstPolynomial);
-
         Console.WriteLine(new string('-', 50));
         Console.Write("First polinomial: ");
         PrintPolynomial(firstPolynomial);
@@ -28,10 +26,8 @@ class AddPolynomials
         Console.WriteLine("Enter number of coefficients for the second polynomial:");
         int secondNumC = int.Parse(Console.ReadLine());
         decimal[] secondPolynomial = new decimal[secondNumC];
-
         Console.WriteLine("Enter the coefficients:");
         WritePolynomial(secondPolynomial);
-
         Console.WriteLine(new string('-', 50));
         Console.Write("Second polinomial: ");
         PrintPolynomial(secondPolynomial);
@@ -44,20 +40,24 @@ class AddPolynomials
         }
         Console.WriteLine("Reversed second polynomial coefficients: {0}", string.Join(", ", reversedSecondArray));
 
+        PolynomialsSum(reversedFirstArray, reversedSecondArray, MaxLength(firstPolynomial, secondPolynomial));
+        Console.WriteLine(new string('-', 50));
+    }
 
-        int usedLength = 0;
+    private static int MaxLength(decimal[] firstPolynomial, decimal[] secondPolynomial)
+    {
+        int maxLength = 0;
 
         if (firstPolynomial.Length >= secondPolynomial.Length)
         {
-            usedLength = firstPolynomial.Length;
+            maxLength = firstPolynomial.Length;
         }
         else
         {
-            usedLength = secondPolynomial.Length;
+            maxLength = secondPolynomial.Length;
         }
 
-        PolynomialsSum(reversedFirstArray, reversedSecondArray, usedLength);
-        Console.WriteLine(new string('-', 50));
+        return maxLength;
     }
 
     private static void PolynomialsSum(decimal[] reversedFirstArray, decimal[] reversedSecondArray, int usedLength)

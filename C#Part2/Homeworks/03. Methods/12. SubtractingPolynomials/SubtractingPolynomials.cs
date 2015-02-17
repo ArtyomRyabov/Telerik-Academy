@@ -41,43 +41,14 @@ class SubtractingPolynomials
         Console.WriteLine(new string('-', 50));
     }
 
-    private static void WritePolynomial(decimal[] polynomial)
+    static void Multiply(decimal[] firstPolynomial, decimal[] secondPolynomial, decimal[] multiplyPolynomials)
     {
-        for (int i = 0; i < polynomial.Length; i++)
+        for (int i = 0; i < firstPolynomial.Length; i++)
         {
-            polynomial[i] = decimal.Parse(Console.ReadLine());
-        }
-    }
-
-    static void PrintPolynomial(decimal[] polynomial)
-    {
-        for (int i = polynomial.Length - 1; i >= 0; i--)
-        {
-            if (i == 0)
+            for (int j = 0; j < secondPolynomial.Length; j++)
             {
-                Console.WriteLine("{0}", polynomial[i]);
-            }
-            else if (i == 1)
-            {
-                if (polynomial[i - 1] >= 0)
-                {
-                    Console.Write("{0}x + ", polynomial[i]);
-                }
-                else
-                {
-                    Console.Write("{0}x ", polynomial[i]);
-                }
-            }
-            else if (polynomial[i] != 0 && i > 1)
-            {
-                if (polynomial[i - 1] >= 0)
-                {
-                    Console.Write("{0}x^{1} + ", polynomial[i], i);
-                }
-                else
-                {
-                    Console.Write("{0}x^{1} ", polynomial[i], i);
-                }
+                int index = i + j;
+                multiplyPolynomials[index] += (firstPolynomial[i] * secondPolynomial[j]);
             }
         }
     }
@@ -129,15 +100,44 @@ class SubtractingPolynomials
         }
     }
 
-    static void Multiply(decimal[] firstPolynomial, decimal[] secondPolynomial, decimal[] multiplyPolynomials)
+    static void PrintPolynomial(decimal[] polynomial)
     {
-        for (int i = 0; i < firstPolynomial.Length; i++)
+        for (int i = polynomial.Length - 1; i >= 0; i--)
         {
-            for (int j = 0; j < secondPolynomial.Length; j++)
+            if (i == 0)
             {
-                int index = i + j;
-                multiplyPolynomials[index] += (firstPolynomial[i] * secondPolynomial[j]);
+                Console.WriteLine("{0}", polynomial[i]);
             }
+            else if (i == 1)
+            {
+                if (polynomial[i - 1] >= 0)
+                {
+                    Console.Write("{0}x + ", polynomial[i]);
+                }
+                else
+                {
+                    Console.Write("{0}x ", polynomial[i]);
+                }
+            }
+            else if (polynomial[i] != 0 && i > 1)
+            {
+                if (polynomial[i - 1] >= 0)
+                {
+                    Console.Write("{0}x^{1} + ", polynomial[i], i);
+                }
+                else
+                {
+                    Console.Write("{0}x^{1} ", polynomial[i], i);
+                }
+            }
+        }
+    }
+
+    private static void WritePolynomial(decimal[] polynomial)
+    {
+        for (int i = 0; i < polynomial.Length; i++)
+        {
+            polynomial[i] = decimal.Parse(Console.ReadLine());
         }
     }
 }
