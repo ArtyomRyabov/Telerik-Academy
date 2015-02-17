@@ -100,13 +100,27 @@ class AddPolynomials
             {
                 Console.Write("{0}", array[i]);
             }
-            else if (i == array.Length - 2)
+            else if ((i == array.Length - 2) && (array[i] != 0))
             {
-                Console.Write("{0}x + ", array[i]);
+                if (array[i + 1] >= 0)
+                {
+                    Console.Write("{0}x + ", array[i]);
+                }
+                else
+                {
+                    Console.Write("{0}x ", array[i]);
+                }
             }
-            else
+            else if (array[i] != 0)
             {
-                Console.Write("{0}x^{1} + ", array[i], (array.Length - 1 - i));
+                if (array[i + 1] >= 0)
+                {
+                    Console.Write("{0}x^{1} + ", array[i], (array.Length - 1 - i));
+                }
+                else
+                {
+                    Console.Write("{0}x^{1} ", array[i], (array.Length - 1 - i));
+                }
             }
         }
 

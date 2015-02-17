@@ -108,7 +108,7 @@ class SubtractingPolynomials
             {
                 Console.WriteLine("{0}", polynomial[i]);
             }
-            else if (i == 1)
+            else if (polynomial[i] != 0 && i == 1)
             {
                 if (polynomial[i - 1] >= 0)
                 {
@@ -119,7 +119,7 @@ class SubtractingPolynomials
                     Console.Write("{0}x ", polynomial[i]);
                 }
             }
-            else if (polynomial[i] != 0 && i > 1)
+            else if (polynomial[i] != 0)
             {
                 if (polynomial[i - 1] >= 0)
                 {
