@@ -32,12 +32,6 @@ class FirstLargerThanNeighbours
         Console.WriteLine("-1 (There is no element that is larger than its neighbours.)");
     }
 
-    //private static bool IfLargerThanNeighbours(int[] array, int i)
-    //{
-    //    bool result = ((array[i] > array[i - 1]) && (array[i] > array[i + 1]));
-    //    return result;
-    //}
-
     private static void FillTheArray(int[] array)
     {
         Console.WriteLine("Enter array's elements:");
