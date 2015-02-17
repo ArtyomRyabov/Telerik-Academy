@@ -7,14 +7,14 @@ class IntegerCalculations
 {
     static void Main()
     {
-        Console.WriteLine("The integer with minimum value is: {0}", MinimunValue(-2, 0, 2, 4, 6, 8, 10));
-        Console.WriteLine("The integer with maximum value is: {0}", MaximunValue(-2, 0, 2, 4, 6, 8, 10));
-        Console.WriteLine("The integer with average value is: {0}", AverageValue(-2, 0, 2, 4, 6, 8, 10));
-        Console.WriteLine("The sum of the integers is: {0}", Sum(-2, 0, 2, 4, 6, 8, 10));
-        Console.WriteLine("The product of the integers is: {0}", Product(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The integer with minimum value is: {0}", IntegersMinimumValue(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The integer with maximum value is: {0}", IntegersMaximumValue(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The integer with average value is: {0}", IntegersAverageValue(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The sum of the integers is: {0}", IntegersSum(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The product of the integers is: {0}", IntegersProduct(-2, 0, 2, 4, 6, 8, 10));
     }
 
-    private static int Product(params int[] args)
+    private static int IntegersProduct(params int[] args)
     {
         int product = 1;
 
@@ -25,7 +25,7 @@ class IntegerCalculations
         return product;
     }
 
-    private static int Sum(params int[] args)
+    private static int IntegersSum(params int[] args)
     {
         int sum = 0;
 
@@ -36,7 +36,7 @@ class IntegerCalculations
         return sum;
     }
 
-    private static double AverageValue(params int[] args)
+    private static double IntegersAverageValue(params int[] args)
     {
         double sum = 0;
 
@@ -49,7 +49,7 @@ class IntegerCalculations
         return average;
     }
 
-    private static int MaximunValue(params int[] args)
+    private static int IntegersMaximumValue(params int[] args)
     {
         int maxValue = int.MinValue;
 
@@ -64,7 +64,7 @@ class IntegerCalculations
         return maxValue;
     }
 
-    private static int MinimunValue(params int[] args)
+    private static int IntegersMinimumValue(params int[] args)
     {
         int minValue = int.MaxValue;
 
