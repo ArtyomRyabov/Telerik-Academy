@@ -95,7 +95,6 @@ class SolveTasks
         {
             Menu();
         }
-
     }
 
     private static void CalculateAverage()
