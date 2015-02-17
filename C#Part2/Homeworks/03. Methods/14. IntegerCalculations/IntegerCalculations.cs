@@ -7,98 +7,72 @@ class IntegerCalculations
 {
     static void Main()
     {
-        Console.WriteLine("Enter number of integers:");
-        int elementsNumber = int.Parse(Console.ReadLine());
-        int[] array = new int[elementsNumber];
-        Console.WriteLine("Enter the integers:");
-
-        for (int i = 0; i < array.Length; i++)
-        {
-            array[i] = int.Parse(Console.ReadLine());
-        }
-
-        Console.WriteLine("Choose start index:");
-        int start = int.Parse(Console.ReadLine());
-        Console.WriteLine("Choose end index:");
-        int end = int.Parse(Console.ReadLine());
-
-        Console.WriteLine("The integer with minimum value is: {0}", MinimunValue(array, start, end));
-        Console.WriteLine("The integer with maximum value is: {0}", MaximunValue(array, start, end));
-        Console.WriteLine("The integer with average value is: {0}", AverageValue(array, start, end));
-        Console.WriteLine("The sum of the integers is: {0}", Sum(array, start, end));
-        Console.WriteLine("The product of the integers is: {0}", Product(array, start, end));
+        Console.WriteLine("The integer with minimum value is: {0}", MinimunValue(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The integer with maximum value is: {0}", MaximunValue(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The integer with average value is: {0}", AverageValue(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The sum of the integers is: {0}", Sum(-2, 0, 2, 4, 6, 8, 10));
+        Console.WriteLine("The product of the integers is: {0}", Product(-2, 0, 2, 4, 6, 8, 10));
     }
 
-    private static int Product(int[] array, int start, int end)
+    private static int Product(params int[] args)
     {
         int product = 1;
 
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < args.Length; i++)
         {
-            if ((i >= start) && (i <= end))
-            {
-                product *= array[i];
-            }
+            product *= args[i];
         }
         return product;
     }
 
-    private static int Sum(int[] array, int start, int end)
+    private static int Sum(params int[] args)
     {
         int sum = 0;
 
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < args.Length; i++)
         {
-            if ((i >= start) && (i <= end))
-            {
-                sum += array[i];
-            }
+            sum += args[i];
         }
         return sum;
     }
 
-    private static double AverageValue(int[] array, int start, int end)
+    private static double AverageValue(params int[] args)
     {
         double sum = 0;
-        int counter = 0;
 
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < args.Length; i++)
         {
-            if ((i >= start) && (i <= end))
-            {
-                sum += array[i];
-                counter++;
-            }
+            sum += args[i];
         }
 
-        double average = sum / counter;
+        double average = sum / args.Length;
         return average;
     }
 
-    private static int MaximunValue(int[] array, int start, int end)
+    private static int MaximunValue(params int[] args)
     {
         int maxValue = int.MinValue;
 
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < args.Length; i++)
         {
-            if ((i >= start) && (i <= end) && (array[i] > maxValue))
+            if (args[i] > maxValue)
             {
-                maxValue = array[i];
+                maxValue = args[i];
             }
         }
 
         return maxValue;
     }
 
-    private static int MinimunValue(int[] array, int start, int end)
+    private static int MinimunValue(params int[] args)
     {
         int minValue = int.MaxValue;
 
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < args.Length; i++)
         {
-            if ((array[i] < minValue) && (i >= start) && (i <= end))
+            if (args[i] < minValue)
             {
-                minValue = array[i];
+                minValue = args[i];
             }
         }
 
