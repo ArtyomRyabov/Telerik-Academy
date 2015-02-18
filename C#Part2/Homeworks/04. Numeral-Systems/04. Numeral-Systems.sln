@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. DecimalToBinary", "01. DecimalToBinary\01. DecimalToBinary.csproj", "{D72DBCE8-447F-4ACB-BA6D-2C39E627D4A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. BinaryToDecimal", "02. BinaryToDecimal\02. BinaryToDecimal.csproj", "{77504953-8F2F-4B02-80F2-F95673A6C0AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D72DBCE8-447F-4ACB-BA6D-2C39E627D4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72DBCE8-447F-4ACB-BA6D-2C39E627D4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72DBCE8-447F-4ACB-BA6D-2C39E627D4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72DBCE8-447F-4ACB-BA6D-2C39E627D4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77504953-8F2F-4B02-80F2-F95673A6C0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77504953-8F2F-4B02-80F2-F95673A6C0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77504953-8F2F-4B02-80F2-F95673A6C0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77504953-8F2F-4B02-80F2-F95673A6C0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
