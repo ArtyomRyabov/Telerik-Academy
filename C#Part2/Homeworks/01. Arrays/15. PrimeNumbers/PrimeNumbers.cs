@@ -22,7 +22,7 @@ class PrimeNumbers
 
         Console.WriteLine("The prime numbers are yellow and not primes are blue");
 
-        for (int j = 2; j < maxNumber; j++)      // For fast result: change 'maxResult' on this line to 'maxResult / 10000'
+        for (int j = 2; j < maxNumber/10000; j++)      // For fast result: change 'maxResult' on this line to 'maxResult / 10000'
         {
             if (notPrimes[j])
             {

@@ -2,7 +2,7 @@
 
 using System;
 
-class Program
+class HexadecimalToDecimal
 {
     static void Main()
     {

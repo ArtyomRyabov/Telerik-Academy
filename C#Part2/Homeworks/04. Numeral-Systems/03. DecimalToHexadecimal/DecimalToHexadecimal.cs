@@ -9,12 +9,17 @@ class DecimalToHexadecimal
         Console.Write("Enter a decimal number: ");
         long decimalNumber = long.Parse(Console.ReadLine());
 
-        Console.WriteLine("Converted to hexademical: {0}", DecimalToHexademicalNumber(decimalNumber));
+        Console.WriteLine("Converted to hexadecimal: {0}", DecimalToHexadecimalNumber(decimalNumber));
     }
 
-    private static string DecimalToHexademicalNumber(long decimalNumber)
+    private static string DecimalToHexadecimalNumber(long decimalNumber)
     {
-        string hexademicalNumber = string.Empty;
+        string hexadecimalNumber = string.Empty;
+
+        if (decimalNumber == 0)
+        {
+            return Convert.ToString(decimalNumber);
+        }
 
         while (decimalNumber > 0)
         {
@@ -23,15 +28,15 @@ class DecimalToHexadecimal
 
             if ((remainder <= 9) && (remainder >= 0))
             {
-                hexademicalNumber = (char)(remainder + '0') + hexademicalNumber;
+                hexadecimalNumber = (char)(remainder + '0') + hexadecimalNumber;
             }
             else if ((remainder <= 15) && (remainder >= 10))
             {
-                hexademicalNumber = (char)(remainder - 10 + 'A') + hexademicalNumber;
+                hexadecimalNumber = (char)(remainder - 10 + 'A') + hexadecimalNumber;
             }  
         }
-        
-        return hexademicalNumber;
+
+        return hexadecimalNumber;
     }
 }
 
