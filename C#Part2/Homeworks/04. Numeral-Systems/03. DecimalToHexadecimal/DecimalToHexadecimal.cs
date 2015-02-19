@@ -15,6 +15,7 @@ class DecimalToHexadecimal
     private static string DecimalToHexademicalNumber(long decimalNumber)
     {
         string hexademicalNumber = string.Empty;
+
         while (decimalNumber > 0)
         {
             byte remainder = (byte)(decimalNumber % 16);
