@@ -22,7 +22,7 @@ class DecimalToBinary
         }
         else if (decimalNumber < 0)
         {
-            decimalNumber *= -1;
+            decimalNumber = (long.MinValue + Math.Abs(decimalNumber)) * -1;
 
             while (decimalNumber > 0)
             {
@@ -31,23 +31,7 @@ class DecimalToBinary
                 binaryNumber = remainder + binaryNumber;
             }
 
-            binaryNumber = binaryNumber.PadLeft(64, '0');
-            string result = string.Empty;
-
-            for (int i = 0; i < binaryNumber.Length - 1; i++)
-            {
-                if (binaryNumber[i] == '0')
-                {
-                    result += '1';
-                }
-                else
-                {
-                    result += '0';
-                }
-            }
-
-            result += "1";
-            return result;
+            return binaryNumber;
         }
         else
         {
@@ -59,7 +43,7 @@ class DecimalToBinary
             }
         }
 
-        return binaryNumber;
+        return binaryNumber = binaryNumber.PadLeft(64, '0');
     }
 }
 
