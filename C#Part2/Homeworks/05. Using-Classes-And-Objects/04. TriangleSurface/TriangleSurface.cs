@@ -12,13 +12,6 @@ class TriangleSurface
     static void Main()
     {
         Menu();
-
-        Console.WriteLine(new string('=', 32));
-        Console.WriteLine("Thank you for using the program!");
-        Console.WriteLine(new string('-', 32));
-        Console.Write(new string(' ', 4));
-        Console.WriteLine("Press <return> to exit!");
-        Console.WriteLine(new string('=', 32));
     }
 
     private static void Menu()
@@ -31,7 +24,8 @@ class TriangleSurface
         Console.WriteLine("2. THREE SIDES");
         Console.WriteLine("3. TWO SIDES AND AN ANGLE BETWEEN THEM");
         Console.WriteLine(new string('-', 52));
-        Console.WriteLine("Press 1 / 2 / 3 for choise or any other key to exit.");
+        Console.WriteLine("Press 1 / 2 / 3 for choise or any other key to exit");
+        Console.WriteLine("followed by <return>");
         Console.WriteLine(new string('=', 52));
 
         char key = char.Parse(Console.ReadLine());
@@ -48,9 +42,19 @@ class TriangleSurface
             case '3':
                 TwoSidesAndAnAngleBetweenThem();
                 break;
-            default:
-                return;
+            default: Exit(); break;
         }
+    }
+
+    private static void Exit()
+    {
+        Console.WriteLine(new string('=', 32));
+        Console.WriteLine("Thank you for using the program!");
+        Console.WriteLine(new string('-', 32));
+        Console.Write(new string(' ', 4));
+        Console.WriteLine("Press <return> to exit!");
+        Console.WriteLine(new string('=', 32));
+        Environment.Exit(0);
     }
 
     private static void TwoSidesAndAnAngleBetweenThem()
@@ -81,8 +85,8 @@ class TriangleSurface
         Console.WriteLine("Result: {0:F2}", area);
 
         Console.WriteLine(new string('=', 39));
-        Console.WriteLine("Press 1 to start a new task");
-        Console.WriteLine("or other key for Menu.");
+        Console.WriteLine("Press 1 to start a new task or other");
+        Console.WriteLine("key for Menu followed by <return>");
         Console.WriteLine(new string('-', 39));
 
         char key = char.Parse(Console.ReadLine());
@@ -126,8 +130,8 @@ class TriangleSurface
         Console.WriteLine("Result: {0:F2}", area);
 
         Console.WriteLine(new string('=', 43));
-        Console.WriteLine("Press 1 to start a new task");
-        Console.WriteLine("or other key for Menu.");
+        Console.WriteLine("Press 1 to start a new task or other key ");
+        Console.WriteLine("for Menu followed by <enter>");
         Console.WriteLine(new string('-', 43));
 
         char key = char.Parse(Console.ReadLine());
@@ -166,8 +170,8 @@ class TriangleSurface
         Console.WriteLine("Result: {0:F2}", (side * altitude) / 2);
         Console.WriteLine(new string('=', 40));
 
-        Console.WriteLine("Press 1 to start a new task");
-        Console.WriteLine("or other key for Menu.");
+        Console.WriteLine("Press 1 to start a new task or other");
+        Console.WriteLine("key for Menu followed by <return>");
         Console.WriteLine(new string('-', 40));
 
         char key = char.Parse(Console.ReadLine());
