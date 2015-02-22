@@ -6,19 +6,6 @@ using System.Linq;
 
 class Workdays
 {
-    static readonly DateTime[] holidays =
-    {
-        new DateTime(2015, 1, 1), new DateTime(2015, 1, 2), new DateTime(2015, 3, 2), new DateTime(2015, 3, 3), 
-        new DateTime(2015, 4, 10), new DateTime(2015, 4, 13), new DateTime(2015, 5, 1), new DateTime(2015, 5, 6),
-        new DateTime(2015, 5, 24), new DateTime(2015, 9, 6), new DateTime(2015, 9, 21), new DateTime(2015, 9, 22),
-        new DateTime(2015, 12, 24), new DateTime(2015, 12, 25), new DateTime(2015, 12, 31)
-    };
-
-    static readonly DateTime[] workingWeekends =
-    {
-        new DateTime(2015, 1, 24), new DateTime(2015, 3, 21), new DateTime(2015, 9, 12), new DateTime(2015, 12, 21)
-    };
-
     static void Main()
     {
         Console.WriteLine("Enter a date (DD/MM/YYYY) untill 01.01.2016:");
@@ -44,12 +31,12 @@ class Workdays
         {
             counter++;
 
-            if (holidays.Contains(start) || start.DayOfWeek == DayOfWeek.Saturday || start.DayOfWeek == DayOfWeek.Sunday)
+            if (allHolidays.Contains(start) || start.DayOfWeek == DayOfWeek.Saturday || start.DayOfWeek == DayOfWeek.Sunday)
             {
                 counter--;
             }
 
-            if (workingWeekends.Contains(start))
+            if (allWorkingWeekends.Contains(start))
             {
                 counter++;
             }
@@ -60,6 +47,17 @@ class Workdays
         return counter;
     }
 
+    static readonly DateTime[] allHolidays =
+    {
+        new DateTime(2015, 1, 1), new DateTime(2015, 1, 2), new DateTime(2015, 3, 2), new DateTime(2015, 3, 3), 
+        new DateTime(2015, 4, 10), new DateTime(2015, 4, 13), new DateTime(2015, 5, 1), new DateTime(2015, 5, 6),
+        new DateTime(2015, 5, 24), new DateTime(2015, 9, 6), new DateTime(2015, 9, 21), new DateTime(2015, 9, 22),
+        new DateTime(2015, 12, 24), new DateTime(2015, 12, 25), new DateTime(2015, 12, 31)
+    };
 
+    static readonly DateTime[] allWorkingWeekends =
+    {
+        new DateTime(2015, 1, 24), new DateTime(2015, 3, 21), new DateTime(2015, 9, 12), new DateTime(2015, 12, 21)
+    };
 }
 

@@ -9,9 +9,7 @@ class SumIntegers
     {
         Console.WriteLine("Enter positive integers, separated by spaces:");
         string input = Console.ReadLine();
-
-        Console.WriteLine("The sum the integers is: {0}", SumOfIntegers(input));
-        
+        Console.WriteLine("The sum is: {0}", SumOfIntegers(input));
     }
 
     private static uint SumOfIntegers(string input)
