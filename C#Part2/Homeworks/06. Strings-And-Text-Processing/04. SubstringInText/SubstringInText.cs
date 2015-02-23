@@ -20,7 +20,7 @@ namespace P04.SubstringInText
         {
             int count = 0;
 
-            for (int i = 0; i < (text.Length - (subString.Length - 1)); i++)
+            for (int i = 0; i < (text.Length - subString.Length + 1); i++)
             {
                 if (text.Substring(i, subString.Length).ToLower().Equals(subString.ToLower()))
                 {
