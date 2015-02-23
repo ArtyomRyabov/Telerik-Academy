@@ -7,8 +7,6 @@ class nFactorial
 {
     static void Main()
     {
-        int[] array = new int[100];
-
         for (int i = 1; i <= 100; i++)
         {
             Factorial(i);
