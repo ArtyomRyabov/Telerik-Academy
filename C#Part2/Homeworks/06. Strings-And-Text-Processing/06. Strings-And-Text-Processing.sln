@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. StringsInCsharp", "01. StringsInCsharp\01. StringsInCsharp.csproj", "{88B0013F-1CBB-4C93-B51C-06A4CBD6FFF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. ReverseString", "02. ReverseString\02. ReverseString.csproj", "{A7926698-56BB-4A19-AAD5-9C365F15C18A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. CorrectBrackets", "03. CorrectBrackets\03. CorrectBrackets.csproj", "{B37BFCD2-3C60-4DEC-AE1B-D5F8FB307912}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{88B0013F-1CBB-4C93-B51C-06A4CBD6FFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88B0013F-1CBB-4C93-B51C-06A4CBD6FFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88B0013F-1CBB-4C93-B51C-06A4CBD6FFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7926698-56BB-4A19-AAD5-9C365F15C18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7926698-56BB-4A19-AAD5-9C365F15C18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7926698-56BB-4A19-AAD5-9C365F15C18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7926698-56BB-4A19-AAD5-9C365F15C18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37BFCD2-3C60-4DEC-AE1B-D5F8FB307912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37BFCD2-3C60-4DEC-AE1B-D5F8FB307912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37BFCD2-3C60-4DEC-AE1B-D5F8FB307912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37BFCD2-3C60-4DEC-AE1B-D5F8FB307912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
