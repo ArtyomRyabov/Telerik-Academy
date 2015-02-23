@@ -17,9 +17,10 @@ namespace P03.CorrectBrackets
 
         private static bool CheckBrackets(string input)
         {
-            int count = 0;
+            int countOpeningBrackets = 0;
+            int countClosingBrackets = 0;
 
-            if ((input.IndexOf(')') < input.IndexOf('(')) || (input.LastIndexOf(')') < input.LastIndexOf('(')))
+            if (input.IndexOf(')') < input.IndexOf('('))
             {
                 return false;
             }
@@ -33,20 +34,20 @@ namespace P03.CorrectBrackets
 
                 if (input[i] == '(')
                 {
-                    count++;
+                    countOpeningBrackets++;
                 }
                 else if (input[i] == ')')
                 {
-                    count--;
+                    countClosingBrackets++;
                 }
 
-                if (count == -1)
+                if (countClosingBrackets > countOpeningBrackets)
                 {
                     return false;
                 }
             }
 
-            if (count == 0)
+            if ((countOpeningBrackets == countClosingBrackets) && (countOpeningBrackets > 0))
             {
                 return true;
             }
