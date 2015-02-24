@@ -16,7 +16,7 @@ namespace P10.UnicodeCharacters
 
             foreach (char item in input)
             {
-                Console.Write("\\u{0:x4}", (int)item);
+                Console.Write(String.Format("\\u{0:x4}", (int)item));
             }
 
             Console.WriteLine();
