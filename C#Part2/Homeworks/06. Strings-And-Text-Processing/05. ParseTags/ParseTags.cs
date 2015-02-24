@@ -42,6 +42,18 @@ namespace P05.ParseTags
 
                         i += 8;
                     }
+                    else if (i == text.LastIndexOf("<upcase>"))
+                    {
+                        i += 8;
+
+                        while (i != text.LastIndexOf("</upcase>"))
+                        {
+                            tempText.Append(text[i].ToString().ToUpper());
+                            i++;
+                        }
+
+                        i += 8;
+                    }
                     else
                     {
                         tempText.Append(text[i]);
