@@ -1,15 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Write a program that extracts from a given text all sentences containing given word.
 
-namespace _08.ExtractSentences
+namespace P08.ExtractSentences
 {
+    using System;
+    using System.Text;
+
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine("Enter the text:");
+            string text = Console.ReadLine();
+            Console.WriteLine("\n" + "Enter the word:");
+            string word = " " + Console.ReadLine() + " ";
+
+            Console.WriteLine("\n" + "Extracted sentences:");
+            Console.WriteLine(Extract(text, word));
+        }
+
+        private static string Extract(string text, string word)
+        {
+            StringBuilder extracted = new StringBuilder();
+            string[] sentences = text.Split(new[] { '.' }, StringSplitOptions.RemoveEmptyEntries);
+
+            for (int i = 0; i < sentences.Length; i++)
+            {
+                if (sentences[i].Contains(word))
+                {
+                    extracted.Append(sentences[i] + '.');
+                }
+            }
+
+            return extracted.ToString();
         }
     }
 }
