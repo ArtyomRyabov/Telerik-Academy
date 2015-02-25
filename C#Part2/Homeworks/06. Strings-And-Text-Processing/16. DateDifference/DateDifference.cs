@@ -14,7 +14,7 @@ namespace P16.DateDifference
             Console.Write("Enter the second date [dd.MM.yyyy]: ");
             DateTime secondDate = DateTime.ParseExact(Console.ReadLine(), "d.M.yyyy", CultureInfo.InvariantCulture);
 
-            Console.WriteLine("Result: {0} days", (secondDate - firstDate).Days);
+            Console.WriteLine("Distance: {0} days", (secondDate - firstDate).Days);
         }
     }
 }
