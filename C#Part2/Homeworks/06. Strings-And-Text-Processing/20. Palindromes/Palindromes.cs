@@ -3,19 +3,22 @@
 namespace P20.Palindromes
 {
     using System;
+    using System.Linq;
 
     class Palindromes
     {
         static void Main()
         {
-            string[] input = new string[] { "U2U3", "A Santa, lived! as a devil at NASA.", "so so", "Dammit, I'm mad!", 
-                                            "ABBA", "a12345678987654321a", "Oh, No!" };
+            string text = "U2U2@A Santa lived as a devil at NASA.@so sos@Dammit, I'm mad!@" +
+                                            "ABBA@a12345678987654321a@Oh, No!";
+            string[] input = text.Split('@').ToArray();
+
             ExtractPolindromes(input);
         }
 
         private static void ExtractPolindromes(string[] input)
         {
-            Console.WriteLine("Polindromes extracted from the text:\n");
+            Console.WriteLine("Polindromes extracted from the input:\n");
 
             foreach (string item in input)
             {
