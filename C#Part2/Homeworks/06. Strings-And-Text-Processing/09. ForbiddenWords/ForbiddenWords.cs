@@ -11,10 +11,10 @@ namespace P09.ForbiddenWords
         {
             Console.WriteLine("Enter the text:");
             string text = Console.ReadLine().ToLower();
-            Console.WriteLine("\n" + "Enter the forbidden words, separated by space:");
+            Console.WriteLine("\nEnter the forbidden words, separated by space:");
             string[] words = Console.ReadLine().ToLower().Split(' ', ',', '.');
 
-            Console.WriteLine("\n" + "Result:");
+            Console.WriteLine("\nResult:");
             Console.WriteLine(ChangeForbiddenWords(text, words));
         }
 

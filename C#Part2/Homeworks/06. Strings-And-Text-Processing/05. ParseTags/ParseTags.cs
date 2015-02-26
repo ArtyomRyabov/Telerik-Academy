@@ -16,7 +16,7 @@ namespace P05.ParseTags
         {
             Console.WriteLine("Enter your text:");
             string text = Console.ReadLine();
-            Console.WriteLine("\n" + "Result:");
+            Console.WriteLine("\nResult:");
             Console.WriteLine(ChangedText(text));
         }
 

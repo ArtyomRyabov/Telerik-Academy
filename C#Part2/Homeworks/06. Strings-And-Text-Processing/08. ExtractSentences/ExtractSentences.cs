@@ -11,10 +11,10 @@ namespace P08.ExtractSentences
         {
             Console.WriteLine("Enter the text:");
             string text = Console.ReadLine();
-            Console.WriteLine("\n" + "Enter the word:");
+            Console.WriteLine("\nEnter the word:");
             string word = " " + Console.ReadLine() + " ";
 
-            Console.WriteLine("\n" + "Extracted sentences:");
+            Console.WriteLine("\nExtracted sentences:");
             Console.WriteLine(Extract(text, word));
         }
 
