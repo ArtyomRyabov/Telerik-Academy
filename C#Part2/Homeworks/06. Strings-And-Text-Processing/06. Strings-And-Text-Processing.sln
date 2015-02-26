@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20. Palindromes", "20. Pali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21. LettersCount", "21. LettersCount\21. LettersCount.csproj", "{E5225AB5-2F1F-40EE-8825-8DE227228DB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22. WordsCount", "22. WordsCount\22. WordsCount.csproj", "{F5614D3C-98D3-4CAB-A51D-F2772EB4F18B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{E5225AB5-2F1F-40EE-8825-8DE227228DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5225AB5-2F1F-40EE-8825-8DE227228DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5225AB5-2F1F-40EE-8825-8DE227228DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5614D3C-98D3-4CAB-A51D-F2772EB4F18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5614D3C-98D3-4CAB-A51D-F2772EB4F18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5614D3C-98D3-4CAB-A51D-F2772EB4F18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5614D3C-98D3-4CAB-A51D-F2772EB4F18B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
