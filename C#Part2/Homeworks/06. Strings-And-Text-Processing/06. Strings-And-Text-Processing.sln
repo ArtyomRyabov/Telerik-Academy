@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18. ExtractEMails", "18. Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19. DatesInCanada", "19. DatesInCanada\19. DatesInCanada.csproj", "{8917118F-F948-427A-BCD1-BCBD342C6281}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20. Palindromes", "20. Palindromes\20. Palindromes.csproj", "{7DFCA5A5-34EA-4A01-BB0C-9979CEB7A326}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{8917118F-F948-427A-BCD1-BCBD342C6281}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8917118F-F948-427A-BCD1-BCBD342C6281}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8917118F-F948-427A-BCD1-BCBD342C6281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DFCA5A5-34EA-4A01-BB0C-9979CEB7A326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFCA5A5-34EA-4A01-BB0C-9979CEB7A326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFCA5A5-34EA-4A01-BB0C-9979CEB7A326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFCA5A5-34EA-4A01-BB0C-9979CEB7A326}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

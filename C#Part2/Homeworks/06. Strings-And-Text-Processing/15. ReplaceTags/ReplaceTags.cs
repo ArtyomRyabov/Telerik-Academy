@@ -9,14 +9,14 @@ namespace P15.ReplaceTags
     {
         static void Main()
         {
-            Console.WriteLine("Enter the text:");
-            string input = Console.ReadLine();
+            string input = @"<p>Please visit <a href=""http://academy.telerik. com"">our site</a> to choose a training course. Also visit <a href=""www.devbg.org"">our forum</a> to discuss the courses.</p>";
+            Console.WriteLine("Text:\n" + input + "\n");
 
             input = input.Replace((@"<a href="""), "[URL=");
             input = input.Replace(@""">", "]");
             input = input.Replace("</a>", "[/URL]");
 
-            Console.WriteLine("\n" + "Text with replaced tags:");
+            Console.WriteLine("Text with replaced tags:");
             Console.WriteLine(input);
         }
     }
