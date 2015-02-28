@@ -39,7 +39,8 @@ namespace P04.DownloadFile
             }
             finally
             {
-                Console.WriteLine("***");
+                Console.WriteLine("[Done]");
+                Console.ReadLine();
             }
         }
     }
