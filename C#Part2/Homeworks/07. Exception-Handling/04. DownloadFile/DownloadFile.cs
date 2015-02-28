@@ -19,7 +19,7 @@ namespace P04.DownloadFile
                 string url = "http://telerikacademy.com/Content/Images/news-img01.png";
                 string file = "news-img01.png";
                 webClient.DownloadFile(url, @file);
-                Console.WriteLine("Download finished\nFile saved at {0}", Directory.GetCurrentDirectory());
+                Console.WriteLine("Download finished\nFile saved at:\n {0}", Directory.GetCurrentDirectory());
             }
             catch (ArgumentNullException ane)
             {
