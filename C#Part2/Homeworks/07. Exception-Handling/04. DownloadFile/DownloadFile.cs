@@ -37,6 +37,10 @@ namespace P04.DownloadFile
             {
                 Console.WriteLine(e.Message);
             }
+            finally
+            {
+                Console.WriteLine("***");
+            }
         }
     }
 }
