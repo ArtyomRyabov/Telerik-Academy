@@ -8,6 +8,7 @@ namespace P03.ReadFileContents
 {
     using System;
     using System.IO;
+    using System.Text;
     using System.Security;
 
     class ReadFileContents
@@ -19,7 +20,7 @@ namespace P03.ReadFileContents
 
             try
             {
-                Console.WriteLine(File.ReadAllText(filePath));
+                Console.WriteLine(File.ReadAllText(filePath, Encoding.UTF8));
             }
             catch (ArgumentNullException ane)
             {
@@ -57,6 +58,11 @@ namespace P03.ReadFileContents
             {
                 Console.WriteLine(se.Message);
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
         }
     }
 }
