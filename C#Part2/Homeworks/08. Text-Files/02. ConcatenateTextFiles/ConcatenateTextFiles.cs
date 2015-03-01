@@ -4,7 +4,6 @@ namespace P02.ConcatenateTextFiles
 {
     using System;
     using System.IO;
-    using System.Text;
     
     class ConcatenateTextFiles
     {
