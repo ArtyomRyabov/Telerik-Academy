@@ -58,11 +58,6 @@ namespace P03.ReadFileContents
             {
                 Console.WriteLine(se.Message);
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
         }
     }
 }

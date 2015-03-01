@@ -13,34 +13,31 @@ namespace P04.DownloadFile
     {
         static void Main()
         {
-            try
+            using (WebClient webClient = new WebClient())
             {
-                WebClient webClient = new WebClient();
-                string url = "http://telerikacademy.com/Content/Images/news-img01.png";
-                string file = "news-img01.png";
-                webClient.DownloadFile(url, @file);
-                Console.WriteLine("Download finished\nFile saved at:\n {0}", Directory.GetCurrentDirectory());
-            }
-            catch (ArgumentNullException ane)
-            {
-                Console.WriteLine(ane.Message);
-            }
-            catch (WebException we)
-            {
-                Console.WriteLine(we.Message);
-            }
-            catch (NotSupportedException nse)
-            {
-                Console.WriteLine(nse.Message);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("[Done]");
-                Console.ReadLine();
+                try
+                {
+                    string url = "http://telerikacademy.com/Content/Images/news-img01.png";
+                    string file = "news-img01.png";
+                    webClient.DownloadFile(url, file);
+                    Console.WriteLine("Download finished\nFile saved at:\n {0}", Directory.GetCurrentDirectory());
+                }
+                catch (ArgumentNullException ane)
+                {
+                    Console.WriteLine(ane.Message);
+                }
+                catch (WebException we)
+                {
+                    Console.WriteLine(we.Message);
+                }
+                catch (NotSupportedException nse)
+                {
+                    Console.WriteLine(nse.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("[Done]");
+                }
             }
         }
     }
