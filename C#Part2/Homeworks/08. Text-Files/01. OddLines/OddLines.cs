@@ -11,18 +11,37 @@ namespace P01.OddLines
         {
             using (StreamReader reader = new StreamReader(@"..\..\OddLines.cs"))
             {
-                byte count = 1;
-                string line = reader.ReadLine();
-
-                while (line != null)
+                try
                 {
-                    if (count % 2 == 1)
-                    {
-                        Console.WriteLine("Line {0:D2}: {1}", count, line);
-                    }
+                    int count = 1;
+                    string line = reader.ReadLine();
 
-                    count++;
-                    line = reader.ReadLine();
+                    while (line != null)
+                    {
+                        if (count % 2 == 1)
+                        {
+                            Console.WriteLine("Line {0:D2}: {1}", count, line);
+                        }
+
+                        count++;
+                        line = reader.ReadLine();
+                    }
+                }
+                catch (FileNotFoundException fnf)
+                {
+                    Console.WriteLine(fnf.Message);
+                }
+                catch (DirectoryNotFoundException dnf)
+                {
+                    Console.WriteLine(dnf.Message);
+                }
+                catch (IOException ioe)
+                {
+                    Console.WriteLine(ioe.Message);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
                 }
             }
         }
