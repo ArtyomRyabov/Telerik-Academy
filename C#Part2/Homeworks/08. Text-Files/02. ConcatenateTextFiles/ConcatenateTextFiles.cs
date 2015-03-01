@@ -10,9 +10,11 @@ namespace P02.ConcatenateTextFiles
     {
         static void Main()
         {
-            using (StreamWriter writer = new StreamWriter(@"..\..\concatenated_files.txt", false))
+            Console.OutputEncoding = Encoding.UTF8;
+
+            using (StreamWriter writer = new StreamWriter(@"..\..\concatenated_files.txt", false, Encoding.UTF8))
             {
-                using (StreamReader firstFileReader = new StreamReader(@"..\..\first_file.txt"))
+                using (StreamReader firstFileReader = new StreamReader(@"..\..\first_file.txt", Encoding.UTF8))
                 {
                     string line = firstFileReader.ReadLine();
 
@@ -23,7 +25,7 @@ namespace P02.ConcatenateTextFiles
                     }
                 }
 
-                using (StreamReader secondFileReader = new StreamReader(@"..\..\second_file.txt"))
+                using (StreamReader secondFileReader = new StreamReader(@"..\..\second_file.txt", Encoding.UTF8))
                 {
                     string line = secondFileReader.ReadLine();
 
