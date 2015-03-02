@@ -12,7 +12,6 @@ namespace P12.RemoveWords
     using System.IO;
     using System.Text;
     using System.Linq;
-    using System.Security;
 
     class RemoveWords
     {
@@ -45,10 +44,6 @@ namespace P12.RemoveWords
             {
                 Console.WriteLine(uae.Message);
             }
-            catch (SecurityException se)
-            {
-                Console.WriteLine(se.Message);
-            }
             catch (OverflowException oe)
             {
                 Console.WriteLine(oe.Message);
@@ -56,10 +51,6 @@ namespace P12.RemoveWords
             catch (OutOfMemoryException ome)
             {
                 Console.WriteLine(ome.Message);
-            }
-            catch (ArgumentNullException ane)
-            {
-                Console.WriteLine(ane.Message);
             }
             catch (ArgumentException ae)
             {
