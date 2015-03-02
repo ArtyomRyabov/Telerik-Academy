@@ -34,7 +34,7 @@ namespace P11.PrefixTest
         {
             using (StreamWriter writer = new StreamWriter(@"..\..\test.txt"))
             {
-                writer.WriteLine(sb);
+                writer.Write(sb);
             }
         }
 

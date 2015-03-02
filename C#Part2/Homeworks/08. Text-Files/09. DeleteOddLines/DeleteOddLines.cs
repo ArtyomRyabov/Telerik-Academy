@@ -1,6 +1,18 @@
-﻿// Write a program that deletes from given text file all odd lines.
-// The result should be in the same file.
-
+﻿/* Write a program that deletes from given text file all odd lines.
+   The result should be in the same file.
+  
+   Input:
+         1
+         2
+         3
+         4
+         5
+         6
+         7
+         8
+         9
+         10
+ */
 
 namespace P09.DeleteOddLines
 {
@@ -23,7 +35,7 @@ namespace P09.DeleteOddLines
         {
             using (StreamWriter writer = new StreamWriter(@"..\..\text.txt"))
             {
-                writer.WriteLine(text);
+                writer.Write(text);
             }
         }
 

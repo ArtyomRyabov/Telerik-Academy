@@ -1,4 +1,8 @@
-﻿// Modify the solution of the previous problem to replace only whole words (not strings).
+﻿/* Modify the solution of the previous problem to replace only whole words (not strings).
+
+   Input: start finishstart finish start start
+          start start finish startfinish start
+ */
 
 namespace P08.ReplaceWholeWord
 {
@@ -12,9 +16,6 @@ namespace P08.ReplaceWholeWord
         {
             StringBuilder sb = new StringBuilder();
 
-            // text before: start finishstart finish start start
-            //              start start finish startfinish start
-
             ReplaceWords(sb);
 
             WriteFileWithNewText(sb);
@@ -24,7 +25,7 @@ namespace P08.ReplaceWholeWord
         {
             using (StreamWriter writer = new StreamWriter(@"..\..\text.txt"))
             {
-                writer.WriteLine(sb);
+                writer.Write(sb);
             }
         }
 
