@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. ReplaceSubstring", "07.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. ReplaceWholeWord", "08. ReplaceWholeWord\08. ReplaceWholeWord.csproj", "{C06A041D-72CD-4AD9-8B0E-BCBB0695BBAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. DeleteOddLines", "09. DeleteOddLines\09. DeleteOddLines.csproj", "{E37FEC54-C767-4C91-922D-67B6D379F7EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{C06A041D-72CD-4AD9-8B0E-BCBB0695BBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C06A041D-72CD-4AD9-8B0E-BCBB0695BBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C06A041D-72CD-4AD9-8B0E-BCBB0695BBAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E37FEC54-C767-4C91-922D-67B6D379F7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E37FEC54-C767-4C91-922D-67B6D379F7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E37FEC54-C767-4C91-922D-67B6D379F7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E37FEC54-C767-4C91-922D-67B6D379F7EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
