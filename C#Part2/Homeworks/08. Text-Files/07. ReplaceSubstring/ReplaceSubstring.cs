@@ -5,23 +5,43 @@ namespace P07.ReplaceSubstring
 {
     using System;
     using System.IO;
+    using System.Text;
 
     class ReplaceSubstring
     {
         static void Main()
         {
+            StringBuilder sb = new StringBuilder();
+            // text before: start finishstart startfinishstart
+            //              finish startfinish startfinishstart
+            ReplaceWords(sb);
+            WriteFileWithNewText(sb);
+        }
+
+        private static void WriteFileWithNewText(StringBuilder sb)
+        {
             using (StreamWriter writer = new StreamWriter(@"..\..\text.txt"))
             {
-                using (StreamReader reader = new StreamReader(@"..\..\text.txt"))    // text: start finishstart startstartfinish
-                {
-                    string text = reader.ReadLine();
+                writer.WriteLine(sb);
+            }
+        }
 
-                    while (text != null)
+        private static void ReplaceWords(StringBuilder sb)
+        {
+            using (StreamReader reader = new StreamReader(@"..\..\text.txt"))
+            {
+                string line = reader.ReadLine();
+
+                while (line != null)
+                {
+                    sb.Append(line).Replace("start", "finish");
+
+                    if (!reader.EndOfStream)
                     {
-                        text = text.Replace("start", "finish");
-                        writer.WriteLine(text);
-                        text = reader.ReadLine();
+                        sb.Append("\r\n");
                     }
+
+                    line = reader.ReadLine();
                 }
             }
         }
