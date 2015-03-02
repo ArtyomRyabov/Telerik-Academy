@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. MaximalAreaSum", "05. M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. SaveSortedNames", "06. SaveSortedNames\06. SaveSortedNames.csproj", "{F8991083-32C4-4DD8-B696-A5CAC0FB5BBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. ReplaceSubstring", "07. ReplaceSubstring\07. ReplaceSubstring.csproj", "{37606600-E345-4E0D-8A9F-0AC31AE5CC7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F8991083-32C4-4DD8-B696-A5CAC0FB5BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8991083-32C4-4DD8-B696-A5CAC0FB5BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8991083-32C4-4DD8-B696-A5CAC0FB5BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37606600-E345-4E0D-8A9F-0AC31AE5CC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37606600-E345-4E0D-8A9F-0AC31AE5CC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37606600-E345-4E0D-8A9F-0AC31AE5CC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37606600-E345-4E0D-8A9F-0AC31AE5CC7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
