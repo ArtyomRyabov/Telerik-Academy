@@ -11,8 +11,6 @@ namespace P06.SaveSortedNames
     {
         static void Main()
         {
-            System.Text.Encoding encoding = System.Text.Encoding.GetEncoding(1251);
-
             List<string> namesList = new List<string>();
 
             ReadFile(namesList);
@@ -24,7 +22,7 @@ namespace P06.SaveSortedNames
 
         private static void WriteToFile(List<string> namesList)
         {
-            using (StreamWriter writer = new StreamWriter(@"..\..\sorted_names.txt", false, Encoding.GetEncoding(1251)))
+            using (StreamWriter writer = new StreamWriter(@"..\..\sorted_names.txt", false))
             {
                 foreach (string name in namesList)
                 {
@@ -35,7 +33,7 @@ namespace P06.SaveSortedNames
 
         private static void ReadFile(List<string> namesList)
         {
-            using (StreamReader reader = new StreamReader(@"..\..\names.txt", Encoding.GetEncoding(1251)))
+            using (StreamReader reader = new StreamReader(@"..\..\names.txt"))
             {
                 string line = reader.ReadLine();
 
