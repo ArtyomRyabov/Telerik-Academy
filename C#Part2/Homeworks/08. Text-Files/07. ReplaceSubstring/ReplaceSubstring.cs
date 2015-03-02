@@ -12,9 +12,12 @@ namespace P07.ReplaceSubstring
         static void Main()
         {
             StringBuilder sb = new StringBuilder();
+
             // text before: start finishstart startfinishstart
             //              finish startfinish startfinishstart
+
             ReplaceWords(sb);
+
             WriteFileWithNewText(sb);
         }
 
