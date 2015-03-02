@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. PrefixTest", "11. Prefi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. RemoveWords", "12. RemoveWords\12. RemoveWords.csproj", "{9A3CBE13-C5B7-43D2-93D7-AF362D7C741F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. CountWords", "13. CountWords\13. CountWords.csproj", "{96F2B1ED-33A0-4C8B-9980-188A0113E3D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{9A3CBE13-C5B7-43D2-93D7-AF362D7C741F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A3CBE13-C5B7-43D2-93D7-AF362D7C741F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A3CBE13-C5B7-43D2-93D7-AF362D7C741F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F2B1ED-33A0-4C8B-9980-188A0113E3D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F2B1ED-33A0-4C8B-9980-188A0113E3D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F2B1ED-33A0-4C8B-9980-188A0113E3D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F2B1ED-33A0-4C8B-9980-188A0113E3D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
