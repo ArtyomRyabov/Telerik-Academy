@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. TRES4Numbers", "1. TRES4Numbers\1. TRES4Numbers.csproj", "{1E2ECAC9-88BA-4931-8146-5143944FDD26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. BunnyFactory", "2. BunnyFactory\2. BunnyFactory.csproj", "{0F0B987A-79EB-4C87-94AA-519A9D26767E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Patterns", "3. Patterns\3. Patterns.csproj", "{C74354AE-D6B1-47F9-82B4-5E9728EB20A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E2ECAC9-88BA-4931-8146-5143944FDD26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2ECAC9-88BA-4931-8146-5143944FDD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2ECAC9-88BA-4931-8146-5143944FDD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2ECAC9-88BA-4931-8146-5143944FDD26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0B987A-79EB-4C87-94AA-519A9D26767E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0B987A-79EB-4C87-94AA-519A9D26767E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0B987A-79EB-4C87-94AA-519A9D26767E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0B987A-79EB-4C87-94AA-519A9D26767E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74354AE-D6B1-47F9-82B4-5E9728EB20A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74354AE-D6B1-47F9-82B4-5E9728EB20A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74354AE-D6B1-47F9-82B4-5E9728EB20A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74354AE-D6B1-47F9-82B4-5E9728EB20A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
