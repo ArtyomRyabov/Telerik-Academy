@@ -17,7 +17,7 @@
             Console.WriteLine(string.Join(" ", numbers.ToArray()));
         }
 
-        private static List<int> NumberOfBunniesAfterMultiplication(List<int> numbers)
+        static List<int> NumberOfBunniesAfterMultiplication(List<int> numbers)
         {
             StringBuilder result = new StringBuilder();
             int numberOfCagesToTake = 0;
@@ -80,8 +80,8 @@
 
             while (line != "END")
             {
-                int bunnies = int.Parse(line);
-                numbers.Add(bunnies);
+                int bunniesNumber = int.Parse(line);
+                numbers.Add(bunniesNumber);
                 line = Console.ReadLine();
             }
         }

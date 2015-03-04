@@ -1,18 +1,17 @@
 ﻿namespace P1.TRES4Numbers
 {
     using System;
-    using System.Numerics;
 
     class TRES4Numbers
     {
         static void Main()
         {
-            BigInteger decimalNumber = BigInteger.Parse(Console.ReadLine());
+            ulong decimalNumber = ulong.Parse(Console.ReadLine());
 
             Console.WriteLine(ConvertToTRresnum4(decimalNumber));
         }
 
-        private static string ConvertToTRresnum4(BigInteger decimalNumber)
+        static string ConvertToTRresnum4(ulong decimalNumber)
         {
             string tresnum4 = string.Empty;
 
@@ -31,7 +30,7 @@
             return tresnum4;
         }
 
-        private static string Tresnum4Numbers(byte remainder)
+        static string Tresnum4Numbers(byte remainder)
         {
             switch (remainder)
             {

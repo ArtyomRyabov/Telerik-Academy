@@ -8,55 +8,48 @@ class SaddyKopper
     {
         StringBuilder number = new StringBuilder();
         number.Append(Console.ReadLine());
-        StringBuilder currentNumber = new StringBuilder();
+
+        number.Remove((number.Length - 1), 1);
         long sum = 0;
         BigInteger product = 1;
-        int transformation = 0;
-        bool isTrue = number.Length > 0;
+        byte transitions = 0;
 
-        while (isTrue)
+        while (true)
         {
-            number.Remove((number.Length - 1), 1);
-
-            if (number.Length == 0)
+            while (number.Length != 0)
             {
-                transformation++;
-                if (transformation >= 10)
+                for (int i = 0; i < number.Length; i++)
                 {
-                    Console.WriteLine(product);
-                    return;
+                    if (i % 2 == 0)
+                    {
+                        sum += number[i] - '0';
+                    }
                 }
-                if (product < 10)
-                {
-                    break;
-                }
-                else
-                {
-                    number.Append(product);
-                    product = 1;
-                    continue;
-                }
+
+                product *= sum;
+                sum = 0;
+                number.Remove((number.Length - 1), 1);
             }
 
-            for (int i = 0; i < number.Length; i++)
+            number.Append(product);
+            product = 1;
+            transitions++;
+
+            if (number.Length == 1)
             {
-                if (i % 2 == 0)
-                {
-                    sum += number[i] - 48;
-                }
-
-                char ch = Convert.ToChar(number[i] - 48);
-                currentNumber.Append((int)ch);
+                Console.WriteLine(transitions);
+                Console.WriteLine(number);
+                return;
             }
-
-            product *= sum;
-            sum = 0;
-            number.Clear();
-            number.Append(currentNumber);
-            currentNumber.Clear();
+            else if (transitions < 10)
+            {
+                number.Remove((number.Length - 1), 1);
+            }
+            else if (transitions == 10)
+            {
+                Console.WriteLine(number);
+                return;
+            }
         }
-
-        Console.WriteLine(transformation);
-        Console.WriteLine(product);
     }
 }

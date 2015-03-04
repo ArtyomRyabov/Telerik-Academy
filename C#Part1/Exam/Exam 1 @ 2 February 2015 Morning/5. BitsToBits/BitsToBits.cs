@@ -1,4 +1,5 @@
 ﻿using System;
+
 class BitsToBits
 {
     static void Main()
@@ -43,6 +44,7 @@ class BitsToBits
                 }
             }
         }
+
         Console.WriteLine(maxZeroesCounter);
         Console.WriteLine(maxOnesCounter);
     }
