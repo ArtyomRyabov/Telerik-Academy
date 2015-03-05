@@ -7,10 +7,7 @@
     {
         static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-            int[,] matrix = new int[n, n];
-
-            FillTheMatrix(matrix, n);
+            int[,] matrix = FillTheMatrix();
 
             long biggestSum = long.MinValue;
             long currentSum = long.MinValue;
@@ -44,8 +41,11 @@
             }
         }
 
-        private static void FillTheMatrix(int[,] matrix, int n)
+        static int[,] FillTheMatrix()
         {
+            int n = int.Parse(Console.ReadLine());
+            int[,] matrix = new int[n,n];
+
             for (int row = 0; row < n; row++)
             {
                 string[] line = Console.ReadLine().Split(' ');
@@ -55,6 +55,8 @@
                     matrix[row, col] = int.Parse(line[col]);
                 }
             }
+
+            return matrix;
         }
 
         static bool IsPattern(int[,] matrix, int row, int col)
@@ -66,7 +68,7 @@
             return isPattern;
         }
 
-        private static long PatternSum(int[,] matrix, int row, int col)
+        static long PatternSum(int[,] matrix, int row, int col)
         {
             long sum = matrix[row, col] + matrix[row, col + 1] + matrix[row, col + 2] + 
                        matrix[row + 1, col + 2] + matrix[row + 2, col + 2] + 
@@ -79,9 +81,9 @@
         {
             long diagonalSum = 0;
 
-                for (int col = 0; col < matrix.GetLength(1); col++)
+                for (int i = 0; i < matrix.GetLength(0); i++)
                 {
-                    diagonalSum += matrix[col, col];
+                    diagonalSum += matrix[i, i];
                 }
 
             return diagonalSum;
