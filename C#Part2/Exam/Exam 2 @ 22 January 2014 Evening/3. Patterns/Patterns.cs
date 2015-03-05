@@ -61,9 +61,12 @@
 
         static bool IsPattern(int[,] matrix, int row, int col)
         {
-            bool isPattern = ((matrix[row, col] + 1 == matrix[row, col + 1]) && (matrix[row, col] + 2 == matrix[row, col + 2]) &&
-                              (matrix[row, col] + 3 == matrix[row + 1, col + 2]) && (matrix[row, col] + 4 == matrix[row + 2, col + 2]) &&
-                              (matrix[row, col] + 5 == matrix[row + 2, col + 3]) && (matrix[row, col] + 6 == matrix[row + 2, col + 4]));
+            bool isPattern = ((matrix[row, col] + 1 == matrix[row, col + 1]) && 
+                              (matrix[row, col] + 2 == matrix[row, col + 2]) &&
+                              (matrix[row, col] + 3 == matrix[row + 1, col + 2]) && 
+                              (matrix[row, col] + 4 == matrix[row + 2, col + 2]) &&
+                              (matrix[row, col] + 5 == matrix[row + 2, col + 3]) && 
+                              (matrix[row, col] + 6 == matrix[row + 2, col + 4]));
 
             return isPattern;
         }
