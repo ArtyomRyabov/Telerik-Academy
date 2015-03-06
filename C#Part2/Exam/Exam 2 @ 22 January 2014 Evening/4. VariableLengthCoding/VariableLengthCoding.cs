@@ -28,6 +28,7 @@
                 textToBinary.Append(Convert.ToString(Convert.ToInt32(text[i]), 2).PadLeft(8, '0'));
             }
 
+            textToBinary.Append(0);
             int counter = 0;
 
             //Decoding data:
