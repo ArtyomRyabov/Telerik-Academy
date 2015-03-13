@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class MobilePhoneMain
+    class MobilePhoneMain
     {
         static void Main()
         {
