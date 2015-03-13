@@ -6,8 +6,8 @@
     {
         static void Main()
         {
-            GSMTest.PrintPhones();
-            GSMCallHistoryTest.CallsHistoryTest();
+            GSMTest.PrintPhones();                   // Problem 7
+            GSMCallHistoryTest.CallsHistoryTest();   // Problem 12
         }
     }
 }
