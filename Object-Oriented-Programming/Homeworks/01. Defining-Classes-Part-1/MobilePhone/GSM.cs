@@ -128,7 +128,7 @@
             {
                 if (String.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Invalid owner name! The name should have at least two letters.");
+                    throw new ArgumentException("Invalid owner name!");
                 }
 
                 this.owner = value;
