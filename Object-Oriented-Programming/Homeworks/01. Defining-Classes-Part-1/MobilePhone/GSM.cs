@@ -111,7 +111,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Invalid price! Price should be bigger than 'zero'");
+                    throw new ArgumentException("Invalid price!");
                 }
 
                 this.price = value;
@@ -128,14 +128,14 @@
             {
                 if (String.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Invalid owner name! Name should have at least two letters.");
+                    throw new ArgumentException("Invalid owner name! The name should have at least two letters.");
                 }
 
                 this.owner = value;
             }
         }
 
-        public List<Call> CallHistory                // Problem 9
+        public List<Call> CallHistory                       // Problem 9
         {
             get
             {
@@ -143,7 +143,7 @@
             }
         }
 
-        public override string ToString()            // Problem 4
+        public override string ToString()                   // Problem 4
         {
             StringBuilder info = new StringBuilder();
 
@@ -162,7 +162,7 @@
             return info.ToString();
         }
 
-        public void AddCall(Call newCall)   // Problem 10
+        public void AddCall(Call newCall)                   // Problem 10
         {
             this.callHistory.Add(newCall);
         }
