@@ -2,16 +2,16 @@
 {
     using System;
 
-    public enum BatteryType { LiIon, LiPo, NiMH, NiCd }
+    public enum BatteryType { LiIon, LiPo, NiMH, NiCd }   // Problem 3
 
     public class Battery
     {
-        private string batteryModel;
+        private string batteryModel;      // Problem 1
         private double? hoursIdle;
         private double? hoursTalk;
         private BatteryType typeBattery;
 
-        public Battery()
+        public Battery()                  // Problem 2
             : this(null)
         {
         }
@@ -39,7 +39,7 @@
             this.TypeBattery = typeBattery;
         }
 
-        public string BatteryModel
+        public string BatteryModel                   // Problem 5
         {
             get
             {

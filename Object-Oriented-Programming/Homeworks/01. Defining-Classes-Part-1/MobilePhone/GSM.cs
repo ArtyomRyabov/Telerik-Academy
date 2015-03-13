@@ -1,19 +1,25 @@
 ﻿namespace MobilePhone
 {
     using System;
+    using System.Collections.Generic;
     using System.Text;
 
     public class GSM
     {
-        private string model;
+        private string model;                                // Problem 1
         private string manufacturer;
         private decimal? price;
         private string owner;
         private Battery battery;
         private Display display;
-        private static GSM iPhone4S;
+        private static GSM iPhone4S;                         // Problem 6
+        private List<Call> callHistory = new List<Call>();   // Problem 9
 
-        public GSM(string model, string manufacturer)
+        public GSM()                                          // Problem 2
+        {
+        }
+
+        public GSM(string model, string manufacturer)         // Problem 2
             : this(model, manufacturer, null)
         {
         }
@@ -43,13 +49,13 @@
             this.display = display;
         }
 
-        public GSM()
+        static GSM()                          // Problem 6
         {
-            IPhone4S = new GSM("iPhone 4s", "Apple", 500.00m, "Unknown", new Battery("Some Model", 200, 8, BatteryType.LiPo),
+            IPhone4S = new GSM("iPhone 4s", "Apple", 500m, "Unknown", new Battery("Some Model", 200, 8, BatteryType.LiPo),
                        new Display(3.5, 16000000));
         }
 
-        public static GSM IPhone4S
+        public static GSM IPhone4S            // Problem 6
         {
             get
             {
@@ -61,7 +67,7 @@
             }
         }
 
-        public string Model
+        public string Model                   // Problem 5
         {
             get
             {
@@ -105,7 +111,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Invalid price!");
+                    throw new ArgumentException("Invalid price! Price should be bigger than 'zero'");
                 }
 
                 this.price = value;
@@ -122,14 +128,22 @@
             {
                 if (String.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Invalid owner name!");
+                    throw new ArgumentException("Invalid owner name! Name should have at least two letters.");
                 }
 
                 this.owner = value;
             }
         }
 
-        public override string ToString()
+        public List<Call> CallHistory                // Problem 9
+        {
+            get
+            {
+                return this.callHistory;
+            }
+        }
+
+        public override string ToString()            // Problem 4
         {
             StringBuilder info = new StringBuilder();
 
@@ -146,6 +160,34 @@
             info.Append(String.Format(" Number of Colours: {0}\n", this.display.Colours));
 
             return info.ToString();
+        }
+
+        public void AddCall(Call newCall)   // Problem 10
+        {
+            this.callHistory.Add(newCall);
+        }
+
+        public void RemoveCall(Call removeCall)
+        {
+            this.callHistory.Remove(removeCall);
+        }
+
+        public void ClearCallHistory()
+        {
+            this.callHistory.Clear();
+        }
+
+        public string CallsTotalPrice(decimal pricePerMinute)     // Problem 11
+        {
+            uint totalDuration = 0;
+
+            foreach (Call call in callHistory)
+            {
+                totalDuration += call.Duration;
+            }
+
+            string price = String.Format("{0:C}", (totalDuration / 60m) * pricePerMinute);
+            return price;
         }
     }
 }

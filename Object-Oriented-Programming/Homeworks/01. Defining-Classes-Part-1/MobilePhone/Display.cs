@@ -4,10 +4,10 @@
 
     public class Display
     {
-        private double? size;
+        private double? size;     // Problem 1
         private int? colours;
 
-        public Display()
+        public Display()          // Problem 2
             : this(null)
         {
         }
@@ -23,7 +23,7 @@
             this.Colours = colours;
         }
 
-        public double? Size
+        public double? Size                            // Problem 5
         {
             get
             {
