@@ -49,7 +49,7 @@
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Invalid battery model");
+                    value = "Unknown";
                 }
 
                 this.batteryModel = value;
@@ -90,16 +90,6 @@
             }
         }
 
-        public BatteryType TypeBattery
-        {
-            get
-            {
-                return this.typeBattery;
-            }
-            set
-            {
-                this.typeBattery = value;
-            }
-        }
+        public BatteryType TypeBattery {get;set;}
     }
 }

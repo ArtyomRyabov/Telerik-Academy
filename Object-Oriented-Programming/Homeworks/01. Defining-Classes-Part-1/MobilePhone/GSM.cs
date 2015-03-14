@@ -6,13 +6,15 @@
 
     public class GSM
     {
+        private static GSM iPhone4S;                         // Problem 6
+
         private string model;                                // Problem 1
         private string manufacturer;
         private decimal? price;
         private string owner;
         private Battery battery;
         private Display display;
-        private static GSM iPhone4S;                         // Problem 6
+
         private List<Call> callHistory = new List<Call>();   // Problem 9
 
         public GSM()                                          // Problem 2
@@ -49,13 +51,13 @@
             this.display = display;
         }
 
-        static GSM()                          // Problem 6
+        static GSM()                               // Problem 6
         {
-            IPhone4S = new GSM("iPhone 4s", "Apple", 500m, "Unknown", new Battery("Some Model", 200, 8, BatteryType.LiPo),
+            IPhone4S = new GSM("iPhone 4s", "Apple", 500m, "", new Battery("", 200, 8, BatteryType.LiPo),
                        new Display(3.5, 16000000));
         }
 
-        public static GSM IPhone4S            // Problem 6
+        public static GSM IPhone4S                 // Problem 6
         {
             get
             {
@@ -67,7 +69,7 @@
             }
         }
 
-        public string Model                   // Problem 5
+        public string Model                        // Problem 5
         {
             get
             {
@@ -128,14 +130,14 @@
             {
                 if (String.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Invalid owner name!");
+                    value = "Unknown";
                 }
 
                 this.owner = value;
             }
         }
 
-        public List<Call> CallHistory                       // Problem 9
+        public List<Call> CallHistory                      // Problem 9
         {
             get
             {

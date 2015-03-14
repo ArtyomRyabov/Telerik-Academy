@@ -4,12 +4,12 @@
 
     public class GSMTest                         // Problem 7
     {
-        public static GSM[] phones = { new GSM("I9195 Galaxy S4 Mini Black", "Samsung", 455, "Unknown", 
-                                            new Battery("Some Model", 130, 14, BatteryType.LiIon), new Display(4.3, 16000000)),
-                                        new GSM("HTC ONE M8", "HTC", 935, "Unknown",
-                                            new Battery("Some Model", 496, 20, BatteryType.LiIon), new Display(5, 16000000)),
-                                        new GSM("NEXUS 5 D821", "LG", 579, "Unknown",
-                                            new Battery("Some Model", 300, 17, BatteryType.LiPo), new Display(4.95, 16000000)) };
+        public static GSM[] phones = { new GSM("I9195 Galaxy S4 Mini Black", "Samsung", 455m, "", 
+                                            new Battery("", 130, 14, BatteryType.LiIon), new Display(4.3, 16000000)),
+                                        new GSM("HTC ONE M8", "HTC", 935m, "",
+                                            new Battery("", 496, 20, BatteryType.LiIon), new Display(5, 16000000)),
+                                        new GSM("NEXUS 5 D821", "LG", 579m, "",
+                                            new Battery("", 300, 17, BatteryType.LiPo), new Display(4.95, 16000000)) };
 
         public static void PrintPhones()
         {
