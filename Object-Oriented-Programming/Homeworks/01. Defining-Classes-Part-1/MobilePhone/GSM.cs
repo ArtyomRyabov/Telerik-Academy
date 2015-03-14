@@ -6,7 +6,9 @@
 
     public class GSM
     {
-        private static GSM iPhone4S;                         // Problem 6
+        private static GSM iPhone4S = new GSM("iPhone 4s", "Apple", 500m, "",                   // Problem 6
+                                               new Battery("", 200, 8, BatteryType.LiPo),
+                                               new Display(3.5, 16000000));                         
 
         private string model;                                // Problem 1
         private string manufacturer;
@@ -15,7 +17,7 @@
         private Battery battery;
         private Display display;
 
-        private List<Call> callHistory = new List<Call>();   // Problem 9
+        private List<Call> callHistory = new List<Call>();    // Problem 9
 
         public GSM()                                          // Problem 2
         {
@@ -51,21 +53,11 @@
             this.display = display;
         }
 
-        static GSM()                               // Problem 6
-        {
-            IPhone4S = new GSM("iPhone 4s", "Apple", 500m, "", new Battery("", 200, 8, BatteryType.LiPo),
-                       new Display(3.5, 16000000));
-        }
-
         public static GSM IPhone4S                 // Problem 6
         {
             get
             {
                 return iPhone4S;
-            }
-            set
-            {
-                iPhone4S = value;
             }
         }
 

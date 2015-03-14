@@ -15,7 +15,7 @@
             : this(null)
         {
         }
-
+        
         public Battery(string batteryModel)
             : this(batteryModel, null)
         {
@@ -90,6 +90,16 @@
             }
         }
 
-        public BatteryType TypeBattery {get;set;}
+        public BatteryType TypeBattery
+        {
+            get
+            {
+                return this.typeBattery;
+            }
+            set
+            {
+                this.typeBattery = value;
+            }
+        }
     }
 }
