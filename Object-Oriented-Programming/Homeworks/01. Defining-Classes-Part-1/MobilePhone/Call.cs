@@ -6,7 +6,7 @@
     {
         private DateTime dateTime;
         private string dialedNumber;
-        public uint duration;
+        private uint duration;
 
         public Call(DateTime dateTime, string dialedNumber, uint duration)
         {

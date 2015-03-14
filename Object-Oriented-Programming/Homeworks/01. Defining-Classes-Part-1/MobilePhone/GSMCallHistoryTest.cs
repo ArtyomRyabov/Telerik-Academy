@@ -4,9 +4,9 @@
 
     public class GSMCallHistoryTest                  // Problem 12
     {
-        static GSM test = new GSM();
+        private static GSM test = new GSM();
 
-        public static Call[] calls = { new Call(DateTime.Now, "0888888888", 30),
+        private static Call[] calls = { new Call(DateTime.Now, "0888888888", 30),
                                        new Call(DateTime.Now, "0899999999", 60),
                                        new Call(DateTime.Now, "0877777777", 100) };
 
