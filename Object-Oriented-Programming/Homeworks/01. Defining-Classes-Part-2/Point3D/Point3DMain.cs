@@ -23,7 +23,8 @@
             path.AddPath(new Point3D(-2, 22, 0.22));
             Console.WriteLine(path);
 
-            PathStorage.SavePath(path, @"..\..\test.txt");   // Writing the upper coordinates to 'test.txt' file
+            Console.WriteLine("Writing the upper coordinates to 'test.txt' file\n");
+            PathStorage.SavePath(path, @"..\..\test.txt");   
 
             Console.WriteLine("Read 'test.txt' file:");               
             Path testRead = PathStorage.LoadPath(@"..\..\test.txt");
