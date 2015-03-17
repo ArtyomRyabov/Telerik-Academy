@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericList", "GenericList\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{70ED87B5-30A8-4B5E-966C-57FAC28FDFC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionAttribute", "VersionAttribute\VersionAttribute.csproj", "{73BC3110-3466-4625-B996-ED1E9240474F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{70ED87B5-30A8-4B5E-966C-57FAC28FDFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70ED87B5-30A8-4B5E-966C-57FAC28FDFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70ED87B5-30A8-4B5E-966C-57FAC28FDFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73BC3110-3466-4625-B996-ED1E9240474F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73BC3110-3466-4625-B996-ED1E9240474F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73BC3110-3466-4625-B996-ED1E9240474F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73BC3110-3466-4625-B996-ED1E9240474F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

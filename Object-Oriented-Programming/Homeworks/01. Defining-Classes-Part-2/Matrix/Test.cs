@@ -6,7 +6,7 @@
     {
         static void Main()
         {
-            GenericMatrix<int> firstMatrix = new GenericMatrix<int>(3, 2);     // Empty matrix
+            GenericMatrix<int> firstMatrix = new GenericMatrix<int>(3, 2);     
 
             firstMatrix[0, 0] = 1;       // Filling the matrix
             firstMatrix[0, 1] = 2;
@@ -81,7 +81,7 @@
             Console.WriteLine(thirdMatrix);
 
             Console.WriteLine("second matrix * third matrix:\n");
-            Console.WriteLine(secondMatrix * thirdMatrix);    // Matrices multiplication
+            Console.WriteLine(secondMatrix * thirdMatrix);        // Matrices multiplication
         }
     }
 }
