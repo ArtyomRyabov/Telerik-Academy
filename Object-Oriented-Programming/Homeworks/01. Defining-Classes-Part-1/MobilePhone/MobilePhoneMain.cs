@@ -2,9 +2,9 @@
 {
     using System;
 
-    class MobilePhoneMain
+    public class MobilePhoneMain
     {
-        static void Main()
+        public static void Main()
         {
             GSMTest.PrintPhones();                   // Problem 7
             GSMCallHistoryTest.CallsHistoryTest();   // Problem 12

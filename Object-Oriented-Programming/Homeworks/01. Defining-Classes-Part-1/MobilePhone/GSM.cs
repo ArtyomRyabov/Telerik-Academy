@@ -5,10 +5,9 @@
     using System.Text;
 
     public class GSM
-    {
-        private static GSM iPhone4S = new GSM("iPhone 4s", "Apple", 500m, "",                   // Problem 6
-                                               new Battery("", 200, 8, BatteryType.LiPo),
-                                               new Display(3.5, 16000000));                         
+    {                                                   // Problem 6
+        private static GSM iPhone4S = new GSM(
+            "iPhone 4s", "Apple", 500m, "", new Battery("", 200, 8, BatteryType.LiPo), new Display(3.5, 16000000));                         
 
         private string model;                                // Problem 1
         private string manufacturer;
@@ -69,7 +68,7 @@
             }
             set
             {
-                if (String.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentException("Invalid model!");
                 }
@@ -86,7 +85,7 @@
             }
             set
             {
-                if (String.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentException("Invalid manufacturer!");
                 }
@@ -120,7 +119,7 @@
             }
             set
             {
-                if (String.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value))
                 {
                     value = "Unknown";
                 }
@@ -141,17 +140,17 @@
         {
             StringBuilder info = new StringBuilder();
 
-            info.Append(String.Format("Model: {0}\n", this.Model));
-            info.Append(String.Format("Manufacturer: {0}\n", this.Manufacturer));
-            info.Append(String.Format("Price: {0}\n", this.Price));
-            info.Append(String.Format("Owner: {0}\n", this.Owner));
-            info.Append(String.Format("Battery: {0}\n", this.battery.BatteryModel));
-            info.Append(String.Format(" Type: {0}\n", this.battery.TypeBattery));
-            info.Append(String.Format(" Idle Hours: {0}\n", this.battery.HoursIdle));
-            info.Append(String.Format(" Talk Hours: {0}\n", this.battery.HoursTalk));
+            info.Append(string.Format("Model: {0}\n", this.Model));
+            info.Append(string.Format("Manufacturer: {0}\n", this.Manufacturer));
+            info.Append(string.Format("Price: {0}\n", this.Price));
+            info.Append(string.Format("Owner: {0}\n", this.Owner));
+            info.Append(string.Format("Battery: {0}\n", this.battery.BatteryModel));
+            info.Append(string.Format(" Type: {0}\n", this.battery.TypeBattery));
+            info.Append(string.Format(" Idle Hours: {0}\n", this.battery.HoursIdle));
+            info.Append(string.Format(" Talk Hours: {0}\n", this.battery.HoursTalk));
             info.Append("Diplay:\n");
-            info.Append(String.Format(" Size: {0}\n", this.display.Size));
-            info.Append(String.Format(" Number of Colours: {0}\n", this.display.Colours));
+            info.Append(string.Format(" Size: {0}\n", this.display.Size));
+            info.Append(string.Format(" Number of Colours: {0}\n", this.display.Colours));
 
             return info.ToString();
         }
@@ -175,12 +174,12 @@
         {
             uint totalDuration = 0;
 
-            foreach (Call call in callHistory)
+            foreach (Call call in this.callHistory)
             {
                 totalDuration += call.Duration;
             }
 
-            string price = String.Format("{0:C}", (totalDuration / 60m) * pricePerMinute);
+            string price = string.Format("{0:C}", (totalDuration / 60m) * pricePerMinute);
             return price;
         }
     }

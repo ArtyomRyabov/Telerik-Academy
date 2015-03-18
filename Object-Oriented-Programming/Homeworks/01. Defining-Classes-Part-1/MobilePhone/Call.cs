@@ -53,7 +53,7 @@
 
         public override string ToString()
         {
-            return String.Format("Dialed number: {0} / Duration: {1} sec. / {2}", this.DialedNumber, this.Duration, this.DateTime);
+            return string.Format("Dialed number: {0} / Duration: {1} sec. / {2}", this.DialedNumber, this.Duration, this.DateTime);
         }
     }
 }

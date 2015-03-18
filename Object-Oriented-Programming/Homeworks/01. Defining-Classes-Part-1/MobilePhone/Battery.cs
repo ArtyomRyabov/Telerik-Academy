@@ -2,7 +2,13 @@
 {
     using System;
 
-    public enum BatteryType { LiIon, LiPo, NiMH, NiCd }   // Problem 3
+    public enum BatteryType                 // Problem 3
+    { 
+        LiIon, 
+        LiPo, 
+        NiMH, 
+        NiCd 
+    }   
 
     public class Battery
     {
