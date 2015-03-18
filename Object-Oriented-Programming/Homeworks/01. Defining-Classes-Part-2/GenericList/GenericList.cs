@@ -12,10 +12,10 @@
         private T[] genericList;
         private int nextAddIndex;
 
-        public GenericList(int StartCapacity)
+        public GenericList()
         {
             this.Capacity = StartCapacity;
-            this.genericList = new T[StartCapacity];
+            this.genericList = new T[this.Capacity];
             this.nextAddIndex = 0;
         }
 
@@ -25,7 +25,7 @@
         {
             get
             {
-                CheckIndexValidity(index);
+                this.CheckIndexValidity(index);
 
                 return this.genericList[index];
             }
@@ -33,39 +33,39 @@
 
         public void AddElement(T elementToAdd)
         {
-            if (nextAddIndex == genericList.Length)
+            if (this.nextAddIndex == this.genericList.Length)
             {
-                DoubleArraySize();
+                this.DoubleArraySize();
             }
 
-            this.genericList[nextAddIndex] = elementToAdd;
-            nextAddIndex++;
+            this.genericList[this.nextAddIndex] = elementToAdd;
+            this.nextAddIndex++;
         }
 
         public void RemoveElementAt(int removeIndex)
         {
-            CheckIndexValidity(removeIndex);
+            this.CheckIndexValidity(removeIndex);
 
             this.Capacity -= 1;
             T[] newGenericList = new T[this.Capacity];
 
             if (removeIndex > 0)
             {
-                Array.Copy(genericList, 0, newGenericList, 0, removeIndex);
+                Array.Copy(this.genericList, 0, newGenericList, 0, removeIndex);
             }
 
-            Array.Copy(genericList, removeIndex + 1, newGenericList, removeIndex, (genericList.Length - 1) - removeIndex);
-            genericList = newGenericList;
+            Array.Copy(this.genericList, removeIndex + 1, newGenericList, removeIndex, (this.genericList.Length - 1) - removeIndex);
+            this.genericList = newGenericList;
             this.nextAddIndex--;
         }
 
         public void InsertElementAt(int insertIndex, T elementToInsert)
         {
-            CheckIndexValidity(insertIndex);
+            this.CheckIndexValidity(insertIndex);
 
-            if (insertIndex == nextAddIndex)
+            if (insertIndex == this.nextAddIndex)
             {
-                AddElement(elementToInsert);
+                this.AddElement(elementToInsert);
             }
             else
             {
@@ -74,12 +74,12 @@
 
                 if (insertIndex > 0)
                 {
-                    Array.Copy(genericList, 0, newGenericList, 0, insertIndex);
+                    Array.Copy(this.genericList, 0, newGenericList, 0, insertIndex);
                 }
 
                 newGenericList[insertIndex] = elementToInsert;
-                Array.Copy(genericList, insertIndex, newGenericList, insertIndex + 1, (genericList.Length - 1) - insertIndex);
-                genericList = newGenericList;
+                Array.Copy(this.genericList, insertIndex, newGenericList, insertIndex + 1, (this.genericList.Length - 1) - insertIndex);
+                this.genericList = newGenericList;
                 this.nextAddIndex++;
             }
         }
@@ -93,7 +93,7 @@
 
         public int FindElement(T element)
         {
-            if (!genericList.Contains(element))
+            if (!this.genericList.Contains(element))
             {
                 throw new ArgumentException("There is no such element!");
             }
@@ -103,13 +103,13 @@
 
         public T Min()                                       // Problem 7
         {
-            T min = genericList[0];
+            T min = this.genericList[0];
 
-            for (int i = 1; i < nextAddIndex; i++)
+            for (int i = 1; i < this.nextAddIndex; i++)
             {
-                if (genericList[i].CompareTo(min) < 0)
+                if (this.genericList[i].CompareTo(min) < 0)
                 {
-                    min = genericList[i];
+                    min = this.genericList[i];
                 }
             }
 
@@ -118,38 +118,22 @@
 
         public T Max()                                       // Problem 7
         {
-            T max = genericList[0];
+            T max = this.genericList[0];
 
-            for (int i = 1; i < nextAddIndex; i++)
+            for (int i = 1; i < this.nextAddIndex; i++)
             {
-                if (genericList[i].CompareTo(max) > 0)
+                if (this.genericList[i].CompareTo(max) > 0)
                 {
-                    max = genericList[i];
+                    max = this.genericList[i];
                 }
             }
 
             return max;
         }
 
-        private void DoubleArraySize()                            // Problem 6
-        {
-            this.Capacity *= 2;
-            T[] newGenericList = new T[this.Capacity];
-            Array.Copy(this.genericList, newGenericList, genericList.Length);
-            this.genericList = newGenericList;
-        }
-
-        private void CheckIndexValidity(int index)
-        {
-            if (index < 0 || index >= genericList.Length)
-            {
-                throw new IndexOutOfRangeException(String.Format("Index {0} is out of range!", index));
-            }
-        }
-
         public override string ToString()
         {
-            if (nextAddIndex == 0)
+            if (this.nextAddIndex == 0)
             {
                 return "Zero contained elements";
             }
@@ -158,12 +142,28 @@
 
             output.AppendLine("Contained elements:");
 
-            for (int i = 0; i < nextAddIndex; i++)
+            for (int i = 0; i < this.nextAddIndex; i++)
             {
-                output.AppendLine(String.Format("{0} -> {1}", i, genericList[i]));
+                output.AppendLine(string.Format("{0} -> {1}", i, this.genericList[i]));
             }
 
             return output.ToString();
+        }
+
+        private void DoubleArraySize()                            // Problem 6
+        {
+            this.Capacity *= 2;
+            T[] newGenericList = new T[this.Capacity];
+            Array.Copy(this.genericList, newGenericList, this.genericList.Length);
+            this.genericList = newGenericList;
+        }
+
+        private void CheckIndexValidity(int index)
+        {
+            if (index < 0 || index >= this.genericList.Length)
+            {
+                throw new IndexOutOfRangeException(string.Format("Index {0} is out of range!", index));
+            }
         }
     }
 }

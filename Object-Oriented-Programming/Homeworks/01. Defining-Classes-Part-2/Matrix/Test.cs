@@ -4,7 +4,7 @@
 
     public class Test
     {
-        static void Main()
+        public static void Main()
         {
             GenericMatrix<int> firstMatrix = new GenericMatrix<int>(3, 2);     
 

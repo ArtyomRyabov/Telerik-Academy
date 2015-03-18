@@ -4,9 +4,9 @@
 
     public class Test
     {
-        static void Main()
+        public static void Main()
         {
-            GenericList<string> list = new GenericList<string>(4);              // Problem 5
+            GenericList<string> list = new GenericList<string>();              // Problem 5
             Console.WriteLine("Empty GenericList"); 
             Console.WriteLine(list);
             Console.WriteLine("List capacity: {0}\n", list.Capacity);

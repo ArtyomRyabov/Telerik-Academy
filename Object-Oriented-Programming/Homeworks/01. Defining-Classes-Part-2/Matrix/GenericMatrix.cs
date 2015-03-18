@@ -82,23 +82,6 @@
             }
         }
 
-        public override string ToString()
-        {
-            StringBuilder result = new StringBuilder();
-
-            for (int row = 0; row < this.Rows; row++)
-            {
-                for (int col = 0; col < this.Cols; col++)
-                {
-                    result.Append(String.Format("{0} ", this.matrix[row, col]));
-                }
-
-                result.Append(Environment.NewLine);
-            }
-
-            return result.ToString();
-        }
-
         public static GenericMatrix<T> operator +(GenericMatrix<T> firstMatrix, GenericMatrix<T> secondMatrix)  // Problem 10
         {
             if (firstMatrix.Rows != secondMatrix.Rows || firstMatrix.Cols != secondMatrix.Cols)
@@ -192,6 +175,23 @@
             }
 
             return true;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+
+            for (int row = 0; row < this.Rows; row++)
+            {
+                for (int col = 0; col < this.Cols; col++)
+                {
+                    result.Append(string.Format("{0} ", this.matrix[row, col]));
+                }
+
+                result.Append(Environment.NewLine);
+            }
+
+            return result.ToString();
         }
     }
 }

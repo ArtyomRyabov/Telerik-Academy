@@ -23,12 +23,14 @@
         }
 
         public double X { get; private set; }             // Problem 1
+
         public double Y { get; private set; }             // Problem 1
+
         public double Z { get; private set; }             // Problem 1
 
         public override string ToString()                 // Problem 1
         {
-            return String.Format("{0}, {1}, {2}", this.X, this.Y, this.Z);
+            return string.Format("{0}, {1}, {2}", this.X, this.Y, this.Z);
         }
     }
 }

@@ -15,7 +15,6 @@
       
         public void AddPath(Point3D points)
         {
-            
            this.pathList.Add(points);
         }
 
@@ -24,9 +23,9 @@
             StringBuilder builder = new StringBuilder();
             int counter = 1;
 
-            foreach (Point3D item in pathList)
+            foreach (Point3D item in this.pathList)
             {
-                builder.Append(String.Format("{0} coordinates: ({1})\n", counter, item));
+                builder.Append(string.Format("{0} coordinates: ({1})\n", counter, item));
                 counter++;
             }
 

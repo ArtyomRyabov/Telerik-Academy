@@ -15,6 +15,8 @@
             {
                 Console.WriteLine("Name: {0} / Version {1}", attribute.Name, attribute.Version);
             }
+
+            Console.WriteLine();
         }
     }
 }

@@ -10,8 +10,7 @@
             double deltaY = secondPoint.Y - firstPoint.Y;
             double deltaZ = secondPoint.Z - firstPoint.Z;
 
-            return Math.Sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ); 
+            return Math.Sqrt(deltaX * deltaX  + deltaY * deltaY + deltaZ * deltaZ); 
         }
     }
 }
-

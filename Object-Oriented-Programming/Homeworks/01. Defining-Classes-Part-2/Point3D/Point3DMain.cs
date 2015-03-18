@@ -6,7 +6,7 @@
 
     public class Point3DMain
     {
-        static void Main()
+        public static void Main()
         {
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
@@ -15,7 +15,7 @@
             Point3D secondPoint = new Point3D(50.05, 50, 5.555);
             Console.WriteLine("Second point coordinates: ({0})\n", secondPoint);
             Console.WriteLine("The distance between start and second point: {0:F2}\n",
-                DistanceCalculator.CalculateDistance(secondPoint, Point3D.StartPoint));
+                              DistanceCalculator.CalculateDistance(secondPoint, Point3D.StartPoint));
 
             Path path = new Path();
             path.AddPath(Point3D.StartPoint);          // Adding paths
