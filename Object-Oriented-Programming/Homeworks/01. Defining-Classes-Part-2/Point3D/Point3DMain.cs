@@ -4,7 +4,7 @@
     using System.Globalization;
     using System.Threading;
 
-    class Point3DMain
+    public class Point3DMain
     {
         static void Main()
         {

@@ -4,9 +4,9 @@
 
     [Version("Test", "0.02")]
     [Version("Test", "0.01")]
-    class Test
+    public class Test
     {
-        static void Main()
+        public static void Main()
         {
             Type type = typeof(Test);
             object[] attributes = type.GetCustomAttributes(false);

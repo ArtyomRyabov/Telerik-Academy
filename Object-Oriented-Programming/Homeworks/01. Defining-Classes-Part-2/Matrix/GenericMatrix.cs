@@ -3,7 +3,7 @@
     using System;
     using System.Text;
 
-    class GenericMatrix<T>
+    public class GenericMatrix<T>
     {                                                 // Problem 8
         private int rows;
         private int cols;
