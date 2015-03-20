@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder.Extensions", "01. StringBuilder.Substring\StringBuilder.Extensions.csproj", "{5CCC1BEF-46FF-4CE5-87D3-70ECDC02E904}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. StringBuilder.Substring", "01. StringBuilder.Substring\01. StringBuilder.Substring.csproj", "{5CCC1BEF-46FF-4CE5-87D3-70ECDC02E904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. IEnumerableExtensions", "02. IEnumerableExtensions\02. IEnumerableExtensions.csproj", "{6F2A758B-2275-45C7-A55D-A97E9B38DD1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5CCC1BEF-46FF-4CE5-87D3-70ECDC02E904}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CCC1BEF-46FF-4CE5-87D3-70ECDC02E904}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CCC1BEF-46FF-4CE5-87D3-70ECDC02E904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2A758B-2275-45C7-A55D-A97E9B38DD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2A758B-2275-45C7-A55D-A97E9B38DD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2A758B-2275-45C7-A55D-A97E9B38DD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2A758B-2275-45C7-A55D-A97E9B38DD1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

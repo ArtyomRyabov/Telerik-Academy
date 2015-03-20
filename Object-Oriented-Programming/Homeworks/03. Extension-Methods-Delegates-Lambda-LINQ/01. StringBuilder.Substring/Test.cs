@@ -1,4 +1,4 @@
-﻿namespace StringBuilder.Extensions
+﻿namespace StringBuilder.Substring
 {
     using System;
     using System.Text;
@@ -11,11 +11,11 @@
             test.Append("Testing StringBuilder.Substring");
             Console.WriteLine(test);
 
-            test = test.Substring(0, 31);    
-            Console.WriteLine(test);               // Must return the original substring
+            test = test.Substring(0, 31);      // Must return Substring equal to the original StringBuilder
+            Console.WriteLine(test);
 
-            test = test.Substring(22, 9);
-            Console.WriteLine(test);               // Must return "Substring"
+            test = test.Substring(22, 9);      // Must return "Substring"
+            Console.WriteLine(test);               
 
             test = test.Substring(5, 0);       // Must return null
             Console.WriteLine(test);
