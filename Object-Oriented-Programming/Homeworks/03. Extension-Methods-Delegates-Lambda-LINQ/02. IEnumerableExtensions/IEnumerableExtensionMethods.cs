@@ -71,6 +71,7 @@
                     min = item;
                 }
             }
+
             return min;
         }
 
@@ -85,6 +86,7 @@
                     max = item;
                 }
             }
+
             return max;
         }
 
