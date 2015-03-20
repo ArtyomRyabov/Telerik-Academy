@@ -56,7 +56,7 @@
             {
                 return this.age;
             }
-            set
+            private set
             {
                 if (value < 0)
                 {
@@ -68,7 +68,7 @@
         }
         public override string ToString()
         {
-            return string.Format("{0} {1}", this.FirstName, this.LastName);
+            return string.Format("{0} {1}, {2} years old", this.FirstName, this.LastName, this.age);
         }
     }
 }
