@@ -4,18 +4,18 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class Program
+    public class Test
     {
         public static void Main()
         {
             List<Student> students = new List<Student>()
             {
-            new Student("Gavril", "Gargov", "421306", "02 588388", "gavril88@mail.bg", 1, new List<int> { 4, 4, 5, 4, 6 }),
-            new Student("Simo", "Monkov", "421333", "0878443536", "simoto@abv.bg", 2, new List<int> { 3, 4, 5, 6, 4 }),
-            new Student("Koicho", "Nikolchev", "421206", "0899776867", "k.nikolchev@mail.bg", 1, new List<int> { 5, 6, 3, 5, 5 }),
-            new Student("Simo", "Zazov", "421334", "0898334455", "zazov222@gmail.com", 2, new List<int> { 2, 2, 3, 3, 4 }),
-            new Student("Viara", "Ivanova", "421335", "0887335263", "viara.ivanova@gmail.com", 1, new List<int> { 6, 6, 6, 6, 5 }),
-            new Student("Zuza", "Buzeva", "421337", "+3592 456776", "zuzata13@abv.bg", 2, new List<int> { 3, 4, 2, 2, 4 })
+                new Student("Gavril", "Gargov", "421306", "02 588388", "gavril88@mail.bg", 1, new List<int> { 4, 4, 5, 4, 6 }),
+                new Student("Simo", "Monkov", "421333", "0878443536", "simoto@abv.bg", 2, new List<int> { 3, 4, 5, 6, 4 }),
+                new Student("Koicho", "Nikolchev", "421206", "0899776867", "k.nikolchev@mail.bg", 1, new List<int> { 5, 6, 3, 5, 5 }),
+                new Student("Simo", "Zazov", "421334", "0898334455", "zazov222@gmail.com", 2, new List<int> { 2, 2, 3, 3, 4 }),
+                new Student("Viara", "Ivanova", "421335", "0887335263", "viara.ivanova@gmail.com", 1, new List<int> { 6, 6, 6, 6, 5 }),
+                new Student("Zuza", "Buzeva", "421337", "+3592 456776", "zuzata13@abv.bg", 2, new List<int> { 3, 4, 2, 2, 4 })
             };
 
             // Problem 9
