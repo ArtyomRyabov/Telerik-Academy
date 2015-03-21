@@ -139,6 +139,8 @@
             }
         }
 
+        public Group Group { get; private set; }
+
         public override string ToString()
         {
             return string.Format("{0} {1}, FN:{2}, Gr:{3}, Marks:{4} / {5} / {6}", this.FirstName, this.LastName, this.facultyNumber, 
