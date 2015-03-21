@@ -37,6 +37,7 @@
                 .Select(x => string.Format("{0} {1}, GroupNumber: {2}", x.FirstName, x.LastName, x.GroupNumber));
 
             Console.WriteLine(String.Join(Environment.NewLine, groupedStudentsExt));
+            Console.WriteLine();
         }
     }
 }

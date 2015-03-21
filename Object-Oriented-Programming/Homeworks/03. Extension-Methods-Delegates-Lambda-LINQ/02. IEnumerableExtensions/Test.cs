@@ -35,7 +35,7 @@
             Console.WriteLine("Collection contains: {0}", string.Join(" ", charCollection));
             Console.WriteLine("Collection's minimal item is: {0}", charCollection.Min());
             Console.WriteLine("Collection's maximal item is: {0}", charCollection.Max());
-            // Next three lines throw 'InvalidCastException':
+            // Next three lines will throw 'InvalidCastException':
             // Console.WriteLine("Sum of collection's items: {0}", charCollection.Sum()); 
             // Console.WriteLine("Product of collection's items: {0}", charCollection.Product());
             // Console.WriteLine("Collection's average value is: {0}\n", charCollection.Average());

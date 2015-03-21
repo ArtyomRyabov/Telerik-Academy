@@ -136,8 +136,6 @@
                                select (string.Format("{0} {1}, GR: {2}, Department: {3}", student.FirstName, student.LastName,
                                        student.GroupNumber, gr.DepartmentName));
 
-            List<string> output = new List<string>();
-
             foreach (var student in mathStudents)
             {
                 Console.WriteLine(student);
