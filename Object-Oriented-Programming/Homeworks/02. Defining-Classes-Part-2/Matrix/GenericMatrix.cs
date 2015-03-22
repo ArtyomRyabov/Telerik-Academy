@@ -137,7 +137,7 @@
                 {
                     for (int i = 0; i < firstMatrix.Cols; i++)
                     {
-                        result[row, col] += (dynamic)firstMatrix[row, i] * (dynamic)secondMatrix[i, col];
+                        result[row, col] += (dynamic)firstMatrix[row, i] * secondMatrix[i, col];
                     }
                 }
             }
@@ -151,7 +151,7 @@
             {
                 for (int col = 0; col < matrix.cols; col++)
                 {
-                    if (matrix[row, col] == (dynamic)0)
+                    if ((dynamic)matrix[row, col] == 0)
                     {
                         return false;
                     }
@@ -167,7 +167,7 @@
             {
                 for (int col = 0; col < matrix.cols; col++)
                 {
-                    if (matrix[row, col] == (dynamic)0)
+                    if ((dynamic)matrix[row, col] == 0)
                     {
                         return false;
                     }

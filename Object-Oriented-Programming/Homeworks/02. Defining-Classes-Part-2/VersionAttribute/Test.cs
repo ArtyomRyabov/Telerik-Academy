@@ -2,8 +2,7 @@
 {
     using System;
 
-    [Version("Test", "0.02")]
-    [Version("Test", "0.01")]
+    [Version(2, 02)]
     public class Test
     {
         public static void Main()
@@ -13,7 +12,7 @@
 
             foreach (VersionAttribute attribute in attributes)
             {
-                Console.WriteLine("Name: {0} / Version {1}", attribute.Name, attribute.Version);
+                Console.WriteLine("Version {0}.{1}", attribute.Major, attribute.Minor);
             }
 
             Console.WriteLine();

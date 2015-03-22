@@ -35,35 +35,35 @@
         {
             if (this.nextAddIndex == this.genericList.Length)
             {
-                this.DoubleArraySize();
+                this.AutoGrow();
             }
 
             this.genericList[this.nextAddIndex] = elementToAdd;
             this.nextAddIndex++;
         }
 
-        public void RemoveElementAt(int removeIndex)
+        public void RemoveElementAt(int index)
         {
-            this.CheckIndexValidity(removeIndex);
+            this.CheckIndexValidity(index);
 
             this.Capacity -= 1;
             T[] newGenericList = new T[this.Capacity];
 
-            if (removeIndex > 0)
+            if (index > 0)
             {
-                Array.Copy(this.genericList, 0, newGenericList, 0, removeIndex);
+                Array.Copy(this.genericList, 0, newGenericList, 0, index);
             }
 
-            Array.Copy(this.genericList, removeIndex + 1, newGenericList, removeIndex, (this.genericList.Length - 1) - removeIndex);
+            Array.Copy(this.genericList, index + 1, newGenericList, index, (this.genericList.Length - 1) - index);
             this.genericList = newGenericList;
             this.nextAddIndex--;
         }
 
-        public void InsertElementAt(int insertIndex, T elementToInsert)
+        public void InsertElementAt(int index, T elementToInsert)
         {
-            this.CheckIndexValidity(insertIndex);
+            this.CheckIndexValidity(index);
 
-            if (insertIndex == this.nextAddIndex)
+            if (index == this.nextAddIndex)
             {
                 this.AddElement(elementToInsert);
             }
@@ -72,13 +72,13 @@
                 this.Capacity += 1;
                 T[] newGenericList = new T[this.Capacity];
 
-                if (insertIndex > 0)
+                if (index > 0)
                 {
-                    Array.Copy(this.genericList, 0, newGenericList, 0, insertIndex);
+                    Array.Copy(this.genericList, 0, newGenericList, 0, index);
                 }
 
-                newGenericList[insertIndex] = elementToInsert;
-                Array.Copy(this.genericList, insertIndex, newGenericList, insertIndex + 1, (this.genericList.Length - 1) - insertIndex);
+                newGenericList[index] = elementToInsert;
+                Array.Copy(this.genericList, index, newGenericList, index + 1, (this.genericList.Length - 1) - index);
                 this.genericList = newGenericList;
                 this.nextAddIndex++;
             }
@@ -103,6 +103,11 @@
 
         public T Min()                                       // Problem 7
         {
+            if (this.nextAddIndex == 0)
+            {
+                throw new ArgumentNullException("The list is empty");
+            }
+
             T min = this.genericList[0];
 
             for (int i = 1; i < this.nextAddIndex; i++)
@@ -118,6 +123,11 @@
 
         public T Max()                                       // Problem 7
         {
+            if (this.nextAddIndex == 0)
+            {
+                throw new ArgumentNullException("The list is empty");
+            }
+
             T max = this.genericList[0];
 
             for (int i = 1; i < this.nextAddIndex; i++)
@@ -150,7 +160,7 @@
             return output.ToString();
         }
 
-        private void DoubleArraySize()                            // Problem 6
+        private void AutoGrow()                            // Problem 6
         {
             this.Capacity *= 2;
             T[] newGenericList = new T[this.Capacity];

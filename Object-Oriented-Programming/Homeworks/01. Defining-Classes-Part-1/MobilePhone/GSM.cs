@@ -132,7 +132,11 @@
         {
             get
             {
-                return this.callHistory;
+                return new List<Call>(this.callHistory);
+            }
+            set
+            {
+                this.callHistory = value;
             }
         }
 
