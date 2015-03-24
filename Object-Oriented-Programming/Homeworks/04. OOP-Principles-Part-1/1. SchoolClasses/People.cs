@@ -2,7 +2,7 @@
 {
     using System;
 
-    public abstract class People : IComment
+    public abstract class People 
     {
         private string fullName;
         private string comment;
@@ -30,7 +30,7 @@
             }
         }
 
-        public string Comment
+        public virtual string Comment
         {
             get
             {

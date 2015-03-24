@@ -30,7 +30,7 @@
                 new Discipline("Maths", 15, 15)
             };
 
-            Discipline physics = new Discipline("Physics", 10, 10, "New discipline");
+            Discipline physics = new Discipline("Physics", 10, 10);
             disciplines.Add(physics);
 
             Console.WriteLine("\n\nList of disciplines:\n");
@@ -41,7 +41,7 @@
                 Console.WriteLine();
             }
 
-            Teacher petrova = new Teacher("Tsanka Petrova", new List<Discipline>() { new Discipline("Physics", 10, 10, "New discipline") });
+            Teacher petrova = new Teacher("Tsanka Petrova", new List<Discipline>() { new Discipline("Physics", 10, 10) });
             Teacher pavlov = new Teacher("Tosho Pavlov", new List<Discipline>() { new Discipline("Maths", 10, 10) });
 
             List<Teacher> teachers = new List<Teacher>() { petrova, pavlov };

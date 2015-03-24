@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    public class Class : IComment
+    public class Class 
     {
         private string classID;
         private string comment;
@@ -64,7 +64,7 @@
             }
         }
 
-        public string Comment
+        public virtual string Comment
         {
             get
             {

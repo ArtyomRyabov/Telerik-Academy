@@ -7,14 +7,14 @@
         private byte age;
         private string name;
 
-        public Animal(string name, byte age, Gender sex)
+        protected Animal(string name, byte age, Gender sex)
         {
             this.Sex = sex;
             this.Name = name;
             this.Age = age;
         }
 
-        private Gender Sex { get; set; }
+        public Gender Sex { get; private set; }
 
         public string Name
         {
