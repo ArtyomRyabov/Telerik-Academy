@@ -7,7 +7,7 @@
         private string fullName;
         private string comment;
 
-        public People(string name)
+        protected People(string name)
         {
             this.FullName = name;
             this.Comment = comment;

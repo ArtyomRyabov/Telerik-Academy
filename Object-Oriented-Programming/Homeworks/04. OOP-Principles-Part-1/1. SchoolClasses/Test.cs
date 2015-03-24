@@ -50,7 +50,7 @@
 
             foreach (Teacher teacher in teachers)
             {
-                Console.WriteLine(teacher);
+                Console.WriteLine("{0} {1}", teacher.FullName, string.Join("\n", teacher.DisciplinesList));
                 Console.WriteLine();
             }
 
@@ -62,9 +62,7 @@
             Console.WriteLine(tenA);
 
             tenA.Comment = "Very good results last year!";
-            Console.WriteLine("\n\nClass \"{0}\" comment: {1}", tenA.ClassID, tenA.Comment);
-
-
+            Console.WriteLine("\n\nClass \"{0}\" comment: {1}\n", tenA.ClassID, tenA.Comment);
         }
     }
 }
