@@ -1,13 +1,14 @@
 ﻿namespace AnimalHierarchy
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
 
     public class AnimalHierarchyMain
     {
         public static void Main()
         {
-            var animalTypes = new string[] { "Cat", "Kitten", "Tomcat", "Dog", "Frog" };
+            var animalTypes = new List<string> { "Cat", "Kitten", "Tomcat", "Dog", "Frog" };
 
             Animal[] animals =
             {
@@ -40,16 +41,16 @@
             Console.WriteLine();
         }
 
-        private static void AverageAgeByTypes(Animal[] animals, string[] animalTypes)
+        private static void AverageAgeByTypes(IEnumerable<Animal> animals, IEnumerable<string> animalTypes)
         {
-            for (int i = 0; i < animalTypes.Length; i++)
-			{
+            foreach (var type in animalTypes)
+            {
                 double averageAge = (from animal in animals
-                                     where animal.GetType().Name == animalTypes[i]
-                                    select (double)animal.Age)
-                                   .Average();
+                                     where Equals(animal.GetType().Name, type)
+                                     select (double)animal.Age)
+                                     .Average();
 
-                Console.WriteLine("{0}: {1:F2} years", animalTypes[i], averageAge);
+                Console.WriteLine("{0}: {1:F2} years", type, averageAge);
             }
         }
     }
