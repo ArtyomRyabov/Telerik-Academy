@@ -7,6 +7,8 @@
     {
         public static void Main()
         {
+            var animalTypes = new string[] { "Cat", "Kitten", "Tomcat", "Dog", "Frog" };
+
             Animal[] animals =
             {
                 new Kitten("Kittie", 1),
@@ -34,22 +36,20 @@
             Console.WriteLine(new string('-', 30));
 
             Console.WriteLine("\nAnimals' average age:\n");
-            AverageAgeByTypes(animals);
+            AverageAgeByTypes(animals, animalTypes);
             Console.WriteLine();
         }
 
-        private static void AverageAgeByTypes(Animal[] animals)
+        private static void AverageAgeByTypes(Animal[] animals, string[] animalTypes)
         {
-            var types = new string[] { "Cat", "Dog", "Frog" };
-
-            for (int i = 0; i < types.Length; i++)
+            for (int i = 0; i < animalTypes.Length; i++)
 			{
                 double averageAge = (from animal in animals
-                                    where animal.GetType().Name == types[i]
+                                     where animal.GetType().Name == animalTypes[i]
                                     select (double)animal.Age)
                                    .Average();
 
-                Console.WriteLine("{0}: {1:F2} years", types[i], averageAge);
+                Console.WriteLine("{0}: {1:F2} years", animalTypes[i], averageAge);
             }
         }
     }
