@@ -13,12 +13,12 @@
                 new Kitten("Kitt", 1),
                 new Tomcat("Tommie", 2),
                 new Tomcat("Tom", 3),
-                new Cat("Kate", 4, Gender.female),
-                new Cat("Cathy", 3, Gender.female),
-                new Dog("Doggy", 5, Gender.male),
-                new Dog("Doggo", 7, Gender.male),
-                new Frog("Froggie", 1, Gender.male),
-                new Frog("Froggia", 2, Gender.female)
+                new Cat("Kate", 4, Gender.Female),
+                new Cat("Cathy", 3, Gender.Female),
+                new Dog("Doggy", 5, Gender.Male),
+                new Dog("Doggo", 7, Gender.Male),
+                new Frog("Froggie", 1, Gender.Male),
+                new Frog("Froggia", 2, Gender.Female)
             };
 
             Console.WriteLine("Animals:\n");

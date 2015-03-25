@@ -3,7 +3,7 @@
     public class Kitten : Cat
     {
         public Kitten(string name, byte age)
-            : base(name, age, Gender.female)
+            : base(name, age, Gender.Female)
         {
         }
 

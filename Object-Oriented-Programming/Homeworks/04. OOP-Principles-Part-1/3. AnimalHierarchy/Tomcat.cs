@@ -3,7 +3,7 @@
     public class Tomcat : Cat
     {
         public Tomcat(string name, byte age)
-            : base(name, age, Gender.male)
+            : base(name, age, Gender.Male)
         {
         }
 
