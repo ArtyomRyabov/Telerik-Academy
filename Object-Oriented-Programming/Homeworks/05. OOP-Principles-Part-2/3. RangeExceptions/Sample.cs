@@ -26,7 +26,7 @@
                 Console.WriteLine(ire.Message);
             }
 
-            Console.WriteLine("Enter a date in range [1.1.1980 - 31.12.2013]");
+            Console.WriteLine("\nEnter a date in range [1.1.1980 - 31.12.2013]");
             DateTime date = DateTime.ParseExact(Console.ReadLine(), "d/M/yyyy", CultureInfo.InvariantCulture);
             DateTime start = new DateTime(1980, 1, 1);
             DateTime end = new DateTime(2013, 12, 31);
@@ -45,10 +45,6 @@
             catch (InvalidRangeException<DateTime> ire)
             {
                 Console.WriteLine(ire.Message);
-            }
-            catch (FormatException fe)
-            {
-                Console.WriteLine(fe.Message);
             }
         }
     }
