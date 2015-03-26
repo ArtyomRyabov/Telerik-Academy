@@ -4,14 +4,34 @@
 
     public class Square : Shape
     {
+        private double width;
+
         public Square(double width)
             : base(width, width)
         {
+            this.Width = width;
         }
 
         public override double CalculateSurface()
         {
             return this.Width * this.Width;
+        }
+
+        public override double Width
+        {
+            get
+            {
+                return this.width;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Side must be bigger than 0");
+                }
+
+                this.width = value;
+            }
         }
 
         public override string ToString()

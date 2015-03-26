@@ -9,9 +9,9 @@
                     new Square(2.5),
                     new Triangle(5, 3.53),
                     new Rectangle(4, 5),
-                 // new Square(0),          "ArgumentOutOfRangeException"
-                    new Rectangle(111.1, 1),
-                    new Triangle(0.1, 100)
+                 // new Square(0),            "ArgumentOutOfRangeException"
+                 // new Rectangle(111.1, 0),  "ArgumentOutOfRangeException"
+                 // new Triangle(0, 100)      "ArgumentOutOfRangeException"
                 };
 
             foreach (Shape shape in shapes)

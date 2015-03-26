@@ -13,13 +13,13 @@
             this.Height = height;
         }
         
-        public double Width
+        public virtual double Width
         {
             get 
             { 
                 return this.width;
             }
-            private set
+            set
             {
                 if (value <= 0)
                 {
