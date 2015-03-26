@@ -1,7 +1,6 @@
 ﻿namespace BankAccounts.Accounts
 {
     using System;
-    using BankAccounts;
     using BankAccounts.Interfaces;
 
     public class DepositAccount : Account, IWithdrawable
