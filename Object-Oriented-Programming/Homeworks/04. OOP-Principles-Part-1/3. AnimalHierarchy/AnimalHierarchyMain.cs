@@ -35,7 +35,6 @@
             }
 
             Console.WriteLine(new string('-', 30));
-
             Console.WriteLine("\nAnimals' average age:\n");
             AverageAgeByTypes(animals, animalTypes);
             Console.WriteLine();
