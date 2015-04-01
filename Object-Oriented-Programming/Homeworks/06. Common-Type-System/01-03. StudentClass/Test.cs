@@ -30,7 +30,7 @@
 
             Console.WriteLine("firstStudent != secondStudent : {0}", firstStudent != secondStudent);
             Console.WriteLine("firstStudent.Equals(secondStudent)) : {0}", firstStudent.Equals(secondStudent));
-            Console.WriteLine("firstStudent.CompareTo(secondStudent) : {0}", firstStudent.CompareTo(secondStudent));
+            Console.WriteLine("firstStudent.CompareTo(secondStudent) : {0}\n", firstStudent.CompareTo(secondStudent));
         }
     }
 }
