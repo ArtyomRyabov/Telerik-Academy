@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. EnigmaCat", "1. EnigmaCat\1. EnigmaCat.csproj", "{EEB5BD84-F057-404E-A97D-FB78A2323823}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. DecreasingAbsoluteDifferences", "2. DecreasingAbsoluteDifferences\2. DecreasingAbsoluteDifferences.csproj", "{EAA4E7B6-17A5-46B3-B752-778B181E4381}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EEB5BD84-F057-404E-A97D-FB78A2323823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEB5BD84-F057-404E-A97D-FB78A2323823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEB5BD84-F057-404E-A97D-FB78A2323823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA4E7B6-17A5-46B3-B752-778B181E4381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA4E7B6-17A5-46B3-B752-778B181E4381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA4E7B6-17A5-46B3-B752-778B181E4381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA4E7B6-17A5-46B3-B752-778B181E4381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
