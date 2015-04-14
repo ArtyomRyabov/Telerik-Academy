@@ -1,4 +1,0 @@
-The word 'text' appears 6 times in the text.
-The word 'file' appears 6 times in the text.
-The word 'program' appears 3 times in the text.
-The word 'words' appears 3 times in the text.
