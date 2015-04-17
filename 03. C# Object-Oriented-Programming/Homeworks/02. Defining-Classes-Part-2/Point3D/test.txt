@@ -1,0 +1,4 @@
+1 coordinates: (0, 0, 0)
+2 coordinates: (50.05, 50, 5.555)
+3 coordinates: (-2, 22, 0.22)
+
