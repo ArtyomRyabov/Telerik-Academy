@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Form</title>
+    <style type="text/css">
+        .submit {
+            width: 50px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Using table is not mandatory. It is just an option (Current lecture name: "HTML Tables"). -->
+    <form name="registrationForm" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Member name : </label>
+                    <input type="text" id="name" placeholder=" Enter your name..." required="required" autofocus="autofocus" />
+                    <strong>*req</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" placeholder=" sample@email.com" required="required"
+                           pattern="[a-zA-Z0-9_.]{3,20}@[a-zA-Z0-9_.]{3,10}.[a-z]{2,4}" />
+                    <strong>*req</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="school">School : </label>
+                    <input type="text" id="school" placeholder=" Enter your school..." required="required" />
+                    <strong>*req</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="submit" type="image" src="submit_button.jpg" name="submitBtn" alt="Submit button" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
