@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <title>LinkedIn</title>
     <style>
-        #ulDisc {
+        .ulDisc {
             list-style-type: disc;
         }
 
-        #ulCircle {
+        .ulCircle {
             list-style-type: circle;
+        }
+
+        #firstSectonHeader {
+            font-size: xx-large;
         }
     </style>
 </head>
@@ -19,7 +23,7 @@
             <a href="https://www.linkedin.com/">LinkedIn</a>
         </h1>
         <nav>
-            <ul id="ulDisc">
+            <ul class="ulDisc">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -30,17 +34,17 @@
                     <a href="#">Join Today</a>
                 </li>
                 <li>
-                    <form name="sign-in-form" method="post" action="">
+                    <form name="sign-in-form" method="post" action="#" autocomplete="off">
                         <fieldset>
                             <legend>Sign In</legend>
-                            <ul id="ulCircle">
+                            <ul class="ulCircle">
                                 <li>
                                     <label for="sign-in-email">Email:</label>
                                     <input type="email" id="sign-in-email" name="Email" pattern="[a-zA-Z0-9_.]{3,20}@[a-zA-Z0-9_.]{3,10}.[a-z]{2,4}" required="required" />
                                 </li>
                                 <li>
                                     <label for="sign-in-password">Password</label>
-                                    <input type="password" id="sign-in-password" name="SignInPassword" minlength="6" required="required" />
+                                    <input type="password" id="sign-in-password" name="Password" required="required" />
                                 </li>
                                 <li>
                                     <input type="submit" value="Sign In" />
@@ -51,17 +55,72 @@
                 </li>
             </ul>
         </nav>
+        <hr />
     </header>
-    <hr />
-    <section>
-        <h2>
-            Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities
-        </h2>
-        <ul id="ulDisc">
-            <li>Stay informed about your contacts and industry</li>
-            <li>Find the people &amp; knowledge you need to achieve your goals</li>
-            <li>Control your professional identity online</li>
-        </ul>
-    </section>
+    <main>
+        <section>
+            <header>
+                <h2 id="firstSectonHeader">
+                    Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities
+                </h2>
+            </header>
+            <ul class="ulDisc">
+                <li>Stay informed about your contacts and industry</li>
+                <li>Find the people &amp; knowledge you need to achieve your goals</li>
+                <li>Control your professional identity online</li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Join LinkedIn Today
+            </h2>
+            <form name="sign-up-form" method="post" action="#" autocomplete="off">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <ul class="ulDisc">
+                        <li>
+                            <label for="first-name">First Name:</label><br />
+                            <input type="text" id="first-name" name="FirstName" required="required" />
+                        </li>
+                        <li>
+                            <label for="last-name">Last Name:</label><br />
+                            <input type="text" id="last-name" name="LastName" required="required" />
+                        </li>
+                        <li>
+                            <label for="sign-up-email">Email:</label><br />
+                            <input type="email" id="sign-up-email" name="Email" pattern="[a-zA-Z0-9_.]{3,20}@[a-zA-Z0-9_.]{3,10}.[a-z]{2,4}" required="required" />
+                        </li>
+                        <li>
+                            <label for="sign-up-password">Password:</label><br />
+                            <input type="password" id="sign-up-password" name="Password" required="required" />
+                            <p>6 or more characters</p>
+                        </li>
+                    </ul>
+                    <input type="submit" value="Join Now" /><a href="#">*</a>
+                    <p>
+                        Already on LinkedIn? <a href="#">Sign In.</a>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>
+            Search for someone by name:
+        </h3>
+        <form name="search-form" method="post" action="#" autocomplete="off">
+            <ul class="ulDisc">
+                <li>
+                    <label for="search-first-name">First Name</label>
+                    <input type="text" id="search-first-name" name="FirstName" placeholder="First Name" />
+                </li>
+                <li>
+                    <label for="search-last-name">Last Name</label>
+                    <input type="text" id="search-last-name" name="LastName" placeholder="Last Name" />
+                </li>
+            </ul>
+            <input type="submit" value="Go" />
+        </form>
+    </footer>
 </body>
 </html>
