@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LinkedIn</title>
+    <style>
+        #ulDisc {
+            list-style-type: disc;
+        }
+
+        #ulCircle {
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </h1>
+        <nav>
+            <ul id="ulDisc">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">What is LinkedIn?</a>
+                </li>
+                <li>
+                    <a href="#">Join Today</a>
+                </li>
+                <li>
+                    <form name="sign-in-form" method="post" action="">
+                        <fieldset>
+                            <legend>Sign In</legend>
+                            <ul id="ulCircle">
+                                <li>
+                                    <label for="sign-in-email">Email:</label>
+                                    <input type="email" id="sign-in-email" name="Email" pattern="[a-zA-Z0-9_.]{3,20}@[a-zA-Z0-9_.]{3,10}.[a-z]{2,4}" required="required" />
+                                </li>
+                                <li>
+                                    <label for="sign-in-password">Password</label>
+                                    <input type="password" id="sign-in-password" name="SignInPassword" minlength="6" required="required" />
+                                </li>
+                                <li>
+                                    <input type="submit" value="Sign In" />
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <section>
+        <h2>
+            Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities
+        </h2>
+        <ul id="ulDisc">
+            <li>Stay informed about your contacts and industry</li>
+            <li>Find the people &amp; knowledge you need to achieve your goals</li>
+            <li>Control your professional identity online</li>
+        </ul>
+    </section>
+</body>
+</html>
