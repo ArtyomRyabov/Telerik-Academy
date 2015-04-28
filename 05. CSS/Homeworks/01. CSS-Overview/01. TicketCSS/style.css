@@ -4,7 +4,7 @@
 
 table {
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
     font-family: Arial;
     color: #a7a6a6;
     background-color: #585858;
@@ -17,20 +17,20 @@ tr td:first-child {
 }
 
 th {
-    text-align: left; /* Doubling this code from 'table' because of IE */
-    font-size: 21px;
+    text-align: left; /* Doubling this line from 'table' because of IE */
+    font-size: 20px;
     font-weight: lighter;
-    padding: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
 }
 
 td {
-    font-weight: lighter;
-    padding: 10px 10px 10px 10px;
+    font-weight: normal;
+    padding:8px 10px 7px 7px;
 }
 
 #name::before {
     content: "\2022";
-    font-size: 52px;
+    font-size: 45px;
     vertical-align: top;
     line-height: 15px;
     color: #74ba7e;

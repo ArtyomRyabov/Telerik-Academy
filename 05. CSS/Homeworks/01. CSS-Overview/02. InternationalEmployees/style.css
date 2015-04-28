@@ -1,0 +1,58 @@
+﻿table {
+    border: 1px inset;
+    border-collapse: collapse;
+    border-color: rgb(154, 154, 154);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+th {
+    height: 16px;
+    font-weight: normal;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background: rgb(36, 192, 57);
+    border: 1px inset;
+    border-color: rgb(154, 154, 154);
+    padding: 5px 5px 5px 8px;
+}
+
+td {
+    height: 23px;
+    border-left: 1px inset;
+    border-right: 1px inset;
+    border-color: rgb(154, 154, 154);
+    padding: 5px 5px 5px 8px;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(235, 235, 214);
+} 
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+}
+
+img {
+    width: 26px;
+    height: 18px;
+    vertical-align: bottom;
+}
+
+.first-col {
+    width: 170px;
+}
+
+.second-col {
+    width: 138px;
+}
+
+.third-col {
+    width: 157px;
+}
+
+.fourth-col {
+    width: 104px;
+}
