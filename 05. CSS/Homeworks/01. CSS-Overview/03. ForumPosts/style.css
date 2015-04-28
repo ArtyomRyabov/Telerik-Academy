@@ -1,0 +1,49 @@
+﻿body {
+    background-color: darkgray;
+}
+
+h1 {
+    color: lightgoldenrodyellow;
+}
+
+body > header, body > footer {
+    text-align: center;
+}
+
+    body > header > h1 {
+        font-size: 40px;
+    }
+
+nav ul li {
+    list-style-type: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li:last-child {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.current {
+    background-color: lightgray;
+}
+
+section h1 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+article footer p {
+    font-size: 13px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #000;
+}
