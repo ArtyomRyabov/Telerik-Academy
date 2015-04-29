@@ -5,7 +5,7 @@
 table {
     text-align: left;
     font-size: 14px;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     color: #a7a6a6;
     background-color: #585858;
 }
@@ -19,7 +19,7 @@ tr td:first-child {
 th {
     text-align: left; /* Doubling this line from 'table' because of IE */
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: normal;
     padding: 7px 7px 7px 7px;
 }
 

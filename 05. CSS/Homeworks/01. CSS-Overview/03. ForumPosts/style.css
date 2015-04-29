@@ -30,7 +30,7 @@ ul li:last-child {
     color: #fff;
 }
 
-.current {
+a.current {
     background-color: lightgray;
 }
 

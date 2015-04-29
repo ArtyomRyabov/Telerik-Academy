@@ -26,9 +26,9 @@ td {
     padding: 5px 5px 5px 8px;
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: rgb(235, 235, 214);
-} 
+}
 
 input[type=checkbox] {
     width: 15px;
@@ -41,18 +41,18 @@ img {
     vertical-align: bottom;
 }
 
-.first-col {
+col.first-col {
     width: 170px;
 }
 
-.second-col {
+col.second-col {
     width: 138px;
 }
 
-.third-col {
+col.third-col {
     width: 157px;
 }
 
-.fourth-col {
+col.fourth-col {
     width: 104px;
 }
