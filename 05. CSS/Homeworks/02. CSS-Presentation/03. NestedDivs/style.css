@@ -1,0 +1,10 @@
+﻿section {
+    width: 90%;
+}
+
+div.chosen {
+    border: 1px solid #f00;
+    border-radius: 60px;
+    background-color: #000;
+    padding-right: 9%;
+}
