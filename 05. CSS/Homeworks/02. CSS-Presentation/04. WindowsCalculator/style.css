@@ -25,21 +25,21 @@ section {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4fa', endColorstr='#aacaea',GradientType=0 ); /* IE6-9 */
 }
 
-#calculator-pic {
+.calculator-pic {
     margin-top: 7px;
     margin-left: 10px;
     display: inline-flex;
     vertical-align: sub;
 }
 
-#title {
+.title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     text-shadow: 0 0 12px #fff;
     margin-left: 3px;
 }
 
-#upper-buttons {
+.upper-buttons {
     margin-left: 237px;
 }
 
@@ -83,11 +83,10 @@ li {
         text-decoration: underline;
     }
 
-#display {
+.display {
     margin: 9px 12px 2px;
     border: 1px solid #8e9cad;
     border-radius: 2px;
-    box-shadow: #fff 0 0 0 1px inset;
     font-family: Consolas;
     font-size: 25px;
     text-align: right;
@@ -99,13 +98,14 @@ li {
     background: -ms-linear-gradient(top, #f4f5f6 0,#edf4fe 2%,#e5eefb 4%,#fbfcfe 75%,#ffffff 100%); /* IE10+ */
     background: linear-gradient(to bottom, #f4f5f6 0,#edf4fe 2%,#e5eefb 4%,#fbfcfe 75%,#ffffff 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    box-shadow: #fff 0 0 0 1px inset;
 }
 
-#digits {
+.digits {
     margin: 16px 4px 8px;
 }
 
-#binary-frame {
+.binary-frame {
     height: 68px;
     margin: 5px 12px;
     border: 1px solid #8696aa;
@@ -192,7 +192,6 @@ label {
 .buttons-table td.digit-button {
     font-size: 17px;
     background: #f7fbff; /* Old browsers */
-    box-shadow: #fff 0 0 0 1px inset;
     background: -moz-linear-gradient(top, #f7fbff 4%, #f1f5f9 38%, #edf3f8 46%, #e8eef5 50%, #eff7fc 96%, #f8ffff 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(4%,#f7fbff), color-stop(38%,#f1f5f9), color-stop(46%,#edf3f8), color-stop(50%,#e8eef5), color-stop(96%,#eff7fc), color-stop(100%,#f8ffff)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, #f7fbff 4%,#f1f5f9 38%,#edf3f8 46%,#e8eef5 50%,#eff7fc 96%,#f8ffff 100%); /* Chrome10+,Safari5.1+ */
@@ -200,6 +199,7 @@ label {
     background: -ms-linear-gradient(top, #f7fbff 4%,#f1f5f9 38%,#edf3f8 46%,#e8eef5 50%,#eff7fc 96%,#f8ffff 100%); /* IE10+ */
     background: linear-gradient(to bottom, #f7fbff 4%,#f1f5f9 38%,#edf3f8 46%,#e8eef5 50%,#eff7fc 96%,#f8ffff 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbff', endColorstr='#f8ffff',GradientType=0 ); /* IE6-9 */
+    box-shadow: #fff 0 0 0 1px inset;
 }
 
 .buttons-table td.disabled-button {
