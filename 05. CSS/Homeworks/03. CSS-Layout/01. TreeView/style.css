@@ -1,0 +1,39 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+.main-list {
+    width: 58px;
+}
+
+    .main-list a {
+        color: #000;
+    }
+
+.sub-list {
+    width: 100px;
+    display: none;
+}
+
+    .sub-list li a {
+        color: #777;
+    }
+
+ul {
+    list-style-type: none;
+    display: block;
+}
+
+    ul li:hover > ul {
+        display: block;
+        padding-left: 10px;
+    }
