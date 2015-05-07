@@ -1,0 +1,108 @@
+﻿body {
+    margin: 10px;
+    padding: 0;
+    width: 660px;
+    border: 1px solid #806850;
+    border-radius: 8px;
+    background-color: #959494;
+}
+
+header {
+    font-family: 'Bodoni MT';
+    font-size: 26px;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    background: #3b3b3b; /* Old browsers */
+    background: -moz-linear-gradient(top, #3b3b3b 0, #3b3b3b 44%, #262626 95%, #262626 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,#3b3b3b), color-stop(44%,#3b3b3b), color-stop(95%,#262626), color-stop(100%,#262626)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3b3b3b 0,#3b3b3b 44%,#262626 95%,#262626 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3b3b3b 0,#3b3b3b 44%,#262626 95%,#262626 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3b3b3b 0,#3b3b3b 44%,#262626 95%,#262626 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #3b3b3b 0,#3b3b3b 44%,#262626 95%,#262626 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
+}
+
+img {
+    vertical-align: middle;
+    margin: 7px 11px 16px;
+}
+
+form {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 1px;
+}
+
+input[type=text], input[type=email] {
+    width: 137px;
+    height: 19px;
+    margin: 9px;
+    padding-left: 10px;
+    border: 1px solid #819db3;
+    position: relative;
+    top: -3px;
+    font-family: Gulim, Calibri, Arial;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #000;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #000;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #000;
+}
+
+input[type=submit] {
+    background-image: url("images/go-button.png");
+    width: 56px;
+    height: 28px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 3px;
+    right: -70px;
+}
+
+article {
+    padding: 9px 11px 8px;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    background-color: #3b3b3b;
+}
+
+h1 {
+    margin: 8px 0 19px;
+    font-family: Georgia;
+    font-size: 28px;
+    font-weight: lighter;
+    color: #fad52c;
+}
+
+p {
+    width: 525px;
+    margin: 0;
+    padding: 0;
+    line-height: 17px;
+    font-family: Gulim, Calibri, Arial;
+    font-size: 13px;
+    color: #a5a5a5;
+}
+
+    p.second-paragraph {
+        width: 552px;
+    }
+
+span {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #a5a5a5;
+}
