@@ -43,7 +43,7 @@ nav {
                 text-decoration: none;
             }
 
-a:hover {
+li:hover, h2:hover {
     text-decoration: underline;
 }
 
