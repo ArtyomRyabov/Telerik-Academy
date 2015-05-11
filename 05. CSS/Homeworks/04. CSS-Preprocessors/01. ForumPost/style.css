@@ -44,7 +44,7 @@ body {
   height: 1000px;
   font: 14px normal Arial;
   color: #ffffff;
-  background: #c3a0ec;
+  background: #9215f2;
   /* Old browsers */
   background: -moz-linear-gradient(top, #c3a0ec 0, #c58af2 5%, #a439f4 15%, #9215f2 25%);
   /* FF3.6+ */
@@ -58,7 +58,7 @@ body {
   /* IE10+ */
   background: linear-gradient(to bottom, #c3a0ec 0, #c58af2 5%, #a439f4 15%, #9215f2 25%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@grColor1', endColorstr='@grColor4', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@grColor1', endColorstr='@defBgColor', GradientType=0);
   /* IE6-9 */
 }
 body header {
