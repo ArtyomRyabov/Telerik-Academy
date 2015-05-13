@@ -30,10 +30,6 @@ input[type="radio"] {
     visibility: hidden;
 }
 
-input[type="radio"]:checked + div.preview {
-    display: block;
-}
-
 label {
     font-size: 20px;
     color: #E4EFF9;
