@@ -46,7 +46,7 @@ label:hover + div.preview
     display: block;
 }*/
 
-label:active {
+/*label:active {
     color: #AECFEE;
     font-weight: bold;
     font-size: 23px;
@@ -56,7 +56,18 @@ label:active + div.preview
 {
     display: block;
     margin-bottom: 0;
+}*/
+
+.avengers input[type="radio"]:checked + label {
+    color: #aecfee;
+    font-weight: bold;
+    font-size: 24px;
 }
+
+    .avengers input[type="radio"]:checked + label + .preview {
+        display: block;
+        margin-bottom: 0;
+    }
 
 img {
     width: 200px;
