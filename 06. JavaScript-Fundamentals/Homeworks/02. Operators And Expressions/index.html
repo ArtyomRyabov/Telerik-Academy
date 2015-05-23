@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Operators And Expressions</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Operators And Expressions - Homework</h1>
+        </header>
+        <section>
+            <article>
+                <h2>Problem 1. Odd or Even</h2>
+                <ul>
+                    <li>Write an expression that checks if given integer is odd or even</li>
+                </ul>
+                <div class="solution">
+                    <label for="input-p1">Input: </label>
+                    <input type="text" id="input-p1" name="integer-input-p1" placeholder="Enter an integer number" />
+                    <button onclick="oddOrEven()">Click to see the result</button>
+                    <label for="output-p1">Output: </label>
+                    <input type="text" id="output-p1" name="integer-result-p1" placeholder="Your number is..." disabled />
+                </div>
+            </article>
+            <article>
+                <h2>Problem 2. Divisible by 7 and 5</h2>
+                <ul>
+                    <li>Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time</li>
+                </ul>
+                <div class="solution">
+                    <label for="input-p2">Input: </label>
+                    <input type="text" id="input-p2" name="integer-input-p2" placeholder="Enter an integer number" />
+                    <button onclick="divisibleBy7And5()">Click to see the result</button>
+                    <label for="output-p2">Output: </label>
+                    <input type="text" id="output-p2" name="integer-result-p2" placeholder="Result is..." disabled />
+                </div>
+            </article>
+            <article>
+                <h2>Problem 3. Rectangle area</h2>
+                <ul>
+                    <li>Write an expression that calculates rectangle’s area by given width and height</li>
+                </ul>
+                <div class="solution">
+                    <label for="rectangle-width">Width: </label>
+                    <input type="number" id="rectangle-width" min="0.000000000000001" max="9007199254740992" placeholder="Enter a possitive number">
+                    <button onclick="rectangleArea()">Click to see the result</button>
+                    <label for="output-p3">Output: </label>
+                    <input type="text" id="output-p3" name="integer-result-p3" placeholder="Result is..." disabled />
+                    <label for="rectangle-height">Height: </label>
+                    <input type="number" id="rectangle-height" min="0.000000000000001" max="9007199254740992" placeholder="Enter a possitive number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 4. Third digit</h2>
+                <ul>
+                    <li>Write an expression that checks for given integer if its third digit (right-to-left) is 7</li>
+                </ul>
+                <div class="solution">
+                    <label for="input-p4">Input: </label>
+                    <input type="text" id="input-p4" name="integer-input-p4" placeholder="Enter an integer number" />
+                    <button onclick="isThirdDigit7()">Click to see the result</button>
+                    <label for="output-p4">Output: </label>
+                    <input type="text" id="output-p4" name="integer-result-p4" placeholder="Result is..." disabled />
+                </div>
+            </article>
+            <article>
+                <h2>Problem 5. Third bit</h2>
+                <ul>
+                    <li>Write a boolean expression for finding the bit #3 (counting from 0) of a given integer</li>
+                    <li>The bits are counted from right to left, starting from bit #0</li>
+                    <li>The result of the expression should be either 1 or 0</li>
+                </ul>
+                <div class="solution">
+                    <label for="input-p5">Input: </label>
+                    <input type="text" id="input-p5" name="integer-input-p5" placeholder="Enter an integer number" />
+                    <button id="button-p5" onclick="findThirdBit()">Click to see the result</button>
+                    <label for="output-p5">Bit #3: </label>
+                    <input type="text" id="output-p5" name="integer-result-p5" placeholder="The third bit is..."  disabled />
+                </div>
+            </article>
+            <article>
+                <h2>Problem 6. Point in Circle</h2>
+                <ul>
+                    <li>Write an expression that checks if given point P(x, y) is within a circle K({0,0}, 5)</li>
+                    <li>{0,0} is the centre and 5 is the radius</li>
+                </ul>
+                <div class="solution">
+                    <label for="x-p6">Width: </label>
+                    <input type="number" id="x-p6" min="-9007199254740992" max="9007199254740992" placeholder="Enter number for 'X'">
+                    <button onclick="pointInsideCircle()">Click to see the result</button>
+                    <label for="output-p6">Output: </label>
+                    <input type="text" id="output-p6" name="result-p6" placeholder="Result is..." disabled />
+                    <label for="y-p6">Height: </label>
+                    <input type="number" id="y-p6" min="-9007199254740992" max="9007199254740992" placeholder="Enter number for 'Y'">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 7. Is prime</h2>
+                <ul>
+                    <li>Write an expression that checks if given positive integer number n (n ≤ 100) is prime</li>
+                </ul>
+                <div class="solution">
+                    <label for="input-p7">Input: </label>
+                    <input type="text" id="input-p7" name="integer-input-p7" placeholder="Enter an integer number" />
+                    <button onclick="isPrimeInteger()">Click to see the result</button>
+                    <label for="output-p7">Output: </label>
+                    <input type="text" id="output-p7" name="result-p7" placeholder="Your number is..." disabled />
+                </div>
+            </article>
+            <article>
+                <h2>Problem 8. Trapezoid area</h2>
+                <ul>
+                    <li>Write an expression that calculates trapezoid's area by given sides a and b and height h</li>
+                </ul>
+                <div class="solution">
+                    <label for="trapezoid-sideA">Side A: </label>
+                    <input type="number" id="trapezoid-sideA" min="0.000000000000001" max="9007199254740992" placeholder="Enter a possitive number">
+                    <button onclick="trapezoidArea()">Click to see the result</button>
+                    <label for="output-p8">Output: </label>
+                    <input type="text" id="output-p8" name="result-p8" placeholder="Result is..." disabled />
+                    <label for="trapezoid-sideB">Side B: </label>
+                    <input type="number" id="trapezoid-sideB" min="0.000000000000001" max="9007199254740992" placeholder="Enter a possitive number"><br />
+                    <label for="trapezoid-height">Height: </label>
+                    <input type="number" id="trapezoid-height" min="0.000000000000001" max="9007199254740992" placeholder="Enter a possitive number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 9. Point in Circle and outside Rectangle</h2>
+                <ul>
+                    <li>Write an expression that checks for given point P(x, y) if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).</li>
+                </ul>
+                <div class="solution">
+                    <label for="x-p9">Width: </label>
+                    <input type="number" id="x-p9" min="-9007199254740992" max="9007199254740992" placeholder="Enter number for 'X'">
+                    <button onclick="pointInCircleOutRectangle()">Click to see the result</button>
+                    <label for="output-p9">Output: </label>
+                    <input type="text" id="output-p9" name="result-p9" placeholder="Result is..." disabled />
+                    <label for="y-p6">Height: </label>
+                    <input type="number" id="y-p9" min="-9007199254740992" max="9007199254740992" placeholder="Enter number for 'Y'">
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
