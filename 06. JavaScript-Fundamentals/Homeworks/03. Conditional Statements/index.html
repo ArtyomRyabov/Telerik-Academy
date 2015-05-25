@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Conditional Statements - Homework</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Conditional Statements - Homework</h1>
+        </header>
+        <section>
+            <article>
+                <h2>Problem 1. Exchange if greater</h2>
+                <ul>
+                    <li>Write an if statement that takes two double variables a and b and exchanges their values if the first one is greater than the second</li>
+                    <li>As a result print the values a and b, separated by a space</li>
+                </ul>
+                <div class="solution">
+                    <label for="doubleA">A is: </label>
+                    <input type="number" id="doubleA" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                    <button onclick="exchangeIfGreater()">Click to see the result</button>
+                    <label for="output-p1">Result: </label>
+                    <input type="text" id="output-p1" placeholder="Result is..." disabled /><br />
+                    <label for="doubleB">B is: </label>
+                    <input type="number" id="doubleB" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 2. Multiplication Sign</h2>
+                <ul>
+                    <li>Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating it</li>
+                    <li>Use a sequence of if operators</li>
+                </ul>
+                <div class="solution">
+                    <label for="a-p2">A is: </label>
+                    <input type="number" id="a-p2" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                    <button onclick="plusMinusOrZero()">Click to see the result</button>
+                    <label for="output-p2">Result: </label>
+                    <input type="text" id="output-p2" placeholder="Result is..." disabled /><br />
+                    <label for="b-p2">B is: </label>
+                    <input type="number" id="b-p2" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number"><br />
+                    <label for="c-p2">C is: </label>
+                    <input type="number" id="c-p2" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 3. The biggest of Three</h2>
+                <ul>
+                    <li>Write a script that finds the biggest of three numbers</li>
+                    <li>Use nested if statements</li>
+                </ul>
+                <div class="solution">
+                    <label for="a-p3">A is: </label>
+                    <input type="number" id="a-p3" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                    <button class="smaller-margin-button" onclick="theBiggestOfThree()">Click to see the result</button>
+                    <label for="output-p3">The biggest: </label>
+                    <input type="text" id="output-p3" placeholder="Result is..." disabled /><br />
+                    <label for="b-p3">B is: </label>
+                    <input type="number" id="b-p3" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number"><br />
+                    <label for="c-p3">C is: </label>
+                    <input type="number" id="c-p3" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 4. Sort 3 numbers</h2>
+                <ul>
+                    <li>Sort 3 real values in descending order</li>
+                    <li>Use nested if statements</li>
+                    <li>Don’t use arrays and the built-in sorting functionality</li>
+                </ul>
+                <div class="solution">
+                    <label for="a-p4">A is: </label>
+                    <input type="number" id="a-p4" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                    <button class="smaller-margin-button" onclick="sortDescendingOrder()">Click to see the result</button>
+                    <label for="output-p4">Result: </label>
+                    <input type="text" id="output-p4" placeholder="Result is..." disabled /><br />
+                    <label for="b-p4">B is: </label>
+                    <input type="number" id="b-p4" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number"><br />
+                    <label for="c-p4">C is: </label>
+                    <input type="number" id="c-p4" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 5. Digit as word</h2>
+                <ul>
+                    <li>Write a script that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English)</li>
+                    <li>Print “not a digit” in case of invalid input</li> 
+                    <li>Use a switch statement</li>
+                </ul>
+                <div class="solution">
+                    <label for="input-p5">Digit: </label>
+                    <input type="number" id="input-p5" min="0" max="9" placeholder="Enter a digit">
+                    <button onclick="digitAsWord()">Click to see the result</button>
+                    <label for="output-p5">Result: </label>
+                    <input type="text" id="output-p5" placeholder="Result is..." disabled />
+                </div>
+            </article>
+            <article>
+                <h2>Problem 6. Quadratic equation</h2>
+                <ul>
+                    <li>Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots)</li>
+                    <li>Calculates and prints its real roots</li>
+                    <li>Quadratic equations may have 0, 1 or 2 real roots</li>
+                </ul>
+                <div class="solution">
+                    <label for="a-p6">A is: </label>
+                    <input type="number" id="a-p6" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                    <button onclick="quadraticEquationRealRoots()">Click to see the result</button>
+                    <label for="output-p6">Roots: </label>
+                    <input type="text" id="output-p6" placeholder="Result is..." disabled /><br />
+                    <label for="b-p6">B is: </label>
+                    <input type="number" id="b-p6" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number"><br />
+                    <label for="c-p6">C is: </label>
+                    <input type="number" id="c-p6" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 7. The biggest of five numbers</h2>
+                <ul>
+                    <li>Write a script that finds the greatest of given 5 variables</li>
+                    <li>Use nested if statements</li>
+                </ul>
+                <div class="solution">
+                    <label for="a-p7">A is: </label>
+                    <input type="number" id="a-p7" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                    <button class="smaller-margin-button" onclick="theBiggestOfFive()">Click to see the result</button>
+                    <label for="output-p7">The biggest: </label>
+                    <input type="text" id="output-p7" placeholder="Result is..." disabled /><br />
+                    <label for="b-p7">B is: </label>
+                    <input type="number" id="b-p7" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number"><br />
+                    <label for="c-p7">C is: </label>
+                    <input type="number" id="c-p7" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number"><br />
+                    <label for="d-p7">D is: </label>
+                    <input type="number" id="d-p7" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number"><br />
+                    <label for="e-p7">E is: </label>
+                    <input type="number" id="e-p7" min="-9007199254740992" max="9007199254740992" placeholder="Enter a number">
+                </div>
+            </article>
+            <article>
+                <h2>Problem 8. Number as words</h2>
+                <ul>
+                    <li>Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation</li>
+                </ul>
+                <div class="solution">
+                    <label for="input-p8">Input: </label>
+                    <input type="number" id="input-p8" min="0" max="999" placeholder="Enter a number">
+                    <button onclick="numbersAsWords()">Click to see the result</button>
+                    <label for="output-p8">Output: </label>
+                    <input type="text" id="output-p8" placeholder="Result is..." disabled />
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
