@@ -5,11 +5,9 @@ function oddOrEven() {
 
     if (isNaN(number) || number === '') {
         output = 'Your input is not a number';
-    }
-    else if (number % 1 !== 0) {
+    } else if (number % 1 !== 0) {
         output = 'Your number is not an integer';
-    }
-    else {
+    } else {
         output = number % 2 === 0 ? 'Even' : 'Odd';
     }
 
@@ -23,11 +21,9 @@ function divisibleBy7And5() {
 
     if (isNaN(number) || number === '') {
         output = 'Your input is not a number';
-    }
-    else if (number % 1 !== 0) {
+    } else if (number % 1 !== 0) {
         output = 'Your number is not an integer';
-    }
-    else {
+    } else {
         output = (number % 5 === 0) && (number % 7 === 0) ? 'True' : 'False';
     }
 
@@ -42,12 +38,10 @@ function rectangleArea() {
 
     if (isNaN(width) || isNaN(height) || width === '' || height === '') {
         document.getElementById('output-p3').value = 'Invalid input';
-    }
-    else if (width > 0 && height > 0) {
+    } else if (width > 0 && height > 0) {
         output = width * height;
         document.getElementById('output-p3').value = Math.round(output * 100) / 100;
-    }
-    else {
+    } else {
         document.getElementById('output-p3').value = 'Negative number is not allowed';
     }
 }
@@ -59,14 +53,11 @@ function isThirdDigit7() {
 
     if (isNaN(number) || number === '') {
         output = 'Your input is not a number';
-    }
-    else if (number % 1 !== 0) {
+    } else if (number % 1 !== 0) {
         output = 'Your number is not an integer';
-    }
-    else if (number.length < 3) {
+    } else if (number.length < 3) {
         output = 'Less than 3 digits';
-    }
-    else {
+    } else {
         output = Math.floor(Math.abs(number / 100)) % 10 === 7;
     }
 
@@ -80,11 +71,9 @@ function findThirdBit() {
 
     if (isNaN(number) || number === '') {
         output = 'Your input is not a number';
-    }
-    else if (number % 1 !== 0) {
+    } else if (number % 1 !== 0) {
         output = 'Your number is not an integer';
-    }
-    else {
+    } else {
         output = (number >> 3) & 1;
     }
 
@@ -101,8 +90,7 @@ function pointInsideCircle() {
     if (isNaN(x) || isNaN(y) || x === '' || y === '') {
         document.getElementById('output-p6').value = 'Invalid input';
         return;
-    }
-    else {
+    } else {
         output = (x * x) + (y * y) <= radius * radius;
     }
 
@@ -117,8 +105,7 @@ function isPrimeInteger() {
     if ((!isNaN(number)) && (number !== '') && (number % 1 === 0) && (number >= 0) && (number <= 100)) {
         if (number < 2) {
             output = false;
-        }
-        else {
+        } else {
             for (var i = 2; i <= Math.sqrt(number) ; i += 1) {
                 if (number % i === 0 && i !== number) {
                     output = false;
@@ -126,14 +113,11 @@ function isPrimeInteger() {
                 }
             }
         }
-    }
-    else if (isNaN(number) || (number === '')) {
+    } else if (isNaN(number) || (number === '')) {
         output = 'Your input is not a number';
-    }
-    else if (number % 1 !== 0) {
+    } else if (number % 1 !== 0) {
         output = 'Your number is not an integer';
-    }
-    else {
+    } else {
         output = 'Number out of range';
     }
 
@@ -151,11 +135,9 @@ function trapezoidArea() {
         (height !== '') && (sideA > 0) && (sideB > 0) && (height > 0)) {
         output = ((sideA * 1 + sideB * 1) / 2) * height;
         document.getElementById('output-p8').value = Math.round(output * 100) / 100;
-    }
-    else if (isNaN(sideA) || isNaN(sideB) || isNaN(height) || sideA === '' || sideB === '' || height === '') {
+    } else if (isNaN(sideA) || isNaN(sideB) || isNaN(height) || sideA === '' || sideB === '' || height === '') {
         document.getElementById('output-p8').value = 'Invalid input';
-    }
-    else {
+    } else {
         document.getElementById('output-p8').value = 'Negative number is not allowed';
     }
 }
@@ -178,8 +160,7 @@ function pointInCircleOutRectangle() {
     if (isNaN(x) || isNaN(y) || x === '' || y === '') {
         document.getElementById('output-p9').value = 'Invalid input';
         return;
-    }
-    else {
+    } else {
         insideK = ((x - centerX) * (x - centerX)) + ((y - centerY) * (y - centerY)) <= radius * radius;
     }
 
@@ -187,8 +168,7 @@ function pointInCircleOutRectangle() {
 
     if (insideK && outsideR) {
         result = 'yes';
-    }
-    else {
+    } else {
         result = 'no';
     }
 
