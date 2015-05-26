@@ -1,0 +1,86 @@
+body, div, section, article, ul, li, h1, h2, input, label, button, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+#wrapper {
+    width: 850px;
+    margin: 15px auto;
+    padding: 25px 5px 25px 25px;
+    font-family: 'Segoe UI';
+    background-color: #ccc9c9;
+    border: 5px solid #fff;
+    border-radius: 15px;
+}
+
+article {
+    margin-top: 30px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+li {
+    margin-left: 40px;
+    color: #f00;
+}
+
+.solution {
+    display: inline-block;
+    margin: 25px 25px 15px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+button {
+    border-radius: 5px;
+    margin: 0 60px;
+    padding: 5px 10px;
+}
+
+    button#button-p4 {
+        margin-left: 100px;
+    }
+
+input {
+    width: 180px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+    input[type="text"] {
+        width: 165px;
+    }
+
+textarea {
+    float: right;
+    width: 270px;
+    height: 100px;
+    border: 2px inset #e8e8e8;
+    border-radius: 5px;
+    padding: 5px;
+    resize: vertical;
+}
+
+    textarea#output-p3 {
+        height: 30px;
+    }
+
+    textarea#output-p4 {
+        width: 380px;
+    }
