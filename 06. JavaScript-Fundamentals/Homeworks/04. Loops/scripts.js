@@ -55,21 +55,24 @@ function findMaxAndMinNumbers(){
         output;
 
     if (input !== '') {
-        array = input.split(', ');
+        array = input.split(' ');
 
         for (i = 0; i < array.length; i+=1) {
+
             if (isNaN(array[i])) {
                 output = 'Invalid input!';
                 document.getElementById('output-p3').value = output;
                 return;
             }
 
-            if (array[i] <= min) {
-                min = array[i];
-            }
+            if (array[i] !== '') {
+                if (+array[i] <= min) {
+                    min = +array[i];
+                }
 
-            if (array[i] >= max) {
-                max = array[i];
+                if (+array[i] >= max) {
+                    max = +array[i];
+                }
             }
         }
         output = 'Max number: ' + max + '\nMin number: ' + min;
@@ -87,7 +90,7 @@ document.getElementById('button-p4').addEventListener('click', findSmallestAndLa
 function findSmallestAndLargestProperty() {
     var property,
         smallestProp = 'z',
-        largestProp = 'a',
+        largestProp = 'A',
         output;
 
     for (property in document) {
@@ -101,7 +104,7 @@ function findSmallestAndLargestProperty() {
 
     output = 'Document: Largest property -> ' + largestProp + '\nDocument: Smallest property -> ' + smallestProp + '\n';
     smallestProp = 'z';
-    largestProp = 'a';
+    largestProp = 'A';
 
     for (property in window) {
         if (property > largestProp) {
@@ -114,7 +117,7 @@ function findSmallestAndLargestProperty() {
 
     output += 'Window: Largest property -> ' + largestProp + '\nWindow: Smallest property -> ' + smallestProp + '\n';
     smallestProp = 'z';
-    largestProp = 'a';
+    largestProp = 'A';
 
     for (property in navigator) {
         if (property > largestProp) {
