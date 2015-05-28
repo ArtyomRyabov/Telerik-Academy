@@ -3,14 +3,21 @@ document.getElementById('button-p1').addEventListener('click', printNumbersFrom1
 
 function printNumbersFrom1ToN(){
     var input = document.getElementById('input-p1').value,
-        output;
+        output,
+        i;
 
-    if (!isNaN(input) && (input !== '') && (input % 1 === 0) && (input >= 1)) {
+    if (!isNaN(input) && (input !== '') && (input % 1 === 0)) {
         input -= 0;
         output = 1;
 
-        for (var i = 2; i <= input; i+=1) {
-            output += ', ' + i;
+        if (input >= 1) {
+            for (i = 2; i <= input; i+=1) {
+                output += ', ' + i;
+            }
+        } else {
+            for (i = 0; i >= input; i-=1) {
+                output += ', ' + i;
+            }
         }
     } else {
         output = 'Invalid input!';
@@ -24,17 +31,27 @@ document.getElementById('button-p2').addEventListener('click', printNumbersFrom1
 
 function printNumbersFrom1ToNExtended(){
     var input = document.getElementById('input-p2').value,
-        output;
+        output,
+        i;
 
-    if (!isNaN(input) && (input !== '') && (input % 1 === 0) && (input >= 1)) {
+    if (!isNaN(input) && (input !== '') && (input % 1 === 0)) {
         input -= 0;
         output = 1;
 
-        for (var i = 2; i <= input; i+=1) {
-            if (i % 21 === 0) {
-                continue;
+        if (input >= 1) {
+            for (i = 2; i <= input; i+=1) {
+                if (i % 21 === 0) {
+                    continue;
+                }
+                output += ', ' + i;
             }
-            output += ', ' + i;
+        } else {
+            for (i = 0; i >= input; i-=1) {
+                if (i % 21 === 0) {
+                    continue;
+                }
+                output += ', ' + i;
+            }
         }
     } else {
         output = 'Invalid input!';
@@ -88,46 +105,28 @@ function findMaxAndMinNumbers(){
 document.getElementById('button-p4').addEventListener('click', findSmallestAndLargestProperty);
 
 function findSmallestAndLargestProperty() {
-    var property,
+    var array = [document, window, navigator],
+        arrayStr = ['Document', 'Window', 'Navigator'],
+        i,
+        arrayLength = array.length,
+        property,
         smallestProp = 'z',
         largestProp = 'A',
-        output;
+        output = '';
 
-    for (property in document) {
-        if (property > largestProp) {
-            largestProp = property;
+    for (i = 0; i < arrayLength; i+=1) {
+        for (property in array[i]) {
+            if (property > largestProp) {
+                largestProp = property;
+            }
+            if (property < smallestProp) {
+                smallestProp = property;
+            }
         }
-        if (property < smallestProp) {
-            smallestProp = property;
-        }
+        output += arrayStr[i] + ': Largest property -> ' + largestProp + '\n' + arrayStr[i] + ': Smallest property -> ' + smallestProp + '\n';
+        smallestProp = 'z';
+        largestProp = 'A';
     }
 
-    output = 'Document: Largest property -> ' + largestProp + '\nDocument: Smallest property -> ' + smallestProp + '\n';
-    smallestProp = 'z';
-    largestProp = 'A';
-
-    for (property in window) {
-        if (property > largestProp) {
-            largestProp = property;
-        }
-        if (property < smallestProp) {
-            smallestProp = property;
-        }
-    }
-
-    output += 'Window: Largest property -> ' + largestProp + '\nWindow: Smallest property -> ' + smallestProp + '\n';
-    smallestProp = 'z';
-    largestProp = 'A';
-
-    for (property in navigator) {
-        if (property > largestProp) {
-            largestProp = property;
-        }
-        if (property < smallestProp) {
-            smallestProp = property;
-        }
-    }
-
-    output += 'Navigator: Largest property -> ' + largestProp + '\nNavigator: Smallest property -> ' + smallestProp;
     document.getElementById('output-p4').value = output;
 }
