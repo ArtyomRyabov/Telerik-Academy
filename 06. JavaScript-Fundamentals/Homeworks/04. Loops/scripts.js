@@ -6,7 +6,7 @@ function printNumbersFrom1ToN(){
         output,
         i;
 
-    if (!isNaN(input) && (input !== '') && (input % 1 === 0)) {
+    if (!isNaN(input) && (input !== '') && !(input % 1)) {
         input -= 0;
         output = 1;
 
@@ -34,7 +34,7 @@ function printNumbersFrom1ToNExtended(){
         output,
         i;
 
-    if (!isNaN(input) && (input !== '') && (input % 1 === 0)) {
+    if (!isNaN(input) && (input !== '') && !(input % 1)) {
         input -= 0;
         output = 1;
 
@@ -99,7 +99,6 @@ function findMaxAndMinNumbers(){
 
     document.getElementById('output-p3').value = output;
 }
-
 
 // Problem 4. Lexicographically smallest
 document.getElementById('button-p4').addEventListener('click', findSmallestAndLargestProperty);
