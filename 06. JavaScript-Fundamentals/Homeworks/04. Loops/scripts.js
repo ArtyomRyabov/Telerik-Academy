@@ -66,8 +66,8 @@ document.getElementById('button-p3').addEventListener('click', findMaxAndMinNumb
 function findMaxAndMinNumbers(){
     var input = document.getElementById('input-p3').value,
         array,
-        min = Number.MAX_VALUE,
-        max = Number.MIN_VALUE,
+        min = Infinity,
+        max = -Infinity,
         i,
         output;
 
