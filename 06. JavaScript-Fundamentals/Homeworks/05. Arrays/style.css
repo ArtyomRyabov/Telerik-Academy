@@ -1,4 +1,4 @@
-body, div, section, article, ul, li, h1, h2, input, label, button {
+body, div, section, article, ul, li, h1, h2, input, label, button, textarea {
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ body {
 #wrapper {
     width: 850px;
     margin: 15px auto;
-    padding: 25px 5px 25px 25px;
+    padding: 25px 5px 25px 35px;
     font-family: 'Segoe UI';
     background-color: #ccc9c9;
     border: 5px solid #fff;
@@ -26,7 +26,7 @@ ul {
 }
 
 li {
-    margin-left: 40px;
+    margin: 0 20px 0 40px;
     color: #f00;
 }
 
@@ -56,6 +56,10 @@ button {
         margin-left: 120px;
     }
 
+    button#button-p7 {
+        margin: 0 50px;
+    }
+
 input {
     width: 180px;
     border-radius: 5px;
@@ -63,12 +67,21 @@ input {
     text-align: center;
 }
 
+    input#input-p3 {
+        width: 220px;
+    }
+
 textarea {
     float: right;
-    width: 260px;
-    height: 320px;
+    width: 200px;
+    height: 50px;
     border: 2px inset #e8e8e8;
     border-radius: 5px;
     padding: 5px;
     resize: vertical;
 }
+
+    textarea#result-p1 {
+        width: 260px;
+        height: 320px;
+    }
