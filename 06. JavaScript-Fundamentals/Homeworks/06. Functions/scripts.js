@@ -1,24 +1,11 @@
-function getInput(str) {
-    return document.getElementById(str).value;
-}
-
-function isValidInput(input) {
-    return ((input !== '') && (input != null)) ? true : false;
-}
-
-function sendOutput(id, out) {
-    document.getElementById(id).value = out;
-}
-
 // Problem 1. English digit
 document.getElementById('button-p1').addEventListener('click', lastDigitAsWord);
 
 function lastDigitAsWord() {
     var output = '',
-        input = getInput('input-p1'),
-        isInput = isValidInput(input);
+        input = document.getElementById('input-p1').value;
 
-    if (isInput && !(input % 1) && !isNaN(input)) {
+    if ((input !== '') && (input != null) && !(input % 1) && !isNaN(input)) {
         switch (input % 10) {
             case 0:
                 output = 'zero';
@@ -57,5 +44,31 @@ function lastDigitAsWord() {
     } else {
         output = 'Invalid input!';
     }
-    sendOutput('output-p1', output);
+    document.getElementById('output-p1').value = output;
+}
+
+// Problem 2. Reverse number
+document.getElementById('button-p2').addEventListener('click', reverseDigitsInNumber);
+
+function reverseDigitsInNumber() {
+    var i,
+        len,
+        start = 0,
+        output = '',
+        input = document.getElementById('input-p2').value;
+
+    if ((input !== '') && (input != null) && !isNaN(input)) {
+        input = (+input).toString()     // removing leading zeroes from string, if such exist
+        if (input < 0) {
+            output += '-';
+            start = 1;
+        }
+        for (len = input.length, i = len - 1; i >= start; i -= 1) {
+            output += input[i];
+        }
+        output = +output;       // removing unnecessary zeroes following the decimal coma
+    } else {
+        output = 'Invalid input!';
+    }
+    document.getElementById('output-p2').value = output;
 }
