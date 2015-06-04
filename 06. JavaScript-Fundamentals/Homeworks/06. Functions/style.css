@@ -1,4 +1,4 @@
-body, div, section, article, ul, li, h1, h2, input, label, button, textarea {
+body, div, section, article, ul, li, h1, h2, input, label, button, textarea, p {
 	margin: 0;
 	padding: 0;
 }
@@ -31,9 +31,37 @@ li {
 }
 
 .solution {
-	display: inline-block;
 	margin: 25px 25px 15px;
 	font-weight: bold;
+}
+
+.text-p3 {
+	float: left;
+	margin-right: 30px;
+}
+
+.word-p3 {
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.radio-buttons-p3 {
+	float: left;
+}
+
+    .radio-buttons-p3 input[type="radio"] {
+	    width: auto;
+    }
+
+.btn {
+	position: relative;
+	top: -30px;
+}
+
+.output-p3 {
+	float: right;
+	position: relative;
+	top: -113px;
 }
 
 h1 {
@@ -52,12 +80,30 @@ button {
 	padding: 5px 10px;
 }
 
+    button#button-p5, button#button-p6 {
+	    margin: 0 50px;
+	    position: relative;
+	    top: 15px;
+    }
+
+    button#button-p6 {
+	    margin: 0 30px;
+    }
+
 input {
 	width: 180px;
 	border-radius: 5px;
 	padding: 5px;
 	text-align: center;
 }
+
+    input#input-word-p3, input#output-p7 {
+	    width: 105px;
+    }
+
+    input#output-p6 {
+	    width: 240px;
+    }
 
 textarea {
 	float: right;
@@ -67,4 +113,19 @@ textarea {
 	border-radius: 5px;
 	padding: 5px;
 	resize: vertical;
+}
+
+#test {
+    display: block;
+	margin: 30px 30px 30px 70px;
+}
+
+#input-p3, #output-p3 {
+	height: 80px;
+}
+
+p {
+	font-size: 1.1em;
+	color: #fff;
+	margin: 15px 40px;
 }
