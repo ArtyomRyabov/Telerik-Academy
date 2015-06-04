@@ -9,7 +9,7 @@ function problem1() {
 function lastDigitAsWord(input) {
     var output = '';
 
-    if ((input !== '') && (input != null) && !(input % 1) && !isNaN(input)) {
+    if ((input !== '') && (input !== null) && !(input % 1) && !isNaN(input)) {
         switch (input % 10) {
             case 0:
                 output = 'zero';
@@ -65,7 +65,7 @@ function reverseDigitsInNumber(input) {
         start = 0,
         output = '';
 
-    if ((input !== '') && (input != null) && !isNaN(input)) {
+    if ((input !== '') && (input !== null) && !isNaN(input)) {
         input = (+input).toString();    // removing unnecessary leading zeroes (if such exist) from string
         if (input < 0) {
             output += '-';
@@ -95,25 +95,25 @@ function problem3() {
 function findWordInText(text, word, sensitive) {
     var output;
 
-    if ((text !== '') && (text != null) && (word !== '') && (word != null) ) {
+    if ((text !== '') && (text !== null) && (word !== '') && (word !== null) ) {
 
         function findWordInTextCaseSensitive() {
             var reg = new RegExp('\\b' + word + '\\b','g');
-            output = text.replace(reg, '@@@');
+            return text.replace(reg, '@@@');
         }
 
         function findWordInTextCaseInsensitive() {
             var reg = new RegExp('\\b' + word + '\\b','gi');
-            output = text.replace(reg, '@@@');
+            return text.replace(reg, '@@@');
         }
 
         if (sensitive) {
-            findWordInTextCaseSensitive();
+            output = findWordInTextCaseSensitive();
         } else {
-            findWordInTextCaseInsensitive();
+            output = findWordInTextCaseInsensitive();
         }
 
-    } else if ((text === '') || (text == null)){
+    } else if ((text === '') || (text === null)){
         output = 'Invalid text!';
     } else {
         output = 'Invalid word!';
@@ -144,7 +144,7 @@ function countANumberAppearancesInArray(numbers, searched) {
         array = [],
         output = '';
 
-    if ((numbers !== '') && (searched !== '') && (searched != null) && !isNaN(searched)) {
+    if ((numbers !== '') && (searched !== '') && (searched !== null) && !isNaN(searched)) {
         array = numbers.split(', ');
         searched |= 0;
 
@@ -227,7 +227,7 @@ function isBiggerThanNeighbours(numbers, index) {
 }
 
 function isValidInteger(input) {
-    if ((input !== '') && (input != null) && !isNaN(input) && !(input % 1)) {
+    if ((input !== '') && (input !== null) && !isNaN(input) && !(input % 1)) {
         return true;
     } else {
         return false;
