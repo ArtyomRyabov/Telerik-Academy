@@ -35,10 +35,11 @@ function createPerson(firstName, lastName, age, gender) {
     };
 }
 
-people.forEach(function (person) {
+function printPerson(person) {
     console.log(person.toString());
-});
+}
 
+people.forEach(printPerson);
 console.log('\n\n********** Problem 2. People of age **********');
 
 isAgeAbove17 = people.every(function (person) {
@@ -52,26 +53,20 @@ underage = people.filter(function (person) {
     return person.age < 18;
 });
 
-underage.forEach(function (person) {
-    console.log(person.toString());
-});
-
+underage.forEach(printPerson);
 console.log('\n\n********** Problem 4. Average age of females **********');
 
 females = people.filter(function (person) {
     return person.gender === 'female';
 });
 
-females.forEach(function (person) {
-    console.log(person.toString());
-});
+females.forEach(printPerson);
 
 averageFemalesAge = females.reduce(function (ageSum, person) {
     return ageSum + person.age;
 }, 0) / females.length;
 
 console.log('*** Result: ' + averageFemalesAge + ' years');
-
 console.log('\n\n********** Problem 5. Youngest male person **********');
 
 if (!Array.prototype.find) {
@@ -94,9 +89,7 @@ youngestMale = people.sort(function (personA, personB) {
 
 males = people.filter(function (person) {
     return person.gender === 'male';
-}).forEach(function (person) {
-    console.log(person.toString());
-});
+}).forEach(printPerson);
 
 console.log('*** Result: ' + youngestMale);
 console.log('\n\n********** Problem 6. Group people **********');
