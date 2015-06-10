@@ -3,15 +3,13 @@ document.getElementById('button-p1').addEventListener('click', increaseArrayMemb
 
 function increaseArrayMembers() {
     var inputArray = [],
-        outputArray = [],
         output = '',
         length = 20,
         i;
 
     for (i = 0; i < length; i += 1) {
-        inputArray[i] = Math.floor((Math.random() * 100) + 1);
-        outputArray[i] = inputArray[i] * 5;
-        output += 'Integer [' + (i + 1) + '] = ' + inputArray[i] + ' goes to: ' + outputArray[i] + '\n';
+        inputArray[i]  = i * 5;
+        output += 'Integer [' + i + '] = ' + inputArray[i] + '\n';
     }
 
     document.getElementById('result-p1').value = output;
@@ -51,6 +49,7 @@ function arraysComparison() {
             } else {
                 output = 'Invalid input!';
                 document.getElementById('result-p2').value = output;
+                return;
             }
 
             if (firstArray.length < secondArray.length) {
@@ -86,12 +85,7 @@ function equalElementsMaxSequence() {
         length = array.length - 1;
 
         for (i = 0; i < length; i += 1) {
-            if (!isNaN(array[i]) && (array[i] !== '') && (array[i] !== null) && 
-            	!isNaN(array[i + 1]) && (array[i + 1] !== '') && (array[i + 1] !== null)) {
-
-                array[i] = +array[i];
-                array[i + 1] = +array[i + 1];
-
+            if ((array[i] !== '') && (array[i] !== null) && (array[i + 1] !== '') && (array[i + 1] !== null)) {
                 if (array[i + 1] === array[i]) {
                     counter += 1;
 
@@ -149,12 +143,7 @@ function maxIncreasingSequence() {
         length = array.length - 1;
 
         for (i = 0; i < length; i += 1) {
-            if (!isNaN(array[i]) && (array[i] !== '') && (array[i] !== null) && 
-            	!isNaN(array[i + 1]) && (array[i + 1] !== '') && (array[i + 1] !== null)) {
-
-                array[i] = +array[i];
-                array[i + 1] = +array[i + 1];
-
+            if ((array[i] !== '') && (array[i] !== null) && (array[i + 1] !== '') && (array[i + 1] !== null)) {
                 if (i === 0) {
                     temp.push(array[i]);
                     counter += 1;
@@ -269,7 +258,7 @@ function mostFrequentNumber() {
 
         for (i = 0; i < length; i += 1) {
         	for (j = i; j < length; j += 1) {
-        		if (!isNaN(array[i]) && (array[i] !== '') && (array[i] !== null) && 
+        		if (!isNaN(array[i]) && (array[i] !== '') && (array[i] !== null) &&
         			!isNaN(array[j]) && (array[j] !== '') && (array[j] !== null)) {
 
         			array[i] = +array[i];
@@ -358,5 +347,5 @@ function binarySearch(arr, number) {
             start = middle + 1;
         }
     }
-    return 'Invalid element!';
+    return 'Element not found!';
 }
