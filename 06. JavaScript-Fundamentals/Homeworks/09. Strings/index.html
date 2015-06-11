@@ -55,8 +55,8 @@
                 <h2>Problem 4. Parse tags</h2>
                 <ul>
                     <li>You are given a text. Write a function that changes the text in all regions</li>
-                    <li>Example: We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>.
-                        We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else.</li>
+                    <li>Example: We are &lt;mixcase>living&lt;/mixcase> in a &lt;upcase>yellow submarine&lt;/upcase>.
+                        We &lt;mixcase>don't&lt;/mixcase> have &lt;lowcase>anything&lt;/lowcase> else.</li>
                     <li>The expected result: We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.</li>
                     <li>Note: Regions can be nested</li>
                 </ul>
@@ -114,7 +114,7 @@
                 <h2>Problem 8. Replace tags</h2>
                 <ul>
                     <li>Write a JavaScript function that replaces in a HTML document given as string all the
-                        tags &lt;a href="…">…</a> with corresponding tags [URL=…]…/URL]</li>
+                        tags &lt;a href="…">…&lt;/a> with corresponding tags [URL=…]…/URL]</li>
                 </ul>
                 <div class="solution">
                     <label for="input-p8">In: </label>
@@ -158,7 +158,27 @@
                     <li>Write a function that formats a string using placeholders</li>
                     <li>The function should work with up to 30 placeholders and all types</li>
                 </ul>
-                <p>Look at </p>
+                <p>Note: Look at the console to see the result. Try to change the input data and see the result again.</p>
+                <div class="solution">
+                    <label for="input-p11">Input: </label>
+                    <textarea id="input-p11" disabled></textarea>
+                    <label for="output-p11">Output: </label>
+                    <textarea id="output-p11" disabled></textarea>
+                </div>
+            </article>
+            <article>
+                <h2>Problem 12. Generate list</h2>
+                <ul>
+                    <li>Write a function that creates a HTML &lt;ul> using a template for every HTML &lt;li></li>
+                    <li>The source of the list should be an array of elements</li>
+                    <li>Replace all placeholders marked with –{…}– with the value of the corresponding property of the object</li>
+                </ul>
+                <div class="solution">
+                    <button id="button-p12">Click to generate</button>
+                    <div data-type="template" id="list-item">
+                        <strong>-{name}-</strong> <span>-{age}-</span>
+                    </div>
+                </div>
             </article>
         </section>
     </div>

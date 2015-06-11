@@ -227,11 +227,12 @@ function problem5() {
                 output.push(input[i]);
             }
         }
+        output = output.join('');
     } else {
         output = 'Invalid input!';
     }
 
-    document.getElementById('output-p5').value = output.join('');
+    document.getElementById('output-p5').value = output;
 }
 
 // Problem 6. Extract text from HTML
@@ -283,8 +284,8 @@ function parseURLToJSONObject(url) {
     return obj;
 }
 
-function validateUrl(text){
-    var reg = /^(https?|ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(value);
+function validateUrl(text) {
+    var reg = /^(https?|ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i;
 
     return reg.test(text);
 }
@@ -311,7 +312,7 @@ function problem7() {
 
     validURL = validateUrl(input);
 
-    if (validURL){
+    if (validURL && input !== ''){
         object = parseURLToJSONObject(input);
         output = toString(object);
     } else {
@@ -429,28 +430,77 @@ function problem10() {
 }
 
 // Problem 11. String format
-document.getElementById('button-p11').addEventListener('click', problem11);
-
 function stringFormat() {
     var i,
-        len;
+        len,
+        plcHldr,
+        firstArg = arguments[0];
 
     for (i = 0, len = arguments.length; i < len; i += 1) {
-        arguments[0] = arguments[0].replace(/{\i}/g, arguments[i + 1]);
+        plcHldr = '{' + i + '}';
+
+        while(firstArg.indexOf(plcHldr) !== -1) {
+            firstArg = firstArg.replace('{' + i + '}', arguments[i + 1]);
+        }
     }
 
-    return arguments[0];
+    return firstArg;
 }
 
 function problem11() {
-    var output,
-        input = document.getElementById('input-p11').value;
+    var frmt = '{0}, {1}, {0} text {2}',
+        str = stringFormat(frmt, 1, 'Pesho', 'Gosho'),
 
-    if (input){
-        output = input;
-    } else {
-        output = 'Invalid input!';
+        format = 'For "boolean": {0}, for "array": {2}, for "object": {1}',
+        string = stringFormat(format, true, { type:"Fiat", model:500, color:"white" }, ['a', 1, false]);
+
+        document.getElementById('input-p11').value = 'format = For "boolean": {0}, for "array": {2}, for "object": {1}' +
+            '\nstring = stringFormat(format, true, { type:"Fiat", model:500, color:"white" }, [\'a\', 1, false])';
+        document.getElementById('output-p11').value = stringFormat(format, true,
+            { type:"Fiat", model:500, color:"white" }, ['a', 1, false]);
+
+    console.log('***** Problem 11. String format *****');
+    console.log('Input:\n' + frmt);
+    console.log('Output:\n' + str);
+    console.log('Input:\n' + format);
+    console.log('Output:\n' + string);
+}
+
+problem11();
+
+// Problem 12. Generate list
+document.getElementById('button-p12').addEventListener('click', problem12);
+
+function format(person, tmpl) {
+    tmpl = tmpl.replace('-{name}-', person.name);
+    tmpl = tmpl.replace('-{age}-', person.age);
+
+    return tmpl;
+}
+
+function generateList(people, template) {
+    var person,
+        liTag,
+        ulTag = document.createElement('ul');
+
+    for (person in people) {
+        if (people.hasOwnProperty(person)) {
+            liTag = document.createElement('li');
+            liTag.innerHTML = format(people[person], template);
+            liTag.style.listStyleType = 'none';
+            liTag.style.marginLeft = '0';
+            ulTag.appendChild(liTag);
+        }
     }
 
-    document.getElementById('output-p11').value = output;
+    document.getElementById('list-item').appendChild(ulTag);
+}
+
+function problem12() {
+    var people = [{name: 'Mitko', age: 23}, {name: 'Vasil', age: 25}, {name: 'Vladimir', age: 30},
+            {name: 'Stoyan', age: 30}, {name: 'Krasimir', age: 35}, {name: 'Simeon', age: 40}],
+        temp = document.getElementById('list-item'),
+        template = temp.innerHTML;
+
+    generateList(people, template);
 }
