@@ -1,3 +1,4 @@
+/* Task Description */
 /* 
 	Write a function that sums an array of numbers:
 		numbers must be always of type Number
