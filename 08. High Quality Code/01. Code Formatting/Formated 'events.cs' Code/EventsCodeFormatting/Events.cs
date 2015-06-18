@@ -6,8 +6,7 @@
     public class Events
     {
         private static StringBuilder output = new StringBuilder();
-
-        public static EventHolder events = new EventHolder();
+        private static EventHolder events = new EventHolder();
 
         public static void Main()
         {
